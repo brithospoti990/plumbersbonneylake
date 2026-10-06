@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Plumbers Bonney Lake">
+  <rect width="64" height="64" rx="12" fill="#0F2E4A"/>
+  <path d="M16 52 V26 a12 12 0 0 1 12 -12 H44" fill="none" stroke="#B8742A" stroke-width="9" stroke-linecap="round"/>
+  <path d="M16 52 V26 a12 12 0 0 1 12 -12 H44" fill="none" stroke="#D59A55" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <rect x="40" y="7" width="8" height="14" rx="2" fill="#8F5A1F"/>
+  <rect x="10" y="46" width="12" height="8" rx="2" fill="#8F5A1F"/>
+  <path d="M46 28 c0 0 -8 10 -8 15 a8 8 0 0 0 16 0 c0 -5 -8 -15 -8 -15z" fill="#1B7F8E"/>
+  <path d="M42.5 44 a4 4 0 0 0 3 3" fill="none" stroke="#9FD8E0" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="76" y="30" font-family="Barlow Semi Condensed, Arial Narrow, Arial, sans-serif" font-weight="700" font-size="28" fill="#0F2E4A" letter-spacing="-.3">PLUMBERS</text>
+  <text x="76" y="56" font-family="Barlow Semi Condensed, Arial Narrow, Arial, sans-serif" font-weight="600" font-size="22" fill="#B8742A" letter-spacing="1.2">BONNEY LAKE</text>
+</svg>
