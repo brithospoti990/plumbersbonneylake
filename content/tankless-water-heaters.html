@@ -1,0 +1,107 @@
+<!--META {
+"slug": "tankless-water-heaters",
+"title": "Tankless Water Heater Installation Bonney Lake, WA | Repair",
+"description": "Tankless water heater installation, repair and descaling in Bonney Lake, WA. Sized for PNW winter inlet temps, correct gas and vent. Call (253) 465-7734.",
+"h1": "Tankless Water Heater Installation & Service in Bonney Lake, WA",
+"lede": "Endless hot water and a reclaimed garage corner — when a tankless unit is sized and installed right. Most tankless complaints we hear on the Plateau come from units sized for California inlet temperatures or fed by a gas line that's too small. We do the math first.",
+"cta_noun": "a tankless water heater",
+"faqs": [
+[
+"Is a tankless water heater worth it in Bonney Lake?",
+"For households that run out of hot water, want space back, or plan to stay in the house for years, yes. The install costs more than a tank because of gas-line and venting work, and the payoff is in efficiency, lifespan and never running cold. If your tank serves you fine and you're moving soon, we'll say so."
+],
+[
+"How many gallons per minute do I need?",
+"Enough to run your busiest simultaneous use — commonly two showers, or a shower and the kitchen tap. In winter, Plateau incoming water can be in the 40s°F, which cuts a unit's output significantly compared to its brochure rating. Use the calculator on this page."
+],
+[
+"Will my existing gas line work?",
+"Often not without upsizing. A tankless unit can draw several times the gas of a tank heater, so a half-inch line that fed the old tank usually needs to become three-quarter or larger from the meter. We size it and handle the gas work."
+],
+[
+"Do tankless heaters need maintenance?",
+"Yes — an annual descaling flush on Bonney Lake's moderately hard water, plus a check of the inlet screen and condensate line. Isolation valves installed with the unit make this a short job."
+],
+[
+"Can I install tankless outside or in a crawl space?",
+"Outdoor-rated units exist, but Plateau winters make freeze protection a real concern. Garage or utility-room installs with proper venting are the norm here."
+],
+[
+"Electric tankless or gas?",
+"Whole-house electric tankless draws enormous amperage and rarely makes sense in Western Washington's cold inlet water. Gas (natural or propane) is the practical whole-house choice; small electric point-of-use units work for a single remote sink."
+],
+[
+"Do you repair tankless units?",
+"Yes — error codes, ignition failures, flow sensors, scale buildup and venting issues on the major brands. Many 'failed' units just need a descale and a cleaned inlet filter."
+]
+]
+}-->
+<h2>The honest case for tankless on the Plateau</h2>
+<p>A tankless water heater heats water only as it flows, so there's no 50-gallon tank losing heat all day and no running out when the third shower starts. The units last longer than tanks — twenty years is realistic with annual descaling — and they hang on a wall. That's the upside, and it's real. The downside is that a tankless install is a bigger job than swapping a tank: the gas line usually needs upsizing, the venting is specific, and the unit has to be sized for the coldest water of the year, not the average. Companies that skip those steps are why some Bonney Lake homeowners say tankless "doesn't work." Sized and plumbed correctly, it works very well.</p>
+
+<div class="tool" id="gpm">
+  <h3>Tankless flow calculator: what size do I need?</h3>
+  <p>Tick the fixtures you want running at the same time in winter.</p>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="fx" value="2.0" checked>Shower (2.0 GPM)</label></li>
+    <li><label><input type="checkbox" class="fx" value="2.0">Second shower at the same time (2.0 GPM)</label></li>
+    <li><label><input type="checkbox" class="fx" value="1.5">Kitchen faucet (1.5 GPM)</label></li>
+    <li><label><input type="checkbox" class="fx" value="1.5">Dishwasher (1.5 GPM)</label></li>
+    <li><label><input type="checkbox" class="fx" value="2.0">Washing machine, hot cycle (2.0 GPM)</label></li>
+    <li><label><input type="checkbox" class="fx" value="4.0">Soaking tub filling (4.0 GPM)</label></li>
+  </ul>
+  <div class="row">
+    <div><label for="gpm-in">Winter inlet water temperature (°F)</label><input id="gpm-in" type="number" min="35" max="70" value="45"></div>
+    <div><label for="gpm-set">Hot water setpoint (°F)</label><input id="gpm-set" type="number" min="100" max="140" value="120"></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="gpm-go">Calculate</button>
+  <div class="result" id="gpm-out" hidden></div>
+  <p class="note">Bonney Lake winter inlet water is often in the low-to-mid 40s°F. A unit advertised at "9 GPM" is rated at a small temperature rise; at a 75°F rise it may deliver half that.</p>
+</div>
+<script>
+(function(){document.getElementById('gpm-go').addEventListener('click',function(){var flow=0;[].forEach.call(document.querySelectorAll('#gpm .fx:checked'),function(c){flow+=parseFloat(c.value)});var rise=(+document.getElementById('gpm-set').value||120)-(+document.getElementById('gpm-in').value||45);if(rise<1)rise=1;var btu=flow*rise*500/0.95;var o=document.getElementById('gpm-out');o.hidden=false;var cls=btu<120000?'a single mid-size condensing gas unit (about 150k–160k BTU) handles this with margin':btu<170000?'a large single condensing gas unit (about 180k–199k BTU)':'more than one unit, or a tankless-plus-tank hybrid — a conversation worth having';o.innerHTML='<strong>'+flow.toFixed(1)+' GPM at a '+rise+'°F rise ≈ '+Math.round(btu/1000)+'k BTU/hr input</strong>Likely fit: '+cls+'. Electric whole-house tankless at this demand would need roughly '+Math.round(flow*rise*500/3412/0.98)+' kW of service — usually impractical.'});})();
+</script>
+
+<figure class="photo"><img src="/img/services/tankless-water-heaters-1.jpg" alt="Wall-mounted condensing tankless water heater with isolation valves and PVC venting installed in a Tehaleh garage by Plumbers Bonney Lake" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Isolation valves with service ports make the annual descale a twenty-minute job instead of a teardown.</figcaption></figure>
+
+<h2>Sizing for Western Washington, not the brochure</h2>
+<p>Every tankless heater has a maximum output in BTUs. How many gallons per minute that becomes depends entirely on how much it has to raise the water temperature. In Bonney Lake, water entering the house from the City's spring and well supply, or from Tacoma Water in Tehaleh, drops into the 40s°F in winter. To deliver a 120°F shower that's a 75°F rise — roughly double the rise the brochure number assumes. A unit that looks generous on paper can run two showers in July and struggle with one shower and a dishwasher in January.</p>
+<p>We size to the winter case and your real simultaneous use. For most three- and four-bedroom homes on the Plateau that means a condensing unit in the 180,000–199,000 BTU class. For large homes, multi-head showers or a soaking tub, we look at two units in parallel or a tankless feeding a small buffer tank. For a cabin or an accessory dwelling, a smaller unit is plenty. Oversizing a little costs almost nothing in operation because the unit modulates; undersizing costs you every cold morning.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 280" role="img" aria-labelledby="tlTitle">
+    <title id="tlTitle">Chart comparing tankless output: at a 35 degree rise a unit delivers about 9 gallons per minute, at a 55 degree rise about 6, and at the 75 degree Bonney Lake winter rise about 4.5</title>
+    <rect width="720" height="280" rx="8" fill="#E3F1F3"/>
+    <text x="360" y="30" text-anchor="middle" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="18" fill="#0F2E4A">Same 199k BTU unit — output falls as the temperature rise climbs</text>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="13" fill="#0F2E4A">
+      <rect x="120" y="70" width="400" height="34" fill="#9FD8E0"/><text x="130" y="93" fill="#0F2E4A">35°F rise (brochure, warm climate)</text><text x="530" y="93" font-weight="700">≈ 9 GPM</text>
+      <rect x="120" y="125" width="270" height="34" fill="#1B7F8E"/><text x="130" y="148" fill="#fff">55°F rise (Bonney Lake spring/fall)</text><text x="400" y="148" font-weight="700">≈ 6 GPM</text>
+      <rect x="120" y="180" width="200" height="34" fill="#B8742A"/><text x="130" y="203" fill="#fff">75°F rise (Bonney Lake winter)</text><text x="330" y="203" font-weight="700">≈ 4.5 GPM</text>
+      <text x="120" y="250" fill="#4A5862">Two showers at once in January ≈ 4 GPM. Size for this bar, not the top one.</text>
+    </g>
+  </svg>
+  <figcaption>Why a unit that "should" be big enough leaves the second shower cold in winter.</figcaption>
+</figure>
+
+<h2>Gas line, venting and the parts of the job people underestimate</h2>
+<p>A tank water heater sips gas; a tankless unit gulps it for a few minutes at a time. The half-inch gas line that fed your old 40-gallon tank almost never carries enough for a 199,000 BTU unit, especially when the furnace and range are also running. We measure the run from the meter, calculate the load for every appliance on the line, and upsize to three-quarter inch or larger where needed. Puget Sound Energy may need to confirm the meter capacity on larger homes; we coordinate that.</p>
+<p>Venting is just as specific. Condensing units vent through PVC or polypropylene with exact length and termination rules, and produce acidic condensate that must drain to an approved location — often through a neutralizer. Non-condensing units need stainless category III vent. Both need combustion air. We route venting to meet clearance rules from windows, doors and the gas meter, and we don't terminate it where it'll ice up a walkway in January.</p>
+<ul>
+  <li>Isolation valves with service ports for descaling</li>
+  <li>A sediment trap on the gas drop and a leak test on the whole line</li>
+  <li>A water pre-filter or scale inhibitor where the water test warrants it</li>
+  <li>A condensate neutralizer and drain on condensing units</li>
+  <li>Permit, gas inspection and plumbing inspection through the City of Bonney Lake or Pierce County</li>
+  <li>Freeze-protection power and placement — the unit's built-in heaters only work if it has power during an outage, so we talk through that</li>
+</ul>
+
+<figure class="photo"><img src="/img/services/tankless-water-heaters-2.jpg" alt="Plumbers Bonney Lake technician upsizing a gas line and installing stainless venting for a tankless water heater in a Lake Tapps home" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>The gas line and vent are most of a tankless install. The unit is the easy part.</figcaption></figure>
+
+<h2>Descaling, repair and error codes</h2>
+<p>Bonney Lake's moderately hard water leaves scale inside a tankless heat exchanger just as it does inside a tank, and the exchanger's narrow passages tolerate far less of it. The symptoms are a unit that cycles, fluctuating temperature, lower flow and eventually an error code. An annual descaling flush — circulating a mild acid through the isolation valves for about forty-five minutes — prevents all of it. We offer it as a yearly service, and we'll show you how to do it yourself if you'd rather.</p>
+<p>Beyond scale, the common repairs we see on the Plateau are ignition failures from a dirty burner or flame rod, a clogged inlet filter after work on the City main, flow sensors fouled by sediment, venting problems after a remodel, and freeze damage on units without power during a winter outage. Most are same-visit fixes. We service all the major brands and carry the common sensors and filters.</p>
+
+<div class="callout"><strong>Pair it with recirculation</strong><br>Tankless units need a minimum flow to fire, so the wait for hot water at a distant tap can feel longer than with a tank. A dedicated <a href="/services/hot-water-recirculation/">recirculation loop</a> or a unit with a built-in recirc mode solves it. We design the two together.</div>
+
+<h2>Switching from a tank: what to expect</h2>
+<p>A tank-to-tankless conversion in Bonney Lake typically takes most of a day: remove and haul the old tank, run the new gas line, mount the unit, install venting and condensate drain, connect water with isolation valves, test, and walk you through the controls. We handle the permit and inspection. If the water test shows significant hardness we'll recommend a <a href="/services/water-softener-installation/">softener</a> or scale inhibitor so the heat exchanger lives its full life. Call <a href="tel:+12534657734">(253) 465-7734</a> for a sizing visit and a written estimate — we serve Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge.</p>

@@ -1,0 +1,104 @@
+<!--META {
+"slug": "faucet-repair-replacement",
+"title": "Faucet Repair & Replacement Bonney Lake, WA | Kitchen, Bath",
+"description": "Faucet repair and replacement in Bonney Lake, WA. Drips, low flow, loose handles fixed; kitchen, bath, shower, tub faucets installed. Call (253) 465-7734.",
+"h1": "Faucet Repair & Replacement in Bonney Lake, WA",
+"lede": "A dripping faucet is the sound of your water bill. Most are a cartridge or a seat away from fixed, and the ones that aren't are a clean replacement. We repair kitchen, bathroom, shower and tub faucets and install new ones so they're straight, sealed and don't leak into the cabinet.",
+"cta_noun": "a faucet repaired",
+"faqs": [
+[
+"Is it worth repairing a faucet or should I replace it?",
+"Repair when it's a quality faucet with a replaceable cartridge, washer or seat — most major-brand faucets are. Replace when the body is corroded, the finish is failing, parts are no longer available, or it's a builder-grade faucet that will fail again. We tell you which before quoting."
+],
+[
+"Why is my faucet dripping?",
+"A worn cartridge, washer, or seat. On Bonney Lake's hard water, scale builds on the seat and the cartridge can't seal. Replacing the cartridge or dressing the seat fixes it."
+],
+[
+"Why is the water pressure low at just one faucet?",
+"Almost always the aerator or the cartridge inlet screen is clogged with scale or sediment. Cleaning or replacing them restores flow. Low pressure everywhere is a different problem — see water line repair."
+],
+[
+"Can you match a faucet to my existing finish?",
+"Yes. We work with all major brands and finishes and can source matching trim for showers and tubs so a replacement doesn't look like a patch."
+],
+[
+"Do you install faucets I bought myself?",
+"Yes. Tell us the model and we'll confirm it fits your sink's hole pattern and spacing before we arrive."
+],
+[
+"How long does a faucet replacement take?",
+"A kitchen or bath faucet is usually under two hours, including new supply lines and shut-off valves if the old ones are failing. Shower valve replacement inside the wall takes longer."
+],
+[
+"Why does my new faucet leak under the sink?",
+"The supply line nut is cross-threaded or under-tightened, the mounting gasket isn't seated, or the old shut-off valve was disturbed and now weeps. All quick fixes; all things we test for before leaving."
+]
+]
+}-->
+<h2>What a drip actually costs</h2>
+<p>A faucet dripping once a second looks harmless and wastes a surprising amount of water — water the City of Bonney Lake bills you for, and if it's the hot side, water your water heater paid to heat. Use the calculator to see your number, then read on for what's probably wrong and how we fix it.</p>
+
+<div class="tool" id="drip">
+  <h3>Drip calculator</h3>
+  <div class="row three">
+    <div><label for="dr-rate">Drips per minute</label><input id="dr-rate" type="number" min="1" max="600" value="60"></div>
+    <div><label for="dr-n">Number of dripping faucets</label><input id="dr-n" type="number" min="1" max="10" value="1"></div>
+    <div><label for="dr-hot">Hot or cold side?</label><select id="dr-hot"><option value="cold">Cold</option><option value="hot">Hot</option></select></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="dr-go">Calculate</button>
+  <div class="result" id="dr-out" hidden></div>
+  <p class="note">Uses the common estimate of roughly 15,000 drips per gallon. A steady stream wastes far more.</p>
+</div>
+<script>
+(function(){document.getElementById('dr-go').addEventListener('click',function(){var r=+document.getElementById('dr-rate').value||0,n=+document.getElementById('dr-n').value||1,h=document.getElementById('dr-hot').value;var galDay=r*60*24*n/15000;var galYr=galDay*365;var o=document.getElementById('dr-out');o.hidden=false;o.innerHTML='<strong>About '+Math.round(galYr).toLocaleString()+' gallons a year</strong>That\'s roughly '+galDay.toFixed(1)+' gallons a day'+(h==='hot'?', and your water heater is paying to heat every one of them.':'.')+(galYr>2000?' At this rate a cartridge replacement pays for itself quickly.':' Small, but drips get worse — the seat wears a groove and the drip becomes a trickle.')});})();
+</script>
+
+<figure class="photo"><img src="/img/services/faucet-repair-replacement-1.jpg" alt="New single-handle kitchen faucet with pull-down sprayer installed on a Bonney Lake sink by Plumbers Bonney Lake" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Straight, sealed at the deck, new braided supply lines, and a quarter-turn shut-off underneath.</figcaption></figure>
+
+<h2>Repairs: cartridges, seats and the parts that wear</h2>
+<p>Modern faucets control water with a cartridge — ceramic disc, ball or sleeve — and older ones with a compression stem and rubber washer. Both wear, and both are replaceable on quality faucets. Here's how the symptom maps to the part:</p>
+<ul>
+  <li><strong>Drip from the spout</strong> — worn cartridge or washer, or a scaled valve seat. We replace the cartridge with the manufacturer's part and dress or replace the seat.</li>
+  <li><strong>Leak from the base of the handle or spout</strong> — O-rings or the cartridge's outer seals. A quick repair.</li>
+  <li><strong>Low flow at one faucet</strong> — the aerator or inlet screens clogged with scale. Bonney Lake's groundwater does this to every faucet eventually; cleaning or replacing the aerator restores it.</li>
+  <li><strong>Handle stiff, loose or spinning</strong> — a worn cartridge or a stripped handle adapter.</li>
+  <li><strong>Pull-down sprayer won't retract or leaks</strong> — the hose or the weight; both replaceable.</li>
+  <li><strong>Shower goes hot-cold-hot</strong> — a failing pressure-balance cartridge in the shower valve. Replaced without opening the wall on most brands.</li>
+</ul>
+<p>We carry cartridges for the major brands on the truck. If the faucet needs an obscure part, we'll tell you whether waiting for it beats replacing the faucet.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 250" role="img" aria-labelledby="fcTitle">
+    <title id="fcTitle">Exploded diagram of a single-handle faucet showing the handle, cartridge, O-rings, valve seat and spout, with labels for which part causes which symptom</title>
+    <rect width="720" height="250" rx="8" fill="#E3F1F3"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">
+      <rect x="320" y="20" width="80" height="26" rx="6" fill="#4A5862"/><text x="420" y="38">Handle — loose or spinning: adapter</text>
+      <rect x="340" y="60" width="40" height="60" rx="6" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="420" y="92">Cartridge — drip from spout, stiff handle</text>
+      <ellipse cx="360" cy="132" rx="24" ry="5" fill="none" stroke="#B03A2E" stroke-width="3"/><text x="420" y="136">O-rings — leak at base of handle/spout</text>
+      <rect x="345" y="146" width="30" height="12" fill="#B8742A"/><text x="420" y="156">Seat — scale pits it; drip even with new cartridge</text>
+      <path d="M330 170 H390 V230 H330Z" fill="#C9D6E0" stroke="#0F2E4A" stroke-width="2"/><text x="420" y="200">Body &amp; spout — corroded: replace the faucet</text>
+      <circle cx="300" cy="228" r="8" fill="#1B7F8E"/><text x="60" y="232">Aerator — low flow, spraying sideways: clean/replace</text>
+      <path d="M312 228 H326" stroke="#1B7F8E" stroke-width="2"/>
+    </g>
+    <text x="40" y="40" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="16" fill="#0F2E4A">What fails, top to bottom</text>
+  </svg>
+  <figcaption>Four of the six parts are a ten-minute repair. Only a corroded body means a new faucet.</figcaption>
+</figure>
+
+<h2>Faucet replacement, done so it stays dry</h2>
+<p>A replacement is more than threading a new faucet through the sink. We remove the old unit (which in a kitchen often means fighting corroded mounting nuts — we have the tools), clean the deck, and check the sink's hole spacing against the new faucet so a deck plate isn't needed where you didn't want one. The new faucet is set straight, sealed at the deck, and connected with new braided stainless supply lines. If the shut-off valves under the sink are the old multi-turn type that no longer close, we replace them with quarter-turn stops; a faucet with no working shut-off is a house-main emergency waiting to happen. Then everything runs hot and cold for several minutes while we check each connection with a dry paper towel.</p>
+<p>In bathrooms we handle widespread, centerset and single-hole lavatory faucets, and we can swap a centerset for a single-hole with a matching deck plate. For tubs and showers, trim-only replacement keeps the valve in the wall when it's sound; full valve replacement is covered on our <a href="/services/tub-shower-installation/">tub and shower page</a>.</p>
+
+<figure class="photo"><img src="/img/services/faucet-repair-replacement-2.jpg" alt="Plumbers Bonney Lake technician replacing a scaled faucet cartridge and valve seat in a Sumner bathroom faucet" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A cartridge and seat replacement — the drip fix that saves the faucet.</figcaption></figure>
+
+<h2>Choosing a faucet that lasts on Plateau water</h2>
+<p>Hard water is tough on cheap faucets. We recommend ceramic-disc cartridges, solid brass bodies, and finishes with a manufacturer's lifetime warranty — the difference in cost is small and the difference in service life is years. Pull-down kitchen faucets with a magnetic dock and a braided hose hold up well; spray heads with rubber nozzles let you rub scale off. If your water is hard enough to spot everything, a <a href="/services/water-softener-installation/">softener</a> is the long-term fix for every faucet in the house.</p>
+
+<div class="callout"><strong>Touchless and filtered faucets</strong><br>Touch and motion-activated kitchen faucets need a battery or an outlet under the sink; filtered-water faucets need an under-sink filter plumbed in. We install both and will tell you what each needs before you buy.</div>
+
+<h2>Before we arrive</h2>
+<p>Empty the cabinet under the sink and note the faucet's brand if it's visible on the spout or handle — it tells us which cartridge to bring. If you're replacing, count the holes in the sink deck (one, three or four) and measure the spacing between the outer ones; the new faucet must match, or come with a deck plate that covers the extras. Shut-off valves that won't turn should be left alone; forcing a corroded stop is how a drip becomes a flood, and replacing it is part of the job. Bring the old cartridge if you've already pulled it; matching by eye beats guessing from a brand name.</p>
+
+<h2>Faucet service across the Plateau</h2>
+<p>Faucet repair and replacement in Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge. If you've got a drip, a sprayer that won't retract or a faucet you've already bought, call <a href="tel:+12534657734">(253) 465-7734</a>. Several small fixes on one visit is the efficient way to do it — see <a href="/services/fixture-installation/">fixture installation</a> for the bigger list.</p>

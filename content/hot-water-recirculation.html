@@ -1,0 +1,109 @@
+<!--META {
+"slug": "hot-water-recirculation",
+"title": "Hot Water Recirculation Pump Installation Bonney Lake, WA",
+"description": "Waiting minutes for hot water? Recirculation pump installation in Bonney Lake, WA: dedicated-loop or comfort systems, smart controls. Call (253) 465-7734.",
+"h1": "Hot Water Recirculation Systems in Bonney Lake, WA",
+"lede": "If the far bathroom takes a minute and a half to run hot, you're pouring treated water down the drain every single day. A recirculation pump keeps hot water at the tap — and the right design depends on how your Bonney Lake home was plumbed.",
+"cta_noun": "a recirculation pump",
+"faqs": [
+[
+"How much water does waiting for hot water waste?",
+"A typical far bathroom holds a gallon or more of cooled water in the pipe between the heater and the tap. Multiply by every hot-water draw in a day and it adds up to thousands of gallons a year — water the City of Bonney Lake bills you for twice, once in and once out."
+],
+[
+"Do I need a dedicated return line?",
+"Not necessarily. New construction in Tehaleh and Prairie Ridge often has one already. Older homes usually don't, and a comfort-style system uses a crossover valve under the farthest sink to send cooled water back through the cold line instead. Both work; the dedicated loop is more efficient."
+],
+[
+"Will a recirculation pump raise my energy bill?",
+"Running continuously, a little. Run on a timer, a motion sensor or a push button it costs very little, and the water savings offset most of it. We set the schedule to your household's routine."
+],
+[
+"Does recirculation work with a tankless water heater?",
+"Yes, with care. Tankless units need minimum flow to fire, so the pump and the heater have to be matched — some tankless models have a recirc mode built in. We design the two together so the heater doesn't short-cycle."
+],
+[
+"Can the pump go anywhere?",
+"A dedicated-loop pump mounts at the water heater on the return line. A comfort system's pump mounts at the heater with a crossover valve at the far fixture. Either way it needs an outlet and should be on a timer or control."
+],
+[
+"Will I feel the cold side get warm?",
+"With a comfort (crossover) system the cold tap at the far sink can run lukewarm briefly after a cycle. A dedicated return line avoids it. We'll tell you which you're getting and why."
+],
+[
+"How long does installation take?",
+"A comfort system is usually two to three hours. A dedicated return line in an existing home depends on access — crawl spaces help — and is typically a half to full day."
+]
+]
+}-->
+<h2>Why hot water takes so long on the Plateau's bigger homes</h2>
+<p>The wait for hot water has nothing to do with the water heater's power and everything to do with pipe. Every foot between the heater and the tap holds water that cooled off since the last use, and all of it has to be pushed out before hot arrives. In a compact 1970s rambler near the lake that's a few seconds. In a two-story Tehaleh, Sky Island or Prairie Ridge home with the heater in the garage and the primary bath at the far end of the second floor, it's commonly sixty to ninety seconds and a gallon or more every time. Three-quarter-inch trunk lines, common in newer construction, hold more than half-inch lines and make it worse.</p>
+<p>A recirculation system keeps that pipe charged with hot water so the wait disappears. Use the calculator to see what your current wait is costing you.</p>
+
+<div class="tool" id="recirc">
+  <h3>How much water is my wait wasting?</h3>
+  <div class="row three">
+    <div><label for="rc-sec">Seconds until hot water arrives</label><input id="rc-sec" type="number" min="5" max="300" value="60"></div>
+    <div><label for="rc-draws">Hot-water draws per day (whole household)</label><input id="rc-draws" type="number" min="1" max="60" value="12"></div>
+    <div><label for="rc-flow">Faucet flow (GPM)</label><select id="rc-flow"><option value="1.5">Bathroom faucet 1.5</option><option value="2.0" selected>Shower 2.0</option><option value="2.2">Kitchen faucet 2.2</option></select></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="rc-go">Calculate waste</button>
+  <div class="result" id="rc-out" hidden></div>
+  <p class="note">Estimate only. The pipe length and diameter behind your wall set the real number; we measure on site.</p>
+</div>
+<script>
+(function(){document.getElementById('rc-go').addEventListener('click',function(){var s=+document.getElementById('rc-sec').value||0,d=+document.getElementById('rc-draws').value||0,f=+document.getElementById('rc-flow').value;var perDraw=s/60*f;var day=perDraw*d;var yr=day*365;var hrs=s*d*365/3600;var o=document.getElementById('rc-out');o.hidden=false;o.innerHTML='<strong>About '+Math.round(yr).toLocaleString()+' gallons a year down the drain</strong>That\'s '+perDraw.toFixed(1)+' gallons per wait, '+day.toFixed(0)+' gallons a day, and roughly '+Math.round(hrs)+' hours a year spent standing at a tap. Pipe between your heater and that fixture likely holds about '+perDraw.toFixed(1)+' gallons.'});})();
+</script>
+
+<figure class="photo"><img src="/img/services/hot-water-recirculation-1.jpg" alt="Hot water recirculation pump with timer installed on the return line at a water heater in a Bonney Lake garage" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A dedicated-loop pump at the heater, on a timer set to the household's mornings and evenings.</figcaption></figure>
+
+<h2>Two ways to build it</h2>
+<p>There are two recirculation designs, and the right one is decided by the plumbing already in your walls.</p>
+<h3>Dedicated return loop</h3>
+<p>The hot line runs out to the farthest fixture and a separate return line comes back to the water heater. A small pump on the return keeps water moving slowly through the loop, so every fixture along it has hot water within a second or two. This is the most efficient and comfortable design — no effect on the cold side, lowest heat loss when insulated — and it's increasingly standard in new construction in Tehaleh and the newer Bonney Lake subdivisions. If your home has a capped three-quarter-inch line near the heater labeled "recirc," you already have the return; we add the pump, check valve and control.</p>
+<h3>Comfort (crossover) system</h3>
+<p>For homes without a return line, a thermostatic crossover valve mounts under the farthest sink and connects the hot and cold supplies. A pump at the heater pushes hot water out through the hot line; cooled water crosses over into the cold line and returns to the heater that way. No new pipe through finished walls. The trade-off is that the cold tap at that sink runs lukewarm for a moment after a cycle, and the cold-side pipe carries a little heat. Run on a timer, a motion sensor or a push button, it's a very good solution for most existing Bonney Lake homes.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 300" role="img" aria-labelledby="rcTitle">
+    <title id="rcTitle">Side-by-side diagram: a dedicated return loop with hot line out to the far bathroom and a separate return line to a pump at the water heater, versus a comfort system with a crossover valve under the far sink that returns cooled water through the cold line</title>
+    <rect width="720" height="300" rx="8" fill="#E3F1F3"/>
+    <g font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="16" fill="#0F2E4A"><text x="40" y="34">Dedicated return loop</text><text x="400" y="34">Comfort / crossover system</text></g>
+    <line x1="360" y1="20" x2="360" y2="280" stroke="#B9C8D4" stroke-width="2"/>
+    <!-- left -->
+    <rect x="40" y="200" width="40" height="70" rx="6" fill="#C9D6E0" stroke="#4A5862" stroke-width="2"/>
+    <path d="M80 215 H300 V90 H290" fill="none" stroke="#B8742A" stroke-width="6"/>
+    <path d="M280 110 H120 V200" fill="none" stroke="#D59A55" stroke-width="4"/>
+    <circle cx="120" cy="185" r="12" fill="#fff" stroke="#0F2E4A" stroke-width="3"/><text x="140" y="190" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Pump + check valve</text>
+    <rect x="280" y="80" width="40" height="30" rx="4" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="215" y="70" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Far bathroom</text>
+    <text x="180" y="240" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#8F5A1F">Return line (insulated)</text>
+    <!-- right -->
+    <rect x="400" y="200" width="40" height="70" rx="6" fill="#C9D6E0" stroke="#4A5862" stroke-width="2"/>
+    <circle cx="470" cy="215" r="12" fill="#fff" stroke="#0F2E4A" stroke-width="3"/><text x="450" y="250" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Pump at heater</text>
+    <path d="M440 215 H660 V110" fill="none" stroke="#B8742A" stroke-width="6"/>
+    <path d="M640 110 V240 H400" fill="none" stroke="#1B7F8E" stroke-width="6"/>
+    <rect x="630" y="95" width="40" height="22" rx="4" fill="#B8742A" stroke="#0F2E4A" stroke-width="2"/><text x="520" y="90" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Crossover valve under far sink</text>
+    <text x="470" y="268" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#1B7F8E">Cold line doubles as return</text>
+  </svg>
+  <figcaption>Copper-colored lines are hot; teal is cold. Both designs keep the far fixture hot; the loop keeps the cold side cold.</figcaption>
+</figure>
+
+<h2>Controls: the part that decides your energy bill</h2>
+<p>A pump that runs all day keeps the pipes hot all day, and the water heater pays to replace that heat constantly. The savings — and most of the comfort — come from running it only when you're about to use hot water. We install and program:</p>
+<ul>
+  <li><strong>Timers</strong> — on for the morning rush and the evening, off overnight and midday. The simplest option and the most common.</li>
+  <li><strong>Aquastat</strong> — a thermostat on the return that shuts the pump off once the loop is hot, so it runs minutes per hour rather than continuously.</li>
+  <li><strong>Demand buttons and motion sensors</strong> — press a button or walk into the bathroom and the pump runs for a couple of minutes. The most efficient design; nothing runs when nobody's home.</li>
+  <li><strong>Smart pumps</strong> — learn your pattern and schedule themselves, with app control. Useful for irregular routines.</li>
+</ul>
+<p>Whatever the control, we insulate the hot trunk and the return where they're accessible. Uninsulated recirculating pipe in a crawl space or garage loses heat continuously, and insulation is the cheapest efficiency upgrade in the whole job.</p>
+
+<figure class="photo"><img src="/img/services/hot-water-recirculation-2.jpg" alt="Thermostatic crossover valve installed under a far bathroom sink in a Sumner home for a comfort recirculation system" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A crossover valve under the farthest sink — the whole system in a home with no return line.</figcaption></figure>
+
+<h2>Recirculation with tankless and heat pump water heaters</h2>
+<p>Tankless units need a minimum flow before they fire, and some will short-cycle or throw an error if a recirculation pump is matched poorly. Several manufacturers now build recirculation modes into their units, with a small internal pump and a schedule, and those pair well with a dedicated return loop. For others we install an external pump sized to the heater's minimum flow and a buffer tank where needed. Heat pump water heaters recover slowly, so with those we favor demand-based controls that don't drain the tank keeping pipes warm all day. If you're planning a <a href="/services/tankless-water-heaters/">tankless</a> or <a href="/services/water-heater-installation/">water heater replacement</a>, telling us about the long wait at the far bathroom at the same time lets us design both together and saves a second visit.</p>
+
+<div class="callout"><strong>What recirculation won't fix</strong><br>A shower that starts hot, then goes cold, then hot again is a cross-connection or a failed mixing valve, not a recirculation problem. Hot water that never gets hot enough is a water heater or thermostat issue. We diagnose before we quote so you don't buy a pump for a problem it can't solve.</div>
+
+<h2>Installation and what it costs you in time</h2>
+<p>A comfort system is usually installed in a morning: pump at the heater, crossover valve at the far sink, an outlet if one isn't nearby, timer programmed, lines insulated. A dedicated loop in an existing home depends on access — in Bonney Lake homes with a crawl space it's often a single day; in slab homes we route creatively or recommend the comfort design instead. We serve Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge; call <a href="tel:+12534657734">(253) 465-7734</a> and tell us how long your longest wait is. We'll quote both designs in writing.</p>

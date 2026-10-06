@@ -1,0 +1,47 @@
+<!--META {
+"path": "/contact/",
+"kind": "company",
+"crumb": "Contact",
+"wide": true,
+"title": "Contact Plumbers Bonney Lake | (253) 465-7734",
+"description": "Call or message Plumbers Bonney Lake, 15121 198th Ave E, Bonney Lake, WA 98391. 24/7 emergency line, same-day scheduling. (253) 465-7734.",
+"h1": "Contact Plumbers Bonney Lake",
+"lede": "Call any hour and a person answers. For scheduled work, the form below reaches us the same way — we reply by phone during business hours and immediately for emergencies."
+}-->
+<div class="contact">
+  <div>
+    <div class="tool" style="margin-top:0" id="ct">
+      <h3>Is this an emergency?</h3>
+      <label for="ct-s">Pick the closest match</label>
+      <select id="ct-s"><option value="">Choose…</option><option value="e">Water leaking or spraying right now</option><option value="e">Sewage backing up</option><option value="e">No water, or no hot water in winter</option><option value="e">Gas smell near the water heater</option><option value="s">Slow drain, dripping faucet, running toilet</option><option value="s">Water heater aging / planning a replacement</option><option value="s">Remodel, repipe, softener or other project</option></select>
+      <div class="result" id="ct-out" hidden></div>
+    </div>
+    <script>(function(){var s=document.getElementById('ct-s'),o=document.getElementById('ct-out');s.addEventListener('change',function(){if(!s.value){o.hidden=true;return}o.hidden=false;o.innerHTML=s.value==='e'?'<strong>Call now — don\'t use the form</strong>Shut the nearest valve or the main, open a low faucet, and call <a href="tel:+12534657734">(253) 465-7734</a>. We dispatch immediately and stay on the phone while you shut off.':'<strong>The form works well for this</strong>Fill it in below with a few details; we\'ll call back to book a same-day or next-day window. Or call <a href="tel:+12534657734">(253) 465-7734</a> if you\'d rather talk.'})})();</script>
+    <ul class="nap">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span><a href="tel:+12534657734">(253) 465-7734</a><br>24/7 — emergency and scheduled service</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 5.3-7 13-7 13S5 14.3 5 9a7 7 0 0 1 7-7zm0 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" fill="currentColor"/></svg><span>Plumbers Bonney Lake<br>15121 198th Ave E, 3rd Floor, Ste Executive<br>Bonney Lake, WA 98391<br><small>Office visits by appointment</small></span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5v5.4l4 2.4-1 1.6-5-3V7h2z" fill="currentColor"/></svg><span>Open 24 hours, 7 days a week<br>Scheduled appointments 7 AM – 6 PM</span></li>
+    </ul>
+    <iframe class="map" style="height:300px" title="Map to Plumbers Bonney Lake, 15121 198th Ave E, Bonney Lake, WA 98391" src="https://www.google.com/maps?q=15121+198th+Ave+E,+Bonney+Lake,+WA+98391&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2 style="margin-top:32px">Service area</h2>
+    <p>Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn (Lakeland Hills), Edgewood, Milton, Prairie Ridge, Wilkeson and Carbonado. Outside that? Call — we'll give you an honest answer on timing. <a href="/service-areas/">See all service areas.</a></p>
+  </div>
+  <form class="card" id="lead-form" method="post" action="/api/lead" novalidate>
+    <h3>Request service or an estimate</h3>
+    <div class="form-grid">
+      <div><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+      <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <div><label for="f-email">Email (optional)</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+      <div><label for="f-city">City</label><select id="f-city" name="city" required><option value="">Choose…</option><option>Bonney Lake</option><option>Lake Tapps</option><option>Sumner</option><option>Buckley</option><option>Tehaleh</option><option>Orting</option><option>South Prairie</option><option>Puyallup</option><option>Enumclaw</option><option>Auburn</option><option>Edgewood</option><option>Prairie Ridge</option><option>Wilkeson / Carbonado</option><option>Other</option></select></div>
+      <div class="full"><label for="f-service">What do you need?</label><select id="f-service" name="service" required><option value="">Choose a service…</option><option>Emergency — leak, burst pipe or no water</option><option>Water heater repair or replacement</option><option>Tankless water heater</option><option>Water softener or filtration</option><option>Drain cleaning or sewer backup</option><option>Toilet, faucet or fixture</option><option>Garbage disposal, dishwasher or ice maker</option><option>Repipe or remodel plumbing</option><option>Backflow preventer or expansion tank</option><option>Something else</option></select></div>
+      <div class="full"><label for="f-urgency">When?</label><select id="f-urgency" name="urgency"><option>As soon as possible</option><option>Today</option><option>This week</option><option>Flexible — planning a project</option></select></div>
+      <div class="full"><label for="f-msg">Describe the problem</label><textarea id="f-msg" name="message" placeholder="e.g., Kitchen sink drains slowly and the dishwasher backs up into it. House built 1994, Lake Tapps."></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="f-web">Website</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+    </div>
+    <button class="btn btn-call" type="submit" style="margin-top:16px">Send request</button>
+    <p class="form-note">We reply by phone during business hours and immediately for emergencies. Your information is never sold or shared — see our <a href="/privacy/">privacy policy</a>.</p>
+    <div class="form-status" role="status" aria-live="polite"></div>
+  </form>
+</div>
+<h2 style="margin-top:48px">What happens after you send the form</h2>
+<p>Your request lands with us the moment you press send. During business hours we call back within the hour to confirm details and book a window; after hours, scheduled requests are called first thing in the morning, and anything marked as an emergency is treated as a phone call — but please do call for those, because a ringing phone is faster than any form. On the day, your plumber calls when they're on the way, diagnoses on site, and writes an estimate before any work beyond the diagnosis starts.</p>

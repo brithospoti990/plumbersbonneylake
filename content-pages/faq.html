@@ -1,0 +1,120 @@
+<!--META {
+"path": "/faq/",
+"kind": "company",
+"crumb": "FAQ",
+"wide": true,
+"title": "Plumbing FAQ | Plumbers Bonney Lake, WA",
+"description": "Answers to what Bonney Lake homeowners ask most: emergencies, pricing, permits, water heaters, hard water, drains and service areas. Call (253) 465-7734.",
+"h1": "Plumbing Questions, Answered",
+"lede": "Everything we get asked on the phone, in one searchable place. If your question isn't here, call — a person answers 24 hours a day.",
+"faq_title": "All questions",
+"faqs": [
+[
+"Do you really answer 24 hours a day?",
+"Yes. A person answers at any hour. Emergencies are dispatched immediately; everything else is booked into the next available window, often the same day."
+],
+[
+"What counts as a plumbing emergency?",
+"Anything actively causing damage or stopping essential service: a leak you can't shut off, sewage backing up, no water, a water heater leaking from the tank, a gas smell at the heater, or a frozen line. If you're not sure, call and we'll tell you honestly whether it can wait."
+],
+[
+"How much do you charge?",
+"Every job is quoted in writing after diagnosis, and nothing beyond the diagnosis is billed until you approve the estimate. On the phone we tell you the arrival fee and, for after-hours calls, the emergency fee. We don't publish flat prices online because the right fix depends on what we find."
+],
+[
+"Do you charge for the drive?",
+"No. We're based in Bonney Lake and cluster calls by area."
+],
+[
+"Are you licensed and insured?",
+"Yes — a registered Washington plumbing contractor, bonded and insured, with L&I-certified plumbers. Numbers are in the footer of every page."
+],
+[
+"Do you pull permits?",
+"Yes, whenever the City of Bonney Lake, Pierce County, King County or your city requires one — water heaters, repipes, sewer lines, remodels, backflow assemblies. We meet the inspector and give you the final."
+],
+[
+"Where are you located?",
+"15121 198th Ave E, 3rd Floor, Ste Executive, Bonney Lake, WA 98391. Office visits by appointment; the crew is usually on the Plateau."
+],
+[
+"Which areas do you serve?",
+"Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn's Lakeland Hills, Edgewood and Milton, Prairie Ridge, Wilkeson and Carbonado. See the service areas page."
+],
+[
+"Is Bonney Lake water hard?",
+"Moderately — the City's spring and well supply carries calcium and magnesium from glacial deposits. Tehaleh's Tacoma Water is softer. We test at your tap before recommending a softener."
+],
+[
+"Why does my water heater's relief valve drip?",
+"Thermal expansion in a closed system. Most Bonney Lake homes have a backflow device or pressure-reducing valve at the meter; without an expansion tank the heater's expanding water has nowhere to go. An expansion tank fixes it."
+],
+[
+"How long should a water heater last here?",
+"Eight to twelve years for a tank on Plateau water, longer with a softener and annual flushing. Tankless units last longer with yearly descaling."
+],
+[
+"Should I go tankless?",
+"If you run out of hot water, want space back, and the gas line and venting can be made right, yes. We size for winter inlet temperatures and quote tank and tankless side by side."
+],
+[
+"Why does hot water take so long to reach my upstairs bathroom?",
+"Pipe length — the water that cooled in the line has to be pushed out first. A recirculation system keeps the line hot; many newer homes already have a return line roughed in."
+],
+[
+"Why do my drains keep clogging?",
+"A recurring clog has a cause: grease setting in a cold crawl-space line, a bellied pipe, roots in the sewer lateral. We clear it, and if it's recurring we camera the line rather than keep clearing it."
+],
+[
+"Can I use chemical drain cleaner?",
+"We'd rather you didn't. It damages older pipe, rarely clears a real clog, and is a hazard for whoever opens the trap next. A plunger or hand auger is safe."
+],
+[
+"My outdoor faucet froze. What now?",
+"If it's a frost-free type, a hose was probably left on and the stem split inside the wall — check for a leak inside when you first use it. Replacement with a correctly pitched frost-free sillcock is the fix."
+],
+[
+"Do I need a backflow preventer?",
+"If you have irrigation, a fire sprinkler, a pool auto-fill, a boiler, a well on a property with City water, or a commercial building, yes — tested annually by a certified tester. We install, test and file the report."
+],
+[
+"What pipe is in my walls?",
+"Pre-1975 homes often have galvanized steel; 1978–1995 may have polybutylene (gray plastic); newer homes have PEX or copper. Our repipe page has an identifier tool."
+],
+[
+"Do you work on wells and septic?",
+"Well pressure tanks, lines and filtration, yes; the line from the house to the septic tank, yes. We partner with a driller for anything in the casing and a septic contractor for the tank and drainfield."
+],
+[
+"Do you install fixtures I bought myself?",
+"Yes. Send the model number first and we'll confirm it fits before the visit."
+],
+[
+"Can you install a walk-in tub for a parent?",
+"Yes, after checking that the water heater and drain can handle it. Often a low-threshold shower with a bench is the better fit; we quote both honestly."
+],
+[
+"Do you do commercial plumbing?",
+"Small commercial — restaurants, salons, offices, churches, small multi-family — including backflow testing and water heaters."
+],
+[
+"What should I do before you arrive?",
+"For a leak, shut the nearest valve or the main and open a low faucet. For a backup, stop using water. Clear the cabinet or area we'll work in. Have the model number or a photo ready if you can."
+],
+[
+"Do you guarantee your work?",
+"Yes — workmanship is warrantied, and manufacturer warranties on parts and fixtures are passed through. If something we fixed fails, call Ashino first."
+]
+]
+}-->
+<div class="tool" id="fs" style="margin-top:0">
+  <h3>Search the questions</h3>
+  <label for="fs-q">Type a word — "tankless", "permit", "drain", "freeze"…</label>
+  <input id="fs-q" type="search" placeholder="Start typing">
+  <p class="note" id="fs-n">Showing all questions.</p>
+</div>
+<script>
+(function(){var q=document.getElementById('fs-q'),n=document.getElementById('fs-n');function run(){var v=q.value.trim().toLowerCase();var ds=document.querySelectorAll('.faq-page details'),c=0;ds.forEach(function(d){var hit=!v||d.textContent.toLowerCase().indexOf(v)>-1;d.style.display=hit?'':'none';if(hit)c++;if(v&&hit)d.open=true;if(!v)d.open=false});n.textContent=v?(c+' question'+(c===1?'':'s')+' match "'+q.value+'".'):'Showing all questions.'}q.addEventListener('input',run)})();
+</script>
+<h2>How to use this page</h2>
+<p>Type a word in the box and the list filters as you go; matching questions open automatically. Each answer is short on purpose — the service pages go deeper, and every answer links to the one that applies. If you're reading this with water on the floor, skip ahead: shut the nearest valve or the main, open a low faucet, and call <a href="tel:+12534657734">(253) 465-7734</a>.</p>

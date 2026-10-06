@@ -1,0 +1,59 @@
+<!--META {
+"path": "/reviews/",
+"kind": "company",
+"crumb": "Reviews",
+"title": "Reviews | Plumbers Bonney Lake, WA",
+"description": "Read verified reviews of Plumbers Bonney Lake on Google and Yelp, and leave your own. Licensed local plumber for Bonney Lake and the Plateau.",
+"h1": "Reviews of Plumbers Bonney Lake",
+"lede": "We don't write our own reviews and we don't filter the ones customers write. Every review of Plumbers Bonney Lake lives on a third-party platform where it can't be edited by us — read them there, and add yours after your next visit.",
+"related": [
+"emergency-plumber",
+"water-heater-installation",
+"tankless-water-heaters"
+],
+"faqs": [
+[
+"Why aren't the reviews shown on this page?",
+"Because reviews copied onto a company's own site can be edited or cherry-picked. We link to the platforms where reviews are verified and public, so you can read every one of them — including any critical ones — exactly as written."
+],
+[
+"Where should I leave a review?",
+"Google is the most useful for neighbors searching for a plumber; Yelp and Nextdoor help too. The buttons on this page take you straight to the right form."
+],
+[
+"What if I had a problem with a job?",
+"Call Ashino directly at (253) 465-7734 before anything else. We'd rather fix it than read about it, and we stand behind our work."
+]
+]
+}-->
+<h2>Where to read our reviews</h2>
+<p>Our Google Business Profile is the primary place customers review us, and it shows every review unedited. Yelp and Nextdoor carry additional reviews from Bonney Lake, Lake Tapps and Sumner neighbors. We'll add the links below as each profile goes live; until then, ask any customer you know on the Plateau — most of our work still comes by word of mouth.</p>
+<div class="areas" style="margin:20px 0 32px">
+  <a href="https://www.google.com/maps/search/Plumbers+Bonney+Lake+15121+198th+Ave+E+Bonney+Lake+WA" rel="noopener" target="_blank">Google reviews<small>Read all reviews on Google</small></a>
+  <a href="https://www.yelp.com/search?find_desc=Plumbers+Bonney+Lake&amp;find_loc=Bonney+Lake%2C+WA" rel="noopener" target="_blank">Yelp<small>Reviews from Plateau neighbors</small></a>
+  <a href="https://nextdoor.com/" rel="noopener" target="_blank">Nextdoor<small>Neighborhood recommendations</small></a>
+</div>
+
+<div class="tool" id="rv">
+  <h3>Leave a review — it takes two minutes</h3>
+  <p>Reviews help neighbors find a local plumber instead of a call center. Pick the platform you already use and we'll take you to the right place.</p>
+  <div class="row three">
+    <div><label for="rv-p">Platform</label><select id="rv-p"><option value="google">Google</option><option value="yelp">Yelp</option><option value="nextdoor">Nextdoor</option></select></div>
+    <div><label for="rv-s">What did we do?</label><select id="rv-s"><option>Emergency repair</option><option>Water heater</option><option>Drain or sewer</option><option>Fixture or remodel</option><option>Water treatment</option><option>Something else</option></select></div>
+    <div><label for="rv-a">Your area</label><select id="rv-a"><option>Bonney Lake</option><option>Lake Tapps</option><option>Sumner</option><option>Buckley</option><option>Tehaleh</option><option>Orting</option><option>Puyallup</option><option>Enumclaw</option><option>Auburn</option><option>Edgewood</option><option>Other</option></select></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="rv-go">Write my review</button>
+  <div class="result" id="rv-out" hidden></div>
+  <p class="note">Mentioning the service and your town in the review helps other homeowners nearby find the right help.</p>
+</div>
+<script>
+(function(){var L={google:'https://www.google.com/maps/search/Plumbers+Bonney+Lake+15121+198th+Ave+E+Bonney+Lake+WA',yelp:'https://www.yelp.com/search?find_desc=Plumbers+Bonney+Lake&find_loc=Bonney+Lake%2C+WA',nextdoor:'https://nextdoor.com/'};document.getElementById('rv-go').addEventListener('click',function(){var p=document.getElementById('rv-p').value,s=document.getElementById('rv-s').value,a=document.getElementById('rv-a').value;var o=document.getElementById('rv-out');o.hidden=false;o.innerHTML='<strong>Thank you</strong>Here\'s a starting line you can paste and edit: <em>"Plumbers Bonney Lake handled our '+s.toLowerCase()+' in '+a+' — "</em><br><a class="btn btn-call" style="margin-top:10px" href="'+L[p]+'" target="_blank" rel="noopener">Open '+(p.charAt(0).toUpperCase()+p.slice(1))+' and leave the review</a>';});})();
+</script>
+
+<h2>What customers tend to mention</h2>
+<p>We don't quote reviews here, but the themes are consistent and we work to keep them that way: the phone gets answered by a person; the plumber arrives when we said; the estimate is written and the price doesn't change; the problem gets explained in plain language; and the house is left clean. When a review is critical, Ashino reads it the same day and calls the customer. That's the whole policy.</p>
+
+<h2>Verify us before you book</h2>
+<p>A review is one signal. Two others matter more: our Washington plumbing contractor registration and our plumbers' L&amp;I certifications, both printed in the footer of every page and checkable on the Department of Labor &amp; Industries contractor lookup. We're also happy to give references for larger jobs — repipes, sewer replacements, remodels — from customers in your area.</p>
+
+<figure class="photo"><img src="/img/reviews-job.jpg" alt="Completed water heater installation in a Bonney Lake garage, one of the jobs customers review most often" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>The job behind a lot of our reviews: a same-day water heater replacement, done to code.</figcaption></figure>

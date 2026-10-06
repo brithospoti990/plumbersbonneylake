@@ -1,0 +1,113 @@
+<!--META {
+"slug": "water-filtration-systems",
+"title": "Water Filtration System Installation Bonney Lake, WA",
+"description": "Whole-house and under-sink water filtration installed in Bonney Lake, WA. Sediment, chlorine, iron, taste and odor. Tested first. Call (253) 465-7734.",
+"h1": "Water Filtration System Installation in Bonney Lake, WA",
+"lede": "Sediment from a well, chlorine on City water, iron that stains the tub — the right filter depends on what's actually in your water. We test, match the filter to the problem, and install it properly at the main or under the sink.",
+"cta_noun": "a water filter installed",
+"faqs": [
+[
+"Is Bonney Lake tap water safe?",
+"City of Bonney Lake water meets state Department of Health standards and the City publishes an annual water quality report. Filtration in Bonney Lake is about taste, chlorine, sediment, hardness and well-water issues — not about making unsafe water safe. On a private well, testing is your responsibility and we recommend a certified lab panel."
+],
+[
+"What's the difference between a whole-house filter and an under-sink filter?",
+"Whole-house (point-of-entry) filters treat every tap — sediment, chlorine, iron — so appliances and showers benefit. Under-sink (point-of-use) filters such as reverse osmosis polish drinking water at one tap. Many homes do best with both."
+],
+[
+"Can a filter remove iron from my well water?",
+"Yes, with the right type. Dissolved iron needs an oxidizing or air-injection filter; iron that's already visible as rust particles needs sediment filtration first. We test to see which you have."
+],
+[
+"Do I need a softener or a filter?",
+"Scale on fixtures and a crusty water heater are hardness — that's a softener. Taste, smell, color and particles are filtration. Plenty of Plateau homes need one of each, and we install them together."
+],
+[
+"Will a whole-house filter lower my water pressure?",
+"A correctly sized filter won't noticeably. An undersized cartridge housing, or one that's overdue for a change, will. We size housings to your home's flow and show you how to tell when a cartridge is due."
+],
+[
+"How often do cartridges need changing?",
+"Sediment and carbon cartridges typically every few months to a year depending on water and household size. Backwashing media tanks regenerate themselves. We leave a change schedule on the housing."
+],
+[
+"Do you install reverse osmosis systems?",
+"Yes. Under-sink RO with a dedicated faucet, or plumbed to the fridge and ice maker. We handle the drain connection with an air gap as code requires."
+]
+]
+}-->
+<h2>Match the filter to the problem</h2>
+<p>Walk into a big-box store in Bonney Lake and you'll find a wall of filters that all claim to fix everything. In practice each filter type solves one or two problems well and does nothing for the others. A carbon block makes chlorinated City water taste better and does nothing for iron. A sediment spin-down protects a well pump's downstream plumbing and does nothing for taste. An iron filter fixes orange staining and does nothing for hardness. Picking by symptom gets you most of the way; a quick test at your tap finishes the job. Use the selector below, then call us to confirm.</p>
+
+<div class="tool" id="picker">
+  <h3>Which water filter do I need?</h3>
+  <p>Tick everything you notice. We'll tell you which filter type usually solves it.</p>
+  <ul class="chk">
+    <li><label><input type="checkbox" value="chlorine">Chlorine smell or taste (City water)</label></li>
+    <li><label><input type="checkbox" value="sediment">Grit, sand or cloudy water; aerators clog</label></li>
+    <li><label><input type="checkbox" value="iron">Orange or brown stains in tubs, toilets or laundry</label></li>
+    <li><label><input type="checkbox" value="sulfur">Rotten-egg smell, especially from hot water</label></li>
+    <li><label><input type="checkbox" value="scale">White scale on fixtures, shower doors, kettle</label></li>
+    <li><label><input type="checkbox" value="taste">Want better-tasting drinking water at the kitchen tap</label></li>
+    <li><label><input type="checkbox" value="well">I'm on a private well</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="pk-go">Show my filter options</button>
+  <div class="result" id="pk-out" hidden></div>
+  <p class="note">A guide, not a diagnosis. Smell and staining in particular need a test to tell iron from manganese and bacteria from sulfur.</p>
+</div>
+<script>
+(function(){var map={chlorine:"a whole-house carbon filter (catalytic carbon if chloramine is present)",sediment:"a sediment pre-filter — spin-down for well grit, pleated or depth cartridge for finer particles",iron:"an oxidizing or air-injection iron filter at the main, ahead of any softener",sulfur:"an air-injection or oxidizing filter; if only hot water smells, check the water heater's anode rod first",scale:"this is hardness, not filtration — a water softener or a salt-free scale conditioner",taste:"an under-sink reverse osmosis or carbon-block system with its own faucet",well:"a certified lab test first — then sediment protection as a baseline and whatever the test shows"};document.getElementById('pk-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#picker input:checked')).map(function(i){return i.value});var o=document.getElementById('pk-out');o.hidden=false;if(!c.length){o.innerHTML='<strong>Nothing ticked yet</strong>Pick at least one symptom above.';return;}var items=c.map(function(k){return '<li>'+map[k]+'</li>'}).join('');var combo=(c.indexOf('scale')>-1&&c.length>1)?' Several of these together usually means a softener plus a filtration stage, installed as one system.':'';o.innerHTML='<strong>Likely solution'+(c.length>1?'s':'')+'</strong><ul style="margin:6px 0 0;padding-left:18px">'+items+'</ul>'+combo});})();
+</script>
+
+<figure class="photo"><img src="/img/services/water-filtration-systems-1.jpg" alt="Whole-house sediment and carbon filtration system installed at the main water line of a Bonney Lake home" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A two-stage whole-house filter: sediment first, then carbon, with a bypass so cartridge changes don't interrupt water to the house.</figcaption></figure>
+
+<h2>City water vs. well water on the Plateau</h2>
+<p>Where your water comes from decides what you're filtering. Most of Bonney Lake is on the City's spring-and-well supply, which is chlorinated for distribution and carries the mineral content of Plateau groundwater. Tehaleh and some county parcels are on Tacoma Water. Buckley, South Prairie, the rural stretches toward Enumclaw and the Carbon River valley around Wilkeson and Carbonado include many private wells.</p>
+<ul>
+  <li><strong>City of Bonney Lake water</strong> — the typical complaints are chlorine taste and smell, a light hardness film, and occasional sediment after main work. A whole-house carbon filter handles the chlorine; a sediment cartridge ahead of it handles the grit; a <a href="/services/water-softener-installation/">softener</a> handles the film.</li>
+  <li><strong>Tacoma Water (Tehaleh)</strong> — softer surface water with a chlorine residual. Carbon filtration and point-of-use drinking-water polishing are usually all that's wanted.</li>
+  <li><strong>Private wells</strong> — anything goes: iron, manganese, sediment, hardness, sulfur odor, and occasionally bacteria. Start with a certified lab panel, then build the treatment train from the results. Sediment protection comes first in almost every case because it protects everything downstream, including the well pump's pressure switch and the <a href="/services/water-heater-installation/">water heater</a>.</li>
+</ul>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 240" role="img" aria-labelledby="ftTitle">
+    <title id="ftTitle">Typical whole-house treatment train in order: sediment filter, iron filter if needed, water softener if needed, carbon filter, then the water heater and house; under-sink reverse osmosis at the kitchen</title>
+    <rect width="720" height="240" rx="8" fill="#E3F1F3"/>
+    <path d="M15 90 H705" fill="none" stroke="#1B7F8E" stroke-width="6"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A" text-anchor="middle">
+      <rect x="60" y="55" width="56" height="70" rx="6" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="88" y="150">1. Sediment</text><text x="88" y="166">(always)</text>
+      <rect x="180" y="40" width="60" height="100" rx="14" fill="#fff" stroke="#B8742A" stroke-width="2" stroke-dasharray="5 4"/><text x="210" y="160">2. Iron filter</text><text x="210" y="176" fill="#8F5A1F">(wells, if needed)</text>
+      <rect x="300" y="40" width="60" height="100" rx="14" fill="#fff" stroke="#B8742A" stroke-width="2" stroke-dasharray="5 4"/><text x="330" y="160">3. Softener</text><text x="330" y="176" fill="#8F5A1F">(if hard)</text>
+      <rect x="420" y="40" width="60" height="100" rx="14" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="450" y="160">4. Carbon</text><text x="450" y="176">(chlorine, taste)</text>
+      <rect x="545" y="60" width="36" height="60" rx="6" fill="#C9D6E0" stroke="#4A5862" stroke-width="2"/><text x="563" y="150">Water heater</text>
+      <rect x="620" y="60" width="50" height="60" rx="4" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="645" y="150">Kitchen</text><text x="645" y="166">under-sink RO</text>
+    </g>
+    <text x="20" y="40" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="15" fill="#0F2E4A">Main in →</text>
+    <text x="360" y="222" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#4A5862">Order matters: sediment protects everything; iron must come out before the softener; carbon last so it isn't fouled.</text>
+  </svg>
+  <figcaption>Not every home needs every stage. The test decides which boxes get built.</figcaption>
+</figure>
+
+<h2>Whole-house filtration: what we install</h2>
+<p>Point-of-entry systems go at the main after the shut-off and pressure-reducing valve, so every faucet, shower and appliance gets treated water. The most common configurations we install around Bonney Lake:</p>
+<ul>
+  <li><strong>Sediment + carbon cartridge system</strong> — two large housings with a bypass. The workhorse for City water homes that want chlorine out and grit gone. Cartridge changes take minutes.</li>
+  <li><strong>Backwashing carbon tank</strong> — a media tank that cleans itself, for larger households or anyone who doesn't want to think about cartridges. Catalytic carbon when chloramine is present.</li>
+  <li><strong>Air-injection iron and sulfur filter</strong> — for wells with dissolved iron, manganese or rotten-egg odor. No chemicals; the system oxidizes and backwashes on a schedule.</li>
+  <li><strong>Spin-down sediment filter</strong> — a clear-bowl screen with a flush valve, perfect ahead of a well pressure tank or as the first stage on a dirty City line.</li>
+  <li><strong>UV disinfection</strong> — for wells where a lab test finds coliform bacteria, installed last in the train after sediment so the lamp can do its job.</li>
+</ul>
+<p>Every whole-house installation includes a bypass loop, unions for easy service, pressure gauges where they help you see when a change is due, and the drain connection with an air gap that Washington's plumbing code requires for backwashing units.</p>
+
+<figure class="photo"><img src="/img/services/water-filtration-systems-2.jpg" alt="Under-sink reverse osmosis drinking water system with dedicated faucet installed in a Sumner kitchen by Plumbers Bonney Lake" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Under-sink reverse osmosis polishes drinking water at one tap and can feed the fridge and ice maker too.</figcaption></figure>
+
+<h2>Under-sink and drinking-water systems</h2>
+<p>If the only thing you want is better-tasting water for drinking, coffee and cooking, a point-of-use system is the efficient choice. We install carbon-block units with a dedicated faucet, and reverse osmosis systems with a storage tank for households that want the most thorough treatment at one tap. Reverse osmosis also removes the dissolved minerals that make ice cloudy, so running a line from the RO to the refrigerator's <a href="/services/ice-maker-water-lines/">ice maker</a> is a popular add-on. Every under-sink install gets a proper drain saddle or air-gap faucet and a check that your cabinet has room for the tank and filter changes.</p>
+
+<h2>Testing: what we check and when to use a lab</h2>
+<p>On the first visit we test hardness, iron, pH, chlorine and total dissolved solids at your tap. That's enough to design most City-water systems. For wells, or when a symptom doesn't match the quick test, we recommend a certified laboratory panel — bacteria, nitrate, arsenic, manganese and the rest — and we help you read the report. Pierce County and the Washington Department of Health both publish guidance for private well owners, and a lab panel is the only honest way to know what a well needs. We don't fabricate problems to sell equipment; if the water is fine, we'll tell you that too.</p>
+
+<div class="callout"><strong>Plumbing-first filtration</strong><br>Filters are only as good as the plumbing around them. A housing that's cross-threaded, a drain line without an air gap or a bypass that leaks will undo the best media on the market. That's why a licensed plumber — not a water-store salesperson — should install your system.</div>
+
+<h2>Maintenance and service</h2>
+<p>Cartridge systems need changes on a schedule that depends on your water and your household; we label the housing with the date and expected interval. Backwashing tanks need a yearly check of the valve and media. Reverse osmosis membranes last several years with pre-filter changes on time. We service systems we installed and most others, and we can put you on a reminder so you never notice a pressure drop or a taste change before we do. Serving Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge — call <a href="tel:+12534657734">(253) 465-7734</a>.</p>

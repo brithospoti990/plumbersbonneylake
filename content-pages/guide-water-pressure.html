@@ -1,0 +1,88 @@
+<!--META {
+"path": "/guides/bonney-lake-water-pressure/",
+"kind": "guide",
+"date": "2026-10-06",
+"crumb": "Water pressure",
+"title": "Why Water Pressure Fluctuates in Bonney Lake Homes | Guide",
+"description": "Why water pressure drops, surges or varies in Bonney Lake homes: pressure zones, PRVs, closed systems, galvanized pipe, and how to measure. (253) 465-7734.",
+"h1": "Why Water Pressure Fluctuates in Bonney Lake Homes",
+"lede": "Pressure that's fine at midnight and weak at 7 a.m., a shower that stings one day and dribbles the next, faucets that spit when the water heater runs — these have different causes, and a ten-dollar gauge on a hose bib tells you which one you have.",
+"related": [
+"water-line-repair",
+"expansion-tanks",
+"repipes-remodels"
+],
+"faqs": [
+[
+"What is normal water pressure in Bonney Lake?",
+"Most homes should see roughly 50 to 70 psi at a hose bib with everything off. Below 40 feels weak; above 80 is hard on fixtures and appliances and is the point where a pressure-reducing valve is called for."
+],
+[
+"Can the City raise my pressure?",
+"The City of Bonney Lake Water Department delivers pressure set by its zones and reservoirs; it can't adjust it for one house. Low pressure at your home is almost always on your side of the meter — a PRV, a narrowed line or a partly closed valve."
+],
+[
+"Is high pressure dangerous?",
+"It shortens the life of every valve, hose and water heater in the house and can burst washing machine hoses. A pressure-reducing valve set to about 60 psi protects everything downstream."
+]
+]
+}-->
+<h2>Measure before you guess</h2>
+<p>Water pressure complaints are the most misdiagnosed thing in residential plumbing, because "low pressure" is used for three different problems: static pressure that's genuinely low, pressure that collapses when water flows (a flow problem, not a pressure problem), and pressure that swings with the time of day or with the water heater. A pressure gauge that screws onto a hose bib costs very little and answers the question in five minutes. Read it with everything off, then with a shower running, then after the water heater has run for a while. Enter the numbers below.</p>
+
+<div class="tool" id="pr">
+  <h3>Pressure reading interpreter</h3>
+  <div class="row three">
+    <div><label for="pr-s">Static (everything off), psi</label><input id="pr-s" type="number" min="0" max="200" value="60"></div>
+    <div><label for="pr-f">With a shower running, psi</label><input id="pr-f" type="number" min="0" max="200" value="50"></div>
+    <div><label for="pr-h">After the water heater has heated, psi</label><input id="pr-h" type="number" min="0" max="200" value="60"></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="pr-go">Interpret</button>
+  <div class="result" id="pr-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('pr-go').addEventListener('click',function(){var s=+document.getElementById('pr-s').value,f=+document.getElementById('pr-f').value,h=document.getElementById('pr-h').value===''?s:+document.getElementById('pr-h').value;var notes=[];if(s<40)notes.push('<b>Static pressure is low ('+s+' psi).</b> If the City zone is normal, suspect a failed or mis-set pressure-reducing valve, a partly closed main valve, or a narrowed service line — see <a href="/services/water-line-repair/">water line repair</a>.');else if(s>80)notes.push('<b>Static pressure is high ('+s+' psi).</b> Fixtures and the water heater are being stressed; a pressure-reducing valve set near 60 psi is the fix.');else notes.push('<b>Static pressure is normal ('+s+' psi).</b>');if(s-f>=15)notes.push('<b>Pressure collapses under flow (drops '+(s-f)+' psi).</b> That\'s a flow restriction, not a supply problem: narrowed galvanized pipe, a clogged filter or softener, or a failing PRV. Older Bonney Lake and Lake Tapps homes with steel pipe show exactly this — see <a href="/services/repipes-remodels/">repipes</a>.');if(h-s>=15)notes.push('<b>Pressure climbs after heating (+'+(h-s)+' psi).</b> Thermal expansion in a closed system — an <a href="/services/expansion-tanks/">expansion tank</a> is missing or waterlogged.');if(notes.length===1)notes.push('Nothing abnormal in these readings. If pressure still feels weak at one fixture, the restriction is local — an aerator, a cartridge or a shut-off valve.');var o=document.getElementById('pr-out');o.hidden=false;o.innerHTML='<strong>Reading</strong>'+notes.join('<br><br>')});})();
+</script>
+
+<h2>Where Bonney Lake's pressure comes from</h2>
+<p>The City of Bonney Lake Water Department moves water from its springs and wells into reservoirs and then down through pressure zones that follow the Plateau's elevation. A home near the top of a zone sees lower pressure than one near the bottom; a home below a reservoir can see pressure high enough to need a reducing valve. That's why neighbors a few blocks apart report opposite problems, and why newer subdivisions — Tehaleh on Tacoma Water, the ridge-top phases of Lakeland Hills — were built with a pressure-reducing valve at every meter. Pressure also moves with demand: early morning and evening draw-down in a zone can take several psi off the top, which you notice only if your home was marginal to begin with.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 260" role="img" aria-labelledby="przTitle">
+    <title id="przTitle">Diagram of a hillside pressure zone: a reservoir at the top, homes at different elevations receiving different pressures, with a pressure-reducing valve shown at a low home and a narrowed pipe shown at an old home</title>
+    <rect width="720" height="260" rx="8" fill="#E3F1F3"/>
+    <path d="M0 230 L260 60 L720 60 L720 230Z" fill="#D9E0E4"/>
+    <rect x="300" y="20" width="90" height="40" rx="6" fill="#1B7F8E"/><text x="305" y="45" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#fff">Reservoir</text>
+    <path d="M345 60 V120 H120 V200" fill="none" stroke="#1B7F8E" stroke-width="5"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">
+      <rect x="440" y="80" width="50" height="40" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="2"/><text x="500" y="105">High on the hill: ~45 psi</text>
+      <rect x="300" y="130" width="50" height="40" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="2"/><text x="360" y="155">Mid-zone: ~60 psi</text>
+      <rect x="100" y="200" width="50" height="40" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="2"/><circle cx="120" cy="196" r="7" fill="#B8742A" stroke="#0F2E4A" stroke-width="2"/><text x="160" y="225">Bottom: 90+ psi → PRV required</text>
+      <text x="20" y="40" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="15">Same zone, three different pressures</text>
+    </g>
+  </svg>
+  <figcaption>Elevation inside a zone decides your static pressure. Your plumbing decides what happens to it after the meter.</figcaption>
+</figure>
+
+<h2>The five causes, in order of how often we find them</h2>
+<ol>
+  <li><strong>A pressure-reducing valve that's failing or mis-set.</strong> PRVs wear out in ten to fifteen years. A failing one can drift high (relief valves drip, faucets spit) or low (weak everything). It's a one-hour replacement at the main.</li>
+  <li><strong>Narrowed galvanized supply pipe.</strong> The classic Lake Tapps and original-lot problem: static pressure is fine, but open two taps and it collapses, because the pipe's bore has rusted to a fraction of its size. A <a href="/services/repipes-remodels/">repipe</a> fixes it permanently.</li>
+  <li><strong>Thermal expansion in a closed system.</strong> Pressure that climbs after the water heater runs, then releases through the relief valve. Most Bonney Lake homes are closed systems now; an <a href="/services/expansion-tanks/">expansion tank</a> is the fix.</li>
+  <li><strong>A restriction you forgot about.</strong> A whole-house filter overdue for a change, a softener with fouled resin, a main shut-off that was never fully reopened after the last repair. Easy to find once the gauge points at a flow problem.</li>
+  <li><strong>A leak on the service line.</strong> Pressure that's weak and a water bill that's high. The meter test on our <a href="/services/water-line-repair/">water line page</a> confirms it.</li>
+</ol>
+
+<h2>Low pressure at one fixture only</h2>
+<p>If the gauge says the house is fine but one shower or faucet is weak, the problem is local. In Bonney Lake that's almost always scale: the aerator screen, the shower head's holes or the valve cartridge's inlet filter has collected mineral from the City's groundwater. Clean or replace the aerator, soak the shower head, and if the cartridge is scaled, swap it — see <a href="/services/faucet-repair-replacement/">faucet repair</a>. A fixture that lost pressure right after plumbing work elsewhere in the house has debris in its screen from the disturbed pipe.</p>
+
+<h2>Pressure that pulses or hammers</h2>
+<p>Banging when a valve closes — the washing machine, the dishwasher, an ice maker — is water hammer, and it's worse at high pressure. A PRV set to 60 psi and hammer arrestors on the fast-closing appliances solve it. A pump cycling on a well property produces a rhythmic pulse at the taps; that's a waterlogged pressure tank, not the house plumbing.</p>
+
+<h2>Pressure and the water heater</h2>
+<p>High pressure is hardest on the water heater, because it's the one appliance that stores water under pressure at high temperature. Every pressure spike works the tank's seams and the fittings on top, and the relief valve, which is sized to open at 150 psi, starts weeping long before that when thermal expansion adds to an already-high baseline. If your water heater has failed early — under eight years — or the relief valve has been replaced more than once, measure the pressure before replacing anything else. A pressure-reducing valve set to 60 psi and a properly charged expansion tank routinely add years to a heater's life on the Plateau.</p>
+<h2>A note on well properties</h2>
+<p>Buckley, South Prairie, Enumclaw and the rural edges run on wells, where pressure is set by the pressure switch at the tank — typically 40/60 psi, meaning the pump starts at 40 and stops at 60. Pressure that cycles rhythmically at the tap is a waterlogged pressure tank; pressure that stays low is a switch set low, a clogged sediment filter, or a pump losing capacity. The gauge test still applies, but the fix is at the well equipment rather than a City valve. We check the tank's air charge, the switch and the filter before looking further.</p>
+<h2>What we do on a pressure call</h2>
+<p>We gauge at the hose bib, at the water heater and under flow; we check the PRV's setting and condition, the main valve, any filter or softener, and the expansion tank. We tell you which of the five causes you have and quote the fix in writing. Serving Bonney Lake, Lake Tapps, Sumner, Tehaleh and the rest of the Plateau — call <a href="tel:+12534657734">(253) 465-7734</a>.</p>
+<h2>When to call</h2><p>If your gauge shows a static reading outside 40–80 psi, a drop of fifteen or more under flow, or a climb after the water heater runs, there is a specific part at fault and we can name it on the first visit. Bring the three numbers when you call; it turns a diagnostic visit into a repair visit. For a single weak fixture, try the aerator first — if it's scaled solid, that's your answer and you've saved a call. For a whole-house problem on an older Lake Tapps or Bonney Lake home, expect us to talk about the service line and the supply pipe honestly, because a repipe is sometimes the only fix that lasts, and we'd rather say so than sell you a valve that won't help.</p>

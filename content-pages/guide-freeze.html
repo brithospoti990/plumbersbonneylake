@@ -1,0 +1,89 @@
+<!--META {
+"path": "/guides/lake-tapps-freeze-prep/",
+"kind": "guide",
+"date": "2026-10-06",
+"crumb": "Freeze prep",
+"title": "Preparing Lake Tapps Homes for a Freeze | Plumbing Guide",
+"description": "Room-by-room freeze prep for Lake Tapps and Bonney Lake homes: crawl spaces, hose bibs, garage water heaters, docks, vacant homes. (253) 465-7734.",
+"h1": "Preparing Lake Tapps Homes for a Freeze",
+"lede": "Lake Tapps homes freeze more than most on the Plateau — sloped lots, exposed crawl spaces, lots of outdoor faucets and a cold wind off the water. A few nights below 25°F each winter is enough. This is the plan we give our own customers.",
+"related": [
+"emergency-plumber",
+"hose-bibs",
+"water-heater-installation"
+],
+"faqs": [
+[
+"At what temperature do pipes freeze?",
+"Exposed pipe can freeze when air temperature holds below about 25°F for several hours; crawl-space and wall pipe takes a longer, colder spell. On Lake Tapps, wind off the water makes exposed pipe freeze sooner than the thermometer suggests."
+],
+[
+"Should I leave a faucet dripping?",
+"On a very cold night, a slow drip from the faucet farthest from the main keeps water moving through the longest run and relieves pressure if ice forms. It's a backstop, not a substitute for insulation."
+],
+[
+"A pipe froze. What now?",
+"Open the faucet it serves, warm the pipe gently from the faucet end — hair dryer, warm towels, never a torch — and watch for leaks as it thaws. If you can't reach it or it's already split, shut the main and call us."
+]
+]
+}-->
+<h2>Build your freeze plan</h2>
+<p>Every house has a different set of weak points. Tell the planner what your home has and it assembles the steps in order, with the ones that prevent the most damage first. It saves your progress on this device.</p>
+
+<div class="tool" id="fz">
+  <h3>Freeze-prep planner</h3>
+  <p>Tick what applies to your home:</p>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="fzq" value="crawl">Crawl space (most Lake Tapps homes)</label></li>
+    <li><label><input type="checkbox" class="fzq" value="garage">Water heater in the garage</label></li>
+    <li><label><input type="checkbox" class="fzq" value="bibs">Three or more outdoor faucets (deck, dock, garden)</label></li>
+    <li><label><input type="checkbox" class="fzq" value="dock">Dock or waterfront water line</label></li>
+    <li><label><input type="checkbox" class="fzq" value="irr">Irrigation system with a backflow assembly</label></li>
+    <li><label><input type="checkbox" class="fzq" value="vacant">The house may be empty for stretches in winter</label></li>
+    <li><label><input type="checkbox" class="fzq" value="well">Private well with a well house or pressure tank outside</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="fz-go">Build my plan</button>
+  <div class="result" id="fz-out" hidden></div>
+</div>
+<script>
+(function(){var P={base:['Disconnect, drain and store every hose','Locate the main shut-off and make sure everyone in the house can close it','On nights forecast below 25°F, open the cabinet doors under sinks on exterior walls and let the farthest faucet drip slowly'],crawl:['Close crawl-space vents and check the access hatch seals','Insulate every supply line in the crawl space; foam sleeves are cheap, heat tape where lines run near vents','Check that the vapor barrier is in place — damp air freezes pipes faster'],garage:['Keep the garage door closed on freezing nights','Insulate the hot and cold lines at the water heater and the first few feet of pipe','If the heater is near the door, a draft baffle or insulation blanket helps'],bibs:['Identify standard vs. frost-free bibs; cover standard ones with insulated covers','Close interior shut-offs for outdoor lines and open the outdoor faucets to drain','Replace any bib that dripped this year — worn ones split first'],dock:['Drain and blow out the dock line; close its shut-off and open the dock end','If the line has no drain-down valve, have one added before next winter'],irr:['Blow out the irrigation zones','Drain the backflow assembly and insulate or enclose it; a cracked RPBA body is a replacement'],vacant:['Set the thermostat no lower than 55°F and leave interior doors open','Consider shutting the main and draining the system for absences over a week; we can do a full drain-down','Ask a neighbor to check in after any hard freeze; a leak-detection shut-off valve is worth it here'],well:['Insulate the well house and add a thermostatically controlled heater or heat tape','Insulate the pressure tank and the line into the house','Keep the well-house door sealed against wind off the lake']};document.getElementById('fz-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#fz .fzq:checked')).map(function(i){return i.value});var steps=P.base.slice();c.forEach(function(k){steps=steps.concat(P[k])});var o=document.getElementById('fz-out');o.hidden=false;o.innerHTML='<strong>Your plan — '+steps.length+' steps</strong><ol style="margin:6px 0 0;padding-left:20px">'+steps.map(function(s){return '<li>'+s+'</li>'}).join('')+'</ol>'});})();
+</script>
+
+<h2>Why Lake Tapps freezes first</h2>
+<p>The lake isn't the Plateau's coldest spot, but its homes are the most exposed. Waterfront lots slope toward the water, which means crawl spaces with open vents facing the wind, supply lines that run the full length of the house to a lakeside kitchen or bath, and outdoor plumbing on the cold side: deck faucets, dock lines, boat-wash bibs. Many homes started as summer cabins and were winterized incrementally — a crawl space insulated on three sides, a line added for the hot tub that nobody wrapped. Add a water heater in an uninsulated garage and a wind off the water, and a 22°F night does damage that a 22°F night in Tehaleh wouldn't.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 260" role="img" aria-labelledby="fzdTitle">
+    <title id="fzdTitle">Cutaway of a Lake Tapps waterfront home showing the five places that freeze: crawl-space supply lines near vents, garage water heater, deck and dock hose bibs, the irrigation backflow assembly, and the line to the dock</title>
+    <rect width="720" height="260" rx="8" fill="#E3F1F3"/>
+    <path d="M0 200 L720 150 V260 H0Z" fill="#D9E0E4"/><path d="M560 190 L720 178 V260 H560Z" fill="#1B7F8E" opacity=".6"/>
+    <rect x="120" y="70" width="300" height="110" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="3"/><path d="M110 70 L270 20 L430 70Z" fill="#B8742A"/>
+    <rect x="120" y="150" width="300" height="30" fill="#C9D6E0" stroke="#0F2E4A" stroke-width="1"/><text x="130" y="170" font-family="Source Sans 3, Arial, sans-serif" font-size="11" fill="#0F2E4A">Crawl space</text>
+    <rect x="30" y="110" width="90" height="70" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="2"/><rect x="60" y="130" width="22" height="40" rx="4" fill="#C9D6E0" stroke="#4A5862"/>
+    <g fill="#B03A2E"><circle cx="71" cy="130" r="7"/><circle cx="400" cy="165" r="7"/><circle cx="430" cy="120" r="7"/><circle cx="520" cy="200" r="7"/><circle cx="480" cy="215" r="7"/></g>
+    <path d="M420 120 H560 V190" fill="none" stroke="#B8742A" stroke-width="4"/><rect x="560" y="186" width="60" height="6" fill="#8F5A1F"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="11" fill="#B03A2E"><text x="20" y="100">1 Garage water heater</text><text x="330" y="200">2 Crawl-space lines by vents</text><text x="440" y="110">3 Deck hose bib</text><text x="530" y="235">4 Dock line</text><text x="400" y="245">5 Irrigation backflow</text></g>
+    <text x="20" y="30" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="15" fill="#0F2E4A">Five places a Lake Tapps home freezes</text>
+  </svg>
+  <figcaption>The planner above turns these five spots into a to-do list for your house.</figcaption>
+</figure>
+
+<h2>Room by room</h2>
+<p><strong>Crawl space.</strong> The number one source of burst-pipe calls on the lake. Close the vents for winter (open them again in spring), insulate every supply line with foam sleeves, run heat tape on lines within a few feet of a vent, and make sure the vapor barrier is intact. If you've never been under your house, this is the year.</p>
+<p><strong>Garage.</strong> A water heater beside an uninsulated garage door loses a lot of heat on a cold night, and the pipes above it are the first to freeze. Insulate the lines, keep the door closed, and consider a draft baffle. A heater past its life is more likely to fail on the coldest morning; check the date on the rating plate before winter.</p>
+<p><strong>Outdoor faucets.</strong> Hoses off, standard bibs covered, frost-free bibs drained. Replace any that dripped this season. Our <a href="/guides/replace-hose-bibs-plateau/">hose bib guide</a> has the full walk-through.</p>
+<p><strong>Dock and waterfront lines.</strong> Blow them out and close the shut-off. A dock line without a drain-down valve should get one.</p>
+<p><strong>Irrigation.</strong> Blow out the zones and the backflow assembly; a frozen RPBA body cracks and that's a replacement.</p>
+<p><strong>Vacant or part-time homes.</strong> Thermostat at 55°F minimum, interior doors open, cabinet doors open on exterior walls. For long absences, a full drain-down is the safe option. A leak-detection shut-off valve that closes the main automatically is the best insurance a part-time lake home can buy.</p>
+
+<h2>What a burst costs — and why the plan is cheap</h2><p>A half-inch supply line at Bonney Lake pressure releases several gallons a minute. Over a night in an empty crawl space that's hundreds of gallons into insulation, vapor barrier and subfloor, plus the drywall or flooring above it if the line is in a wall. The repair itself is often small; the restoration is not. Every item in the plan above costs less than the deductible on that claim, and most of them are a single Saturday. A leak-detection shut-off valve on the main, which closes automatically when flow doesn't stop, is the one upgrade we'd put ahead of all the others for a part-time lake home.</p>
+<h2>If a pipe freezes anyway</h2>
+<p>Open the faucet it serves so melting ice has somewhere to go. Warm the pipe gently from the faucet end toward the frozen section — a hair dryer, warm towels, a space heater in the room, never an open flame. Watch for leaks as it thaws; ice splits pipe, and the leak appears when flow returns. If you can't reach the section, if it's already leaking, or if the main itself froze, close the main and call <a href="tel:+12534657734">(253) 465-7734</a>. We dispatch freeze emergencies from Bonney Lake, minutes from the lake, ahead of everything else — see <a href="/services/emergency-plumber/">emergency plumbing</a>.</p>
+
+<h2>The water heater in a cold snap</h2>
+<p>A water heater that's marginal all year tends to quit on the coldest morning: inlet water in the low 40s°F means longer recovery, a tired element or a weak thermocouple finally gives up, and the family wakes to no hot water on a day the garage is at 30°F. If your heater is past ten years, has a dripping relief valve, or rumbles when it heats, replacing it before winter is cheaper than replacing it during one. We stock common sizes for same-day replacement, and we add the expansion tank and strapping that most lake-home installs are missing.</p>
+<h2>Docks, boats and the shoreline</h2>
+<p>Dock water lines are the most-forgotten plumbing on the lake. Many were added after the house was built, run above ground along the bank, and have no shut-off and no drain. Blown out and valved off, they survive winter; left charged, they split and leak unnoticed until the lake is in use again. While you're at it, a boat-wash bib or a dock hose station should be frost-free and on its own interior shut-off. We can add both in an afternoon.</p>
+<h2>Let us do the walk-around</h2>
+<p>Our fall winterizing visit covers every outdoor faucet, the dock and irrigation blow-down, the backflow assembly, crawl-space and garage lines, and a water heater flush, in one stop. For part-time homes we add a drain-down or a leak-detection valve. Serving Lake Tapps, Bonney Lake, Lakeland Hills and the whole Plateau.</p>
+<h2>When to call</h2><p>Call before the first freeze if you'd like the walk-around done, if any outdoor faucet dripped this year, if the water heater is past ten years, or if the house will be empty for part of the winter. Call during a freeze the moment a tap stops flowing or you hear running water you can't explain — shut the main first. And call in March if the first use of an outdoor faucet produces a drip inside; that's the split stem showing itself, and it only gets worse. <a href="tel:+12534657734">(253) 465-7734</a>, any hour.</p>

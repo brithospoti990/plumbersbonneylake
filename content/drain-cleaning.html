@@ -1,0 +1,115 @@
+<!--META {
+"slug": "drain-cleaning",
+"title": "Drain Cleaning Bonney Lake, WA | Clogged Sink, Tub & Shower",
+"description": "Drain cleaning in Bonney Lake, WA for slow or clogged kitchen sinks, tubs, showers, laundry and floor drains. Cleared and checked. Call (253) 465-7734.",
+"h1": "Drain Cleaning in Bonney Lake, WA",
+"lede": "A slow kitchen sink, a tub that holds water, a laundry drain that backs up on the spin cycle. We clear the clog with the right cable and the right head for that drain, then tell you honestly whether it was a one-off or a sign the line underneath needs attention.",
+"cta_noun": "a drain cleared",
+"faqs": [
+[
+"Which drains do you clean?",
+"Kitchen and bathroom sinks, tubs, showers, laundry standpipes, floor drains, toilets and the main sewer line. Each gets a different cable and head; the main line is covered in detail on our drain and sewer line repair page."
+],
+[
+"Can I just use a chemical drain cleaner?",
+"We'd rather you didn't. Caustic cleaners damage older metal pipes and PVC joints, rarely clear a real clog, and leave a hazard in the standing water for whoever opens the trap next. A plunger and a hand auger are the safe first tries."
+],
+[
+"Why do my drains keep clogging?",
+"A drain that clogs repeatedly has a reason: grease solidifying in a cold crawl-space line, a trap arm with no slope, a partially collapsed pipe, or roots in the main. Clearing it again is fine; finding out why is better. We'll tell you when a camera inspection makes sense."
+],
+[
+"Is it one drain or the main line?",
+"One slow drain is a local clog. Two or more slow at once, gurgling when another fixture runs, or sewage at the lowest drain means the main line. That's the first question we ask on the phone."
+],
+[
+"Do you use hydro jetting?",
+"For stubborn grease and scale in kitchen and main lines we can arrange hydro jetting, which scours the pipe wall rather than punching a hole through the clog. We'll say when it's worth it over cabling."
+],
+[
+"How long does drain cleaning take?",
+"Most single-drain clogs are cleared in under an hour. Main lines take longer, especially with roots."
+],
+[
+"Do you guarantee the drain will stay clear?",
+"We guarantee the clog we cleared is gone. If the pipe itself is the problem — a belly, a break, roots — we'll show you on camera and quote the repair separately rather than pretend a cleaning will hold."
+]
+]
+}-->
+<h2>Is it one drain, or all of them?</h2>
+<p>The single most useful thing you can tell a plumber about a clog is how many drains are affected. One slow sink is a local problem in that fixture's trap or branch line. Two or more slow drains, water coming up in a tub when the toilet flushes, or gurgling from a drain you aren't using mean the blockage is in a shared line — often the main. The checker below sorts it out and tells you what to expect.</p>
+
+<div class="tool" id="dc">
+  <h3>Where's the clog?</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="dc" value="kitchen">Kitchen sink slow or backed up</label></li>
+    <li><label><input type="checkbox" class="dc" value="bath">Bathroom sink slow</label></li>
+    <li><label><input type="checkbox" class="dc" value="tub">Tub or shower holds water</label></li>
+    <li><label><input type="checkbox" class="dc" value="toilet">Toilet flushes weakly or backs up</label></li>
+    <li><label><input type="checkbox" class="dc" value="laundry">Laundry standpipe overflows on spin</label></li>
+    <li><label><input type="checkbox" class="dc" value="gurgle">Gurgling from a drain when another fixture runs</label></li>
+    <li><label><input type="checkbox" class="dc" value="lowest">Water or sewage appearing at the lowest drain in the house</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="dc-go">Diagnose</button>
+  <div class="result" id="dc-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('dc-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#dc .dc:checked')).map(function(i){return i.value});var o=document.getElementById('dc-out');o.hidden=false;var fixtures=c.filter(function(k){return ['kitchen','bath','tub','toilet','laundry'].indexOf(k)>-1});if(!c.length){o.innerHTML='<strong>Nothing ticked</strong>Pick the drains that are misbehaving.';return}if(c.indexOf('lowest')>-1||c.indexOf('gurgle')>-1||fixtures.length>=2){o.innerHTML='<strong>Main or branch line blockage</strong>More than one fixture, gurgling, or sewage at the lowest drain means the shared line is blocked — not the fixture. Stop running water, don\'t flush, and call us: we clear the main from the cleanout and camera it to find the cause. See <a href="/services/drain-line-repair/">drain &amp; sewer line repair</a>.';return}var k=fixtures[0];var m={kitchen:'Kitchen clogs are almost always grease and food in the trap or the branch line behind the wall. We cable from the cleanout under the sink and, if it\'s recurring, recommend hydro jetting to scour the grease rather than punch through it.',bath:'Bathroom sinks clog with hair and soap at the pop-up stopper and in the trap. Usually a quick clear; we also check the trap arm slope.',tub:'Tub and shower drains collect hair and soap scum in the trap. A small cable through the overflow clears it; a drain screen prevents it.',toilet:'A weak flush with other drains fine is a toilet problem — a partial obstruction in the trapway or scaled rim jets. See our <a href="/services/toilet-repair-replacement/">toilet page</a>.',laundry:'A laundry standpipe that overflows on spin can\'t keep up with the pump: lint in the trap, a standpipe that\'s too short, or a 1½-inch line that needs to be 2-inch. We clear it and tell you if the pipe is undersized.'}[k];o.innerHTML='<strong>Single fixture — local clog</strong>'+m});})();
+</script>
+
+<figure class="photo"><img src="/img/services/drain-cleaning-1.jpg" alt="Plumbers Bonney Lake technician clearing a clogged kitchen drain with a drum machine through the cleanout under a Bonney Lake sink" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>The right cable and head for the drain: a small drum machine for a kitchen branch, not the sewer machine.</figcaption></figure>
+
+<h2>How we clear each kind of drain</h2>
+<ul>
+  <li><strong>Kitchen sinks.</strong> Grease, coffee grounds and food solids build a plug in the trap or in the branch line behind the wall — and in Bonney Lake's crawl-space homes, that branch runs through unheated space where grease sets hard. We cable from the cleanout or the trap with a grease-cutting head, run hot water to confirm flow, and check the <a href="/services/garbage-disposals/">disposal</a>'s drain connection while we're there.</li>
+  <li><strong>Bathroom sinks.</strong> Hair wrapped around the pop-up stopper and soap scum in the trap. Often a hand-clear and a trap clean; a cable if it's deeper.</li>
+  <li><strong>Tubs and showers.</strong> Hair and soap at the strainer and in the trap. We go through the overflow on tubs so the drain shoe isn't damaged, and through the strainer on showers.</li>
+  <li><strong>Laundry standpipes.</strong> Lint and detergent sludge. A standpipe that's too short or a line that's undersized for a modern high-efficiency washer's pump is a plumbing fix, not a cleaning; we'll say which.</li>
+  <li><strong>Floor drains.</strong> Garage and utility-room floor drains dry out, lose their trap seal and collect debris. We clear and refill them, and add a trap primer if they keep drying.</li>
+  <li><strong>Toilets.</strong> Augered through the bowl. Repeated toilet clogs with everything else fine are usually an object in the trapway.</li>
+  <li><strong>Main sewer line.</strong> Cabled from the outdoor or basement cleanout with a root-cutting head, then camera-inspected. Full detail on our <a href="/services/drain-line-repair/">drain and sewer line page</a>.</li>
+</ul>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 280" role="img" aria-labelledby="dcTitle">
+    <title id="dcTitle">Diagram of a house drain system showing fixture traps, branch lines, the main stack, cleanouts and the main sewer line, with labels indicating that one slow fixture means a local clog while several slow fixtures mean the main</title>
+    <rect width="720" height="280" rx="8" fill="#E3F1F3"/>
+    <path d="M60 240 H660" stroke="#4A5862" stroke-width="10"/><text x="560" y="265" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Main sewer line → street / septic</text>
+    <path d="M360 240 V40" stroke="#4A5862" stroke-width="8"/><text x="372" y="60" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Main stack (vents through roof)</text>
+    <g stroke="#4A5862" stroke-width="5" fill="none">
+      <path d="M120 100 V120 C120 140 140 140 140 120 V110 H360"/>
+      <path d="M220 160 V180 C220 200 240 200 240 180 V170 H360"/>
+      <path d="M520 100 V120 C520 140 500 140 500 120 V110 H360"/>
+      <path d="M600 160 V180 C600 200 580 200 580 180 V170 H360"/>
+    </g>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">
+      <text x="80" y="90">Kitchen sink</text><text x="190" y="150">Bath sink</text><text x="490" y="90">Tub/shower</text><text x="575" y="150">Toilet</text>
+    </g>
+    <circle cx="140" cy="128" r="9" fill="#B03A2E"/><text x="30" y="200" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#B03A2E">Clog in a trap or branch = one slow fixture</text>
+    <circle cx="460" cy="240" r="9" fill="#B03A2E"/><text x="400" y="222" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#B03A2E">Clog in the main = everything backs up</text>
+    <rect x="300" y="222" width="14" height="14" fill="#B8742A"/><text x="250" y="212" font-family="Source Sans 3, Arial, sans-serif" font-size="11" fill="#8F5A1F">Cleanout</text>
+  </svg>
+  <figcaption>Every fixture has its own trap and branch. Only the main is shared — which is why a main clog shows up everywhere at once.</figcaption>
+</figure>
+
+<h2>Why drains clog on the Plateau</h2>
+<p>Bonney Lake's housing stock is mostly crawl-space construction, and drain lines that run through a cold crawl space in January do something lines in a warm slab don't: they chill whatever flows through them. Grease that left the kitchen sink as liquid sets a few feet down the line. Add Plateau water's mineral content, which leaves scale on pipe walls that gives grease and hair something to grip, and you get kitchen and laundry lines that narrow over years until a normal day's use tips them over. Older homes around Lake Tapps and the original city lots with galvanized or cast-iron drains have rough interiors that catch debris far more than smooth PVC.</p>
+<p>That's the background to our honest answer on recurring clogs: we're glad to clear a drain every year, but if it's the same drain, a camera look costs less than the third cleaning and tells you whether the pipe has a belly, a bad joint or roots — see <a href="/services/drain-line-repair/">drain and sewer line repair</a>.</p>
+
+<figure class="photo"><img src="/img/services/drain-cleaning-2.jpg" alt="Camera inspection of a drain line after cleaning showing a clear pipe, performed by Plumbers Bonney Lake in a Lake Tapps home" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A camera after cleaning shows whether the pipe is clean and sound — or why it clogged.</figcaption></figure>
+
+<h2>What not to do before we arrive</h2>
+<ul>
+  <li><strong>Don't pour chemical drain cleaner.</strong> It rarely works on a real clog, it damages older pipe and PVC solvent joints, and it burns whoever opens the trap next — including us. If you already have, tell us so we can protect ourselves.</li>
+  <li><strong>Don't run the dishwasher or washer</strong> into a slow line; it will overflow.</li>
+  <li><strong>Do try a plunger</strong> on a sink or tub with the overflow covered, and a hand auger if you have one. Both are safe and solve a surprising share of clogs.</li>
+  <li><strong>Do note the pattern</strong>: which drains, since when, and whether anything else gurgles. It's half the diagnosis.</li>
+</ul>
+
+<h2>Prevention that actually works</h2>
+<p>Hair screens in tubs and showers. No grease, fats or coffee grounds down the kitchen sink, and a hot-water flush after washing up. Lint traps on laundry hoses. Running a gallon of hot water through rarely used drains monthly so traps don't dry. And for homes with big trees over the sewer line, a yearly cabling of the main on your schedule rather than a backup on a holiday. We offer drain maintenance as part of our yearly plumbing inspection for Bonney Lake homes and small commercial plumbing customers — a restaurant's grease line, in particular, needs a plan.</p>
+
+<div class="callout"><strong>Grease and the City of Bonney Lake</strong><br>Grease that leaves your house doesn't disappear; it reaches the City's sewer mains or your septic tank. Keeping it out of the drain protects your line first and the system second — and if you're on septic, it extends the time between pump-outs.</div>
+
+<h2>Drain cleaning across the Plateau</h2>
+<p>Same-day drain cleaning in Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge. Call <a href="tel:+12534657734">(253) 465-7734</a> and tell us which drains are slow; if it's the main line and it's backing up now, see our <a href="/services/emergency-plumber/">emergency page</a>.</p>

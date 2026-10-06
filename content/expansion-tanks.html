@@ -1,0 +1,109 @@
+<!--META {
+"slug": "expansion-tanks",
+"title": "Expansion Tank Installation Bonney Lake, WA | Plumber",
+"description": "Dripping relief valve or banging pipes? Expansion tank installation for closed plumbing systems in Bonney Lake, WA, set up right. Call (253) 465-7734.",
+"h1": "Thermal Expansion Tank Installation in Bonney Lake, WA",
+"lede": "Most Bonney Lake homes are now closed plumbing systems — a backflow preventer or pressure-reducing valve at the meter means expanding hot water has nowhere to go. The symptom is a dripping relief valve, a leaking faucet or a water heater that dies early. The fix is small, inexpensive, and often missing.",
+"cta_noun": "an expansion tank",
+"faqs": [
+[
+"What does an expansion tank do?",
+"When a water heater heats a tankful of water, the water expands by a fraction of a gallon. In an open system it pushes back into the City main. In a closed system — one with a check valve, backflow preventer or pressure-reducing valve — it can't, so pressure spikes. An expansion tank gives that extra volume a cushion of air to press against."
+],
+[
+"How do I know if my home is a closed system?",
+"If there's a pressure-reducing valve, a backflow preventer or a check valve on your main — common on Bonney Lake water service and required on many newer connections — it's closed. A relief valve that drips after showers or laundry is the classic tell. We confirm with a pressure gauge over a heating cycle."
+],
+[
+"Is an expansion tank required by code?",
+"Washington's plumbing code requires thermal expansion control where a closed system exists, and inspectors in Bonney Lake and Pierce County check for one on water heater permits. Many older installs skipped it."
+],
+[
+"Can I just replace the dripping relief valve?",
+"You can, and it will drip again. The valve is doing its job — venting pressure that has nowhere else to go. Fix the cause with an expansion tank and the new valve stays dry."
+],
+[
+"How long do expansion tanks last?",
+"Five to ten years typically. The internal bladder eventually fails and the tank fills with water, at which point it does nothing. Tapping it — hollow on top, solid on the bottom — and checking the air charge tells you its condition."
+],
+[
+"Does the air charge matter?",
+"Yes, a lot. The tank must be pre-charged to match your home's static water pressure before it's installed. A tank set to the factory default on a house that runs higher does little. We measure and set it."
+],
+[
+"Do tankless water heaters need an expansion tank?",
+"Usually not for the heater itself, since there's no stored volume. But if the house has a recirculation loop, a buffer tank or other stored hot water, it may. We assess the whole system."
+]
+]
+}-->
+<h2>The small part that explains a lot of Bonney Lake plumbing problems</h2>
+<p>When the City of Bonney Lake Water Department installs a backflow preventer at your meter — part of its cross-connection control program — or when a plumber adds a pressure-reducing valve to tame high pressure, your house becomes a closed system. Water can come in but can't go back out. That's fine until the water heater runs. Heating forty or fifty gallons from 50°F to 120°F expands it by roughly half a gallon, and in a closed system that half-gallon drives pressure up sharply every single heating cycle. The temperature-and-pressure relief valve on the water heater opens to vent it, which is why so many Plateau homeowners find a wet floor or a drip line under the heater and assume the valve is broken.</p>
+<p>The valve isn't broken. It's the only thing protecting the tank. Every cycle of pressure spikes also hammers faucet cartridges, toilet fill valves, washing machine hoses and the water heater's own seams. A thermal expansion tank — a small steel tank with a rubber bladder and an air cushion — absorbs that expansion so pressure stays steady. It's one of the least expensive parts in plumbing and one of the most frequently missing.</p>
+
+<div class="tool" id="exp">
+  <h3>Do I need an expansion tank? Four quick checks</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="ex" value="closed">There's a pressure-reducing valve, backflow preventer or check valve on my main water line (or I'm on Bonney Lake City water with a newer meter)</label></li>
+    <li><label><input type="checkbox" class="ex" value="drip">The relief valve on my water heater drips or has a wet discharge line</label></li>
+    <li><label><input type="checkbox" class="ex" value="bang">Pipes bang or faucets spit when the water heater is running</label></li>
+    <li><label><input type="checkbox" class="ex" value="none">I don't see a small tank (about the size of a football or basketball) on the cold line above or near my water heater</label></li>
+    <li><label><input type="checkbox" class="ex" value="old">There is an expansion tank, but it's older than about 6 years or feels heavy/full of water when tapped</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="ex-go">Check</button>
+  <div class="result" id="ex-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('ex-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#exp .ex:checked')).map(function(i){return i.value});var o=document.getElementById('ex-out');o.hidden=false;var msg;if(!c.length){msg='<strong>Nothing checked</strong>If none of these apply, you may have an open system or a working tank. A pressure test over one heating cycle settles it.';}else if(c.indexOf('old')>-1){msg='<strong>Likely a failed expansion tank</strong>A waterlogged bladder tank does nothing. Replacement is quick, and we set the air charge to your actual house pressure.';}else if(c.indexOf('closed')>-1&&c.indexOf('none')>-1){msg='<strong>Yes — you almost certainly need one</strong>A closed system with no expansion tank is exactly the situation the code requires one for'+(c.indexOf('drip')>-1||c.indexOf('bang')>-1?', and your symptoms match':'')+'.';}else if(c.indexOf('drip')>-1||c.indexOf('bang')>-1){msg='<strong>Symptoms point to thermal expansion</strong>Even if you\'re not sure about the valve at the meter, a dripping relief valve or spitting faucets are the classic signs. We confirm with a gauge before installing anything.';}else{msg='<strong>Worth a pressure test</strong>A closed system without symptoms yet is still stressing the water heater. A gauge over one heating cycle gives a definite answer.';}o.innerHTML=msg;});})();
+</script>
+
+<figure class="photo"><img src="/img/services/expansion-tanks-1.jpg" alt="Thermal expansion tank installed on the cold supply above a water heater in a Bonney Lake utility room, properly supported" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Mounted on the cold inlet, supported, and pre-charged to the house's measured pressure.</figcaption></figure>
+
+<h2>Signs of thermal expansion in a Bonney Lake home</h2>
+<ul>
+  <li><strong>A dripping or weeping relief valve</strong> on the water heater, especially right after a shower or a load of laundry. The discharge line may be wet or there may be a puddle or mineral trail under it.</li>
+  <li><strong>Faucets that spit or surge</strong> for a second when first opened, then settle.</li>
+  <li><strong>Banging or ticking pipes</strong> while the water heater is recovering.</li>
+  <li><strong>Toilet fill valves and faucet cartridges that fail early.</strong> Repeated pressure spikes wear the seals.</li>
+  <li><strong>A water heater that fails well before its expected life</strong>, often with a split seam or a leak at the top fittings.</li>
+  <li><strong>A pressure gauge on a hose bib that climbs well above normal</strong> while the heater runs, then drops when a tap is opened.</li>
+</ul>
+<p>Any one of these on a closed system is reason enough. Because the City of Bonney Lake has been adding backflow protection at meters for years, we find homes that were open when the water heater was installed and are closed now — the expansion problem started the day the meter was upgraded, and nobody told the homeowner.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 260" role="img" aria-labelledby="exTitle">
+    <title id="exTitle">Diagram showing why a closed plumbing system needs an expansion tank: water enters through a backflow preventer that only allows flow in, the water heater heats water which expands, and the expansion tank's air cushion absorbs the extra volume so the relief valve stays closed</title>
+    <rect width="720" height="260" rx="8" fill="#E3F1F3"/>
+    <path d="M20 120 H140" fill="none" stroke="#1B7F8E" stroke-width="6"/>
+    <path d="M140 105 L170 120 L140 135Z" fill="#0F2E4A"/><text x="90" y="100" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">City main</text><text x="120" y="160" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Backflow preventer: in only</text>
+    <path d="M170 120 H330" fill="none" stroke="#1B7F8E" stroke-width="6"/>
+    <path d="M250 120 V70" fill="none" stroke="#1B7F8E" stroke-width="5"/>
+    <ellipse cx="250" cy="45" rx="28" ry="26" fill="#fff" stroke="#0F2E4A" stroke-width="3"/><path d="M222 45 H278" stroke="#4A5862" stroke-width="2"/><text x="236" y="40" font-family="Source Sans 3, Arial, sans-serif" font-size="10" fill="#4A5862">air</text><text x="230" y="58" font-family="Source Sans 3, Arial, sans-serif" font-size="10" fill="#1B7F8E">water</text>
+    <text x="290" y="48" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Expansion tank</text>
+    <rect x="330" y="60" width="110" height="160" rx="16" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="3"/><text x="345" y="150" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="14" fill="#0F2E4A">Water heater</text>
+    <rect x="440" y="90" width="18" height="12" fill="#B8742A"/><text x="462" y="100" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">T&amp;P relief valve — stays closed</text>
+    <path d="M440 120 H700" fill="none" stroke="#B8742A" stroke-width="6"/><text x="560" y="145" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Hot to house</text>
+    <text x="330" y="245" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#8F5A1F">Heating 50 gal ≈ +½ gal volume. Without the tank, that ½ gal has to leave through the relief valve.</text>
+  </svg>
+  <figcaption>The air cushion gives expanding water somewhere to go. No tank, no cushion, no choice but the relief valve.</figcaption>
+</figure>
+
+<h2>Sizing and pre-charge: the two things installers get wrong</h2>
+<p>Expansion tanks come in a few sizes keyed to water heater capacity and supply pressure. A two-gallon tank handles most 40- and 50-gallon heaters at normal pressure; larger heaters, higher pressure or recirculation loops call for a bigger tank. Undersizing means the bladder bottoms out and pressure still spikes.</p>
+<p>Pre-charge matters more than size. The tank ships with a factory air charge, and if your house's static pressure is higher — which it often is on the Plateau's gravity-fed zones until a pressure-reducing valve is set — the bladder is already compressed before any expansion happens and the tank does nearly nothing. We measure your static pressure with a gauge, adjust the tank's air charge to match <em>before</em> it's filled with water, and note the pressure on the tank for the next person. If your static pressure is above what fixtures are rated for, we'll tell you — a pressure-reducing valve protects the whole house and the expansion tank then gets set to the regulated pressure.</p>
+
+<figure class="photo"><img src="/img/services/expansion-tanks-2.jpg" alt="Plumbers Bonney Lake technician measuring static water pressure with a hose bib gauge before setting an expansion tank's air charge" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Measure the house pressure first. The tank's air charge has to match it or it's just decoration.</figcaption></figure>
+
+<h2>Installation details</h2>
+<ul>
+  <li>Mounted on the cold-water supply to the heater, after the shut-off valve, oriented and supported so its weight isn't hanging on a half-inch nipple.</li>
+  <li>A brass tee or dielectric fitting where copper meets the steel tank.</li>
+  <li>Air charge set to measured static pressure; tank labeled with the pressure and date.</li>
+  <li>Relief valve inspected and replaced if it's been weeping long enough to corrode, with the discharge line run correctly.</li>
+  <li>Whole-house pressure checked and a pressure-reducing valve recommended where it's high.</li>
+  <li>On water heater installs, the expansion tank is included — it's part of a code-compliant replacement, not an upsell.</li>
+</ul>
+
+<div class="callout"><strong>Replacing an old one</strong><br>An expansion tank that's waterlogged weighs several pounds more than a healthy one and sounds solid when tapped. Replacement takes under an hour and we check the air charge on the new tank before it goes in. If your tank is on an older heater, we check the heater's condition at the same time.</div>
+
+<h2>Expansion tanks for other closed systems</h2>
+<p>The same physics applies anywhere water is heated in a closed loop. Hydronic heating systems, <a href="/services/hot-water-recirculation/">recirculation loops</a> with buffer tanks, and some <a href="/services/tankless-water-heaters/">tankless</a> setups with storage all need expansion control, sized to their own volume and pressure. Small commercial plumbing systems — a restaurant's water heater, a salon, a church kitchen — are nearly always closed and often overlooked. We assess the whole system, not just the water heater. Serving Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge — call <a href="tel:+12534657734">(253) 465-7734</a>.</p>

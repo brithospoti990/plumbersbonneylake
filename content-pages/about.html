@@ -1,0 +1,68 @@
+<!--META {
+"path": "/about/",
+"kind": "company",
+"crumb": "About",
+"title": "About Ashino Thomas | Plumbers Bonney Lake, WA",
+"description": "Meet Ashino Thomas, founder of Plumbers Bonney Lake — a locally owned, licensed Washington plumbing contractor serving the Plateau. Call (253) 465-7734.",
+"h1": "About Ashino Thomas and Plumbers Bonney Lake",
+"lede": "Plumbers Bonney Lake started with a simple observation: Plateau homeowners were waiting days for plumbers who drove in from somewhere else, then paying for the drive. Ashino Thomas built a company that lives here instead.",
+"related": [
+"emergency-plumber",
+"water-heater-installation",
+"drain-line-repair"
+],
+"faqs": [
+[
+"Is Plumbers Bonney Lake licensed and insured?",
+"Yes. The company is a registered Washington plumbing contractor, bonded and insured, and every plumber on the crew holds a Washington State L&I plumber certification. Our registration and certification numbers are in the footer of every page and on every invoice."
+],
+[
+"Who will come to my house?",
+"A certified plumber from our own crew — not a subcontractor. Ashino still runs calls himself, and every technician is trained on the way we diagnose, estimate and clean up."
+],
+[
+"Do you charge for the drive?",
+"No. We're based in Bonney Lake and we cluster calls by area, so the drive is on us. You'll hear any after-hours arrival fee on the phone before we dispatch."
+],
+[
+"Do you do commercial work?",
+"Small commercial plumbing — restaurants, salons, offices, churches, small multi-family — yes, including backflow testing and water heaters. Large construction, no."
+]
+]
+}-->
+<h2>Why a local plumber, and why Bonney Lake</h2>
+<p>Ashino Thomas has worked in plumbing on the Plateau long enough to see the same pattern repeat: a homeowner in Lake Tapps or Tehaleh calls a company with a big ad budget, waits a day or two for a truck from Kent or Tacoma, pays a dispatch fee that covers the drive, and gets a technician who has never seen the neighborhood's water or its housing. The job gets done, usually. But the local knowledge that prevents the next problem — knowing that this subdivision is a closed system, that this neighborhood's wells run high in iron, that these lots have fifty-year-old firs over fifty-year-old sewer laterals — never makes it into the visit.</p>
+<p>Plumbers Bonney Lake was founded to be the alternative. The office sits on 198th Ave E in the center of Bonney Lake. The crew lives on the Plateau. The trucks are stocked for the houses here — frost-free hose bibs for Lake Tapps, expansion tanks for Tehaleh, iron filters for Buckley wells — and the schedule is built around being minutes away rather than an hour. Same-day service isn't a promise we strain to keep; it's the natural result of being local.</p>
+
+<figure class="photo"><img src="/img/ashino-thomas.jpg" alt="Ashino Thomas, founder and lead plumber of Plumbers Bonney Lake, at the company's Bonney Lake office" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Ashino Thomas, founder. Still on the truck most days.</figcaption></figure>
+
+<h2>How we work</h2>
+<ul>
+  <li><strong>A person answers the phone, 24 hours a day.</strong> For emergencies we walk you through the shut-off while the truck is dispatched.</li>
+  <li><strong>Diagnose the cause, not the symptom.</strong> A dripping relief valve gets a pressure test, not just a new valve. A recurring clog gets a camera, not a fourth cleaning.</li>
+  <li><strong>Written estimate before any work.</strong> Options, prices and our honest recommendation — repair or replace, now or later. Nothing beyond the diagnosis is billed until you approve it.</li>
+  <li><strong>Licensed plumbers only.</strong> Washington requires it, and inspectors check it. Every person who touches your plumbing holds an L&amp;I certification.</li>
+  <li><strong>Permits pulled, inspections met.</strong> Water heaters, repipes, sewer lines, remodels — if the City of Bonney Lake or Pierce County requires a permit, we pull it in our name and hand you the final.</li>
+  <li><strong>Clean up, walk-through, follow-up.</strong> We leave the space as we found it, show you what was done, and note anything else we saw for you to plan around.</li>
+</ul>
+
+<div class="tool" id="ab">
+  <h3>What Ashino checks first in a house like yours</h3>
+  <div class="row"><div><label for="ab-y">Year your home was built</label><input id="ab-y" type="number" min="1890" max="2026" value="1998"></div><div><label for="ab-a">Area</label><select id="ab-a"><option value="bl">Bonney Lake / Prairie Ridge</option><option value="lt">Lake Tapps / Lakeland Hills</option><option value="te">Tehaleh</option><option value="valley">Sumner / Orting / Puyallup valley</option><option value="rural">Buckley / South Prairie / Enumclaw / Carbon River</option></select></div></div>
+  <button class="btn btn-outline" type="button" id="ab-go">Show the checklist</button>
+  <div class="result" id="ab-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('ab-go').addEventListener('click',function(){var y=+document.getElementById('ab-y').value||2000,a=document.getElementById('ab-a').value;var items=[];if(y<1975)items.push('<a href="/services/repipes-remodels/">Supply pipe material</a> — galvanized steel is likely and past its life');if(y>=1978&&y<=1995)items.push('<a href="/services/repipes-remodels/">Polybutylene check</a> — gray plastic supply pipe, replace on sight');if(y<1990)items.push('<a href="/services/drain-line-repair/">Sewer lateral camera</a> — cast iron or clay under mature trees');items.push('<a href="/services/water-heater-installation/">Water heater age and anode</a> — the date is on the rating plate');items.push('<a href="/services/expansion-tanks/">Expansion tank and pressure</a> — most Plateau homes are closed systems');if(a==='te'||a==='lt'||(y>=1995))items.push('<a href="/services/hot-water-recirculation/">Hot-water wait at the far bath</a> — a return line may already exist');if(a==='rural')items.unshift('<a href="/services/water-filtration-systems/">Well water lab test</a> — iron, sediment, hardness before any equipment');if(a==='valley')items.push('<a href="/services/water-line-repair/">Crawl space and service line</a> — high water table, wet soil');if(a==='lt'||a==='rural')items.push('<a href="/services/hose-bibs/">Outdoor faucets and exposed lines</a> — freeze protection');var o=document.getElementById('ab-out');o.hidden=false;o.innerHTML='<strong>First-visit checklist</strong><ol style="margin:6px 0 0;padding-left:20px">'+items.slice(0,6).map(function(i){return '<li>'+i+'</li>'}).join('')+'</ol>'});})();
+</script>
+
+<h2>Credentials</h2>
+<p>Plumbers Bonney Lake is a registered Washington State plumbing contractor, bonded and insured, with plumbers certified through the Department of Labor &amp; Industries plumber certification program. For backflow work, our testers hold the Washington Department of Health Backflow Assembly Tester certification, which lets us test and file reports with the City of Bonney Lake and Tacoma Water. Registration and certification numbers are printed in the footer of this site and on every estimate and invoice; you're welcome to verify them on the L&amp;I contractor lookup.</p>
+
+<h2>The service area</h2>
+<p>Our home base is Bonney Lake, and our regular routes cover Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn's Lakeland Hills, Edgewood, Prairie Ridge, and the Carbon River towns of Wilkeson and Carbonado. See the <a href="/service-areas/">service area pages</a> for what we know about each town's water and housing.</p>
+
+<figure class="photo"><img src="/img/home-truck.jpg" alt="Plumbers Bonney Lake service truck stocked for Plateau homes, parked in Bonney Lake, WA" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Stocked for the houses on the Plateau, not a generic parts list.</figcaption></figure>
+
+<h2>Get in touch</h2>
+<p>Call <a href="tel:+12534657734">(253) 465-7734</a> any hour, or use the <a href="/contact/">contact page</a> to request a visit. Our office is at 15121 198th Ave E, 3rd Floor, Ste Executive, Bonney Lake, WA 98391 — visits by appointment, since the crew is usually out on the Plateau.</p>

@@ -1,0 +1,88 @@
+<!--META {
+"path": "/guides/tankless-vs-tank-pierce-county/",
+"kind": "guide",
+"date": "2026-10-06",
+"crumb": "Tankless vs tank",
+"title": "Tankless vs Tank Water Heater for Pierce County | Guide",
+"description": "Tankless or tank for a Bonney Lake home? Winter inlet temperatures, gas line, venting, hot-water habits and lifespan, compared honestly. (253) 465-7734.",
+"h1": "Tankless vs. Tank: Which Water Heater Fits a Pierce County Home?",
+"lede": "The internet answer is 'tankless is better.' The Plateau answer is 'it depends on your gas line, your winter water temperature and how your household uses hot water.' Here's how we decide it on a real house.",
+"related": [
+"tankless-water-heaters",
+"water-heater-installation",
+"hot-water-recirculation"
+],
+"faqs": [
+[
+"Does tankless save money in Western Washington?",
+"On operating cost, some — a tankless unit doesn't keep 50 gallons hot all day. On total cost, the higher install (gas line, venting) takes years to recover. The clearer wins are endless hot water, space and lifespan."
+],
+[
+"Can an electric house go tankless?",
+"Whole-house electric tankless needs enormous amperage and struggles with our cold inlet water. An electric house is usually better served by a heat pump water heater tank."
+],
+[
+"How long does each last?",
+"Tanks: eight to twelve years on Plateau water, longer with a softener and flushing. Tankless: fifteen to twenty with annual descaling."
+]
+]
+}-->
+<h2>Start with your household, not the brochure</h2>
+<p>Tankless water heaters heat water on demand; tanks store it hot. Neither is better in the abstract. A tank is simpler, cheaper to install, forgiving of hard water, and runs out. A tankless unit never runs out, lasts longer, hangs on a wall, costs more to install because of gas and venting, and needs to be sized for the coldest water of the year — which in Bonney Lake means inlet water in the 40s°F in winter. Answer the questions below for the honest recommendation we'd give at your kitchen table.</p>
+
+<div class="tool" id="tt">
+  <h3>Which fits your house?</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="tt" value="runout">We run out of hot water at least weekly</label></li>
+    <li><label><input type="checkbox" class="tt" value="gas">The house has natural gas or propane</label></li>
+    <li><label><input type="checkbox" class="tt" value="stay">We plan to stay in this house 8+ years</label></li>
+    <li><label><input type="checkbox" class="tt" value="space">We'd like the floor space back (garage, closet)</label></li>
+    <li><label><input type="checkbox" class="tt" value="soft">We have a water softener or will install one</label></li>
+    <li><label><input type="checkbox" class="tt" value="big">Large tub, multi-head shower or 5+ people</label></li>
+    <li><label><input type="checkbox" class="tt" value="budget">The install budget is tight right now</label></li>
+    <li><label><input type="checkbox" class="tt" value="far">The far bathroom already waits a long time for hot water</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="tt-go">Recommend</button>
+  <div class="result" id="tt-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('tt-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#tt .tt:checked')).map(function(i){return i.value});var has=function(k){return c.indexOf(k)>-1};var score=0;if(has('runout'))score+=3;if(has('gas'))score+=2;if(has('stay'))score+=2;if(has('space'))score+=1;if(has('soft'))score+=1;if(has('big'))score+=1;if(has('budget'))score-=3;if(!has('gas'))score-=3;var rec,why;if(!has('gas')){rec='Heat pump (hybrid) electric tank';why='Without gas, whole-house tankless is impractical in our climate. A heat pump tank is the efficient electric choice and often qualifies for utility incentives.';}else if(score>=5){rec='Tankless (condensing gas)';why='Your household gets the real benefits — endless hot water, space, lifespan — and the house can support the gas and venting work. We size for a 75°F winter rise.'+(has('far')?' Pair it with a recirculation loop so the far bath doesn\'t wait.':'');}else if(score>=2){rec='Either — quote both';why='A good case for tankless but not a slam dunk. We\'ll quote a tank and a tankless install side by side so you can see the difference.';}else{rec='High-quality gas tank (50 gal or sized to demand)';why=has('budget')?'A tank gives you reliable hot water at the lowest install cost; a tankless can come at the next replacement.':'For your pattern of use a tank serves well; add an expansion tank and annual flushing to get its full life.';}var o=document.getElementById('tt-out');o.hidden=false;o.innerHTML='<strong>'+rec+'</strong>'+why});})();
+</script>
+
+<h2>The winter inlet problem</h2>
+<p>A tankless unit's brochure rating — "9.8 GPM!" — assumes a modest temperature rise, the kind you'd see in Phoenix. In Bonney Lake, the water arriving from the City's springs and wells, or from Tacoma Water in Tehaleh, drops into the low-to-mid 40s°F in January. Raising that to a 120°F shower is a 75°F rise, and the same unit delivers roughly half its brochure flow. A unit that handled two showers in July struggles with one shower and a dishwasher in January. We size every tankless install for the winter case and the household's real simultaneous use — the calculator on our <a href="/services/tankless-water-heaters/">tankless page</a> shows the math.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 240" role="img" aria-labelledby="tvtTitle">
+    <title id="tvtTitle">Comparison table of tank versus tankless water heaters on install complexity, hot water supply, lifespan, hard water tolerance, space, and winter performance</title>
+    <rect width="720" height="240" rx="8" fill="#E3F1F3"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="13" fill="#0F2E4A">
+      <text x="30" y="36" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="16">Factor</text><text x="300" y="36" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="16">Tank</text><text x="500" y="36" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="16">Tankless</text>
+      <line x1="30" y1="46" x2="690" y2="46" stroke="#B9C8D4"/>
+      <text x="30" y="72">Install</text><text x="300" y="72" fill="#1B7F8E">Simple, same-day</text><text x="500" y="72" fill="#B03A2E">Gas upsizing + venting</text>
+      <text x="30" y="100">Hot water supply</text><text x="300" y="100" fill="#B03A2E">Runs out</text><text x="500" y="100" fill="#1B7F8E">Endless (if sized right)</text>
+      <text x="30" y="128">Lifespan on Plateau water</text><text x="300" y="128">8–12 yrs</text><text x="500" y="128" fill="#1B7F8E">15–20 yrs with descaling</text>
+      <text x="30" y="156">Hard water tolerance</text><text x="300" y="156" fill="#1B7F8E">Forgiving</text><text x="500" y="156" fill="#B03A2E">Needs annual descale</text>
+      <text x="30" y="184">Space</text><text x="300" y="184">Floor footprint</text><text x="500" y="184" fill="#1B7F8E">Wall-mounted</text>
+      <text x="30" y="212">January performance</text><text x="300" y="212" fill="#1B7F8E">Unaffected</text><text x="500" y="212" fill="#B03A2E">Output drops ~half</text>
+    </g>
+  </svg>
+  <figcaption>Neither column wins. The house and the household pick the column.</figcaption>
+</figure>
+
+<h2>What a tankless install involves on the Plateau</h2>
+<p>The unit is the easy part. The gas line that fed a 40-gallon tank is almost always too small for a 199,000 BTU tankless heater, so it gets upsized from the meter — three-quarter inch or larger — with the whole-house load calculated. Condensing units vent through PVC with strict length and termination rules and produce acidic condensate that needs a neutralizer and a drain. Isolation valves with service ports go in for descaling. Then there's the permit and both plumbing and gas inspections through the City of Bonney Lake or Pierce County. A conversion is most of a day; a tank swap is two to three hours.</p>
+
+<h2>What a tank install involves</h2>
+<p>Less, but not nothing. Western Washington requires seismic straps. Most Bonney Lake homes are closed systems, so an <a href="/services/expansion-tanks/">expansion tank</a> is required. The relief valve needs a discharge line, the pan needs a drain where a leak would cause damage, the vent needs proper draft, and the permit and inspection still apply. A tank done right costs more than a tank done wrong, and the difference shows up at year eight.</p>
+
+<h2>The third option: heat pump tanks</h2>
+<p>For all-electric homes — common around Lake Tapps and in older Bonney Lake neighborhoods without gas — a hybrid heat pump water heater is usually the better answer than electric tankless. It pulls heat from the surrounding air, uses a fraction of the electricity of a standard electric tank, and works well in a garage or utility room with the space it needs. Puget Sound Energy and other local utilities periodically offer incentives. It's slower to recover than gas, so we size the tank up and often pair it with demand-based recirculation.</p>
+
+<h2>Recirculation changes the math</h2>
+<p>Tankless units need a minimum flow to fire, and some will short-cycle if a recirculation pump is matched poorly. Several manufacturers now build recirculation into the unit, with an internal pump and a schedule, and those pair well with the dedicated return line many Tehaleh and Lakeland Hills homes already have. If the far bathroom's wait for hot water is part of why you're replacing the heater, tell us: the right tankless model solves both problems at once, and a tank paired with a demand-controlled pump solves them too. Designing the two together is cheaper than retrofitting a pump later.</p>
+<h2>Hard water and the tankless decision</h2>
+<p>Bonney Lake's groundwater leaves scale in a tankless heat exchanger faster than in a tank, because the exchanger's passages are narrow. That doesn't rule tankless out; it means budgeting for an annual descale and seriously considering a softener or a scale-inhibiting filter upstream. On Tacoma Water in Tehaleh the water is softer and the issue is smaller. On a Buckley or South Prairie well with iron, a tankless unit needs filtration ahead of it or the exchanger fouls. A tank is more forgiving of all of this, which is part of why we still install plenty of them.</p>
+<h2>Our recommendation, honestly</h2>
+<p>If you run out of hot water, have gas, plan to stay, and can absorb the install — tankless, sized for January, with a softener or scale inhibitor and annual descaling. If you're all-electric — a heat pump tank. If a tank has served you fine and you're replacing on a tight timeline or budget — a quality tank installed to code, with the expansion tank and strapping it needs. We quote both paths in writing on every water heater call. Serving Bonney Lake, Lake Tapps, Sumner, Tehaleh, Puyallup and the Plateau — <a href="tel:+12534657734">(253) 465-7734</a>.</p>
+<h2>When to call</h2><p>If the heater is leaking, don't wait to decide: shut the cold supply and the power, and call. We can replace a tank the same day and still quote a tankless conversion for when you're ready, or do the conversion now if the gas line checks out. If you're planning ahead, the best time to call is before the heater fails — a tankless install involves a day of work and a permit, and an emergency replacement rarely leaves room for that. Either way you'll get both numbers in writing and an honest recommendation for your house, not a brochure.</p>

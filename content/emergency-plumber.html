@@ -1,0 +1,126 @@
+<!--META {
+"slug": "emergency-plumber",
+"title": "Emergency Plumber Bonney Lake, WA | 24 Hour Plumbing Repair",
+"description": "24-hour emergency plumber in Bonney Lake, WA. Burst pipes, no hot water, sewer backups, leaks. Local crew, fast dispatch. Call (253) 465-7734.",
+"h1": "Emergency Plumber in Bonney Lake, WA — 24 Hours a Day",
+"lede": "A burst pipe at 2 a.m. doesn't care that the office is closed. Plumbers Bonney Lake dispatches from 198th Ave E around the clock, so the plumber who answers your emergency is already on the Plateau — not driving in from Seattle or Tacoma.",
+"cta_noun": "an emergency plumber",
+"faqs": [
+[
+"What counts as a plumbing emergency?",
+"Anything that is actively causing damage or has stopped essential service: a burst or leaking supply pipe you can't shut off, sewage backing up into the house, no water at all, a water heater leaking from the tank, a gas smell near a water heater, or a frozen line in a cold snap. If you're unsure, call — we'll tell you honestly whether it can wait until morning."
+],
+[
+"How quickly can an emergency plumber reach Bonney Lake?",
+"Because we're based in Bonney Lake, most addresses in the city, Lake Tapps, Sumner, Buckley and Tehaleh are a short drive. Emergency calls are dispatched ahead of all scheduled work and we tell you an honest arrival window when you call."
+],
+[
+"Do you charge extra for nights and weekends?",
+"Emergency and after-hours work is quoted before we start, the same as daytime work. You'll hear the arrival-fee and the diagnosis process on the phone, and nothing beyond that is charged until you approve a written estimate on site."
+],
+[
+"Should I turn off my water before you arrive?",
+"If water is actively leaking, yes — shut the main valve where the supply enters the house (often in the garage, crawl space or near the water heater) or at the meter box by the street. We walk you through it on the phone. Then open a low faucet to drain pressure."
+],
+[
+"What should I do if my water heater is leaking?",
+"Turn off the cold supply valve on top of the heater, switch off the breaker (electric) or set the gas valve to 'off' (gas), and put towels or a pan under it. A tank leaking from the bottom is usually a failed tank, not a repair — we can replace it the same day in most cases."
+],
+[
+"Can you handle a sewer backup?",
+"Yes. We clear the blockage, camera the line to find out why it happened — roots, a belly, a broken joint — and tell you whether a drain line repair is needed or a cleaning will hold. We also advise on cleanup and when to call a restoration company."
+],
+[
+"Do you serve Lake Tapps and Tehaleh for emergencies?",
+"Yes. Lake Tapps, Tehaleh, Sumner, Buckley, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge are all within our emergency dispatch area."
+]
+]
+}-->
+<h2>What to do in the first five minutes</h2>
+<p>Most of the water damage from a plumbing emergency happens before the plumber arrives, not after. A supply line at normal Bonney Lake water pressure can push several gallons a minute into a wall or crawl space, so the single most valuable thing you can do is stop the flow. Use the tool below to find the right first move for your problem, then call us at <a href="tel:+12534657734">(253) 465-7734</a>. We'll stay on the phone while you do it.</p>
+
+<div class="tool" id="triage">
+  <h3>Emergency triage: pick your problem</h3>
+  <label for="tri-sel">What's happening right now?</label>
+  <select id="tri-sel">
+    <option value="">Choose…</option>
+    <option value="burst">Water spraying or pouring from a pipe</option>
+    <option value="wh">Water heater leaking or no hot water</option>
+    <option value="sewer">Sewage backing up in a tub, shower or floor drain</option>
+    <option value="nowater">No water at all</option>
+    <option value="frozen">Pipes frozen — no flow from one or more taps</option>
+    <option value="toilet">Toilet overflowing and won't stop</option>
+    <option value="gas">Gas smell near the water heater or furnace</option>
+  </select>
+  <div class="result" id="tri-out" hidden></div>
+  <p class="note">These steps are for stopping damage until a licensed plumber arrives. If anyone is in danger or you smell gas strongly, leave the house and call 911 first.</p>
+</div>
+<script>
+(function(){var s=document.getElementById('tri-sel'),o=document.getElementById('tri-out');var t={
+burst:["Shut the main valve, then drain pressure","1. Turn the main shut-off valve clockwise until it stops — it's usually where the line enters the house (garage wall, crawl space hatch, utility room) or in the meter box at the street. 2. Open the lowest cold faucet in the house to drain pressure. 3. Move anything valuable out of the water. 4. Call us — we carry copper, PEX and CPVC fittings for a same-visit pipe repair."],
+wh:["Isolate the heater — supply, then power","1. Turn the cold-water valve on top of the heater clockwise to close it. 2. Electric: switch off the water heater breaker. Gas: turn the control knob to OFF. 3. Put a pan or towels under the tank. 4. Note the age (on the rating plate). Leaking from the bottom usually means replacement; from a fitting on top usually means repair. We stock common sizes for same-day water heater replacement."],
+sewer:["Stop using water — all of it","1. Don't flush, run the dishwasher, washer or showers; every gallon you send down comes back up at the lowest drain. 2. Keep people and pets out of the affected area. 3. If you have an outdoor cleanout (a capped pipe near the foundation), loosening the cap lets water exit outside instead of inside. 4. Call us — we clear the line and camera it to find the cause."],
+nowater:["Check the obvious before you panic","1. Ask a neighbor — if they have no water either, it's the City of Bonney Lake or Tacoma Water, not your plumbing. 2. Check that the main valve wasn't bumped closed. 3. In freezing weather, go to the frozen-pipe steps. 4. On a well: check the breaker for the pump and the pressure gauge. If the system shows pressure but no flow, call us."],
+frozen:["Open the tap, warm the pipe slowly, watch for the thaw","1. Open the affected faucet so melting ice has somewhere to go. 2. Warm the pipe gently with a hair dryer or warm towels, starting from the faucet end — never a torch. 3. Watch for leaks as it thaws; ice splits pipes and the leak appears when flow returns. 4. If you can't reach the frozen section (crawl space, exterior wall), call us."],
+toilet:["Close the angle stop, lift the float","1. Turn the small valve behind the toilet clockwise. 2. If it won't turn, lift the tank lid and hold the float up to stop the fill. 3. Don't flush again. 4. If other drains are also slow, it's a main-line clog — see the sewer steps."],
+gas:["Leave, then call from outside","1. Don't flip switches or light anything. 2. Get everyone outside. 3. Call Puget Sound Energy's emergency line or 911 from outside. 4. Once the utility clears the leak, call us to inspect the water heater's gas connection and relight it safely."]};
+s.addEventListener('change',function(){var v=t[s.value];if(!v){o.hidden=true;return;}o.hidden=false;o.innerHTML='<strong>'+v[0]+'</strong>'+v[1];});})();
+</script>
+
+<h2>Where your shut-off valves are in a Bonney Lake home</h2>
+<p>Every Bonney Lake homeowner should know two valves: the main shut-off and the water heater supply valve. In most homes on the Plateau the main valve is where the service line enters — on a garage wall, in the crawl space near the front of the house, or in a utility closet. If you can't find it, the City of Bonney Lake Water Department's meter box is at the edge of your property, usually near the street, and the valve on the house side of the meter can be closed with a meter key or a crescent wrench. Newer Tehaleh and Prairie Ridge homes typically have a clearly labeled main valve and a pressure-reducing valve together in the garage.</p>
+<figure class="diagram">
+  <svg viewBox="0 0 720 300" role="img" aria-labelledby="svTitle">
+    <title id="svTitle">Diagram showing shut-off valve locations: meter box at the street, main valve where the line enters the house, water heater valve, and fixture angle stops</title>
+    <rect width="720" height="300" rx="8" fill="#E3F1F3"/>
+    <rect x="0" y="250" width="720" height="50" fill="#D9E0E4"/>
+    <text x="30" y="282" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="15" fill="#4A5862">Street</text>
+    <rect x="60" y="225" width="40" height="22" rx="3" fill="#4A5862"/><text x="40" y="215" font-family="Source Sans 3, Arial, sans-serif" font-size="13" fill="#0F2E4A">1. Meter box</text>
+    <path d="M80 225 V200 H300 V120" fill="none" stroke="#B8742A" stroke-width="6"/>
+    <rect x="300" y="60" width="380" height="190" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="3"/>
+    <path d="M290 60 L490 10 L690 60Z" fill="#B8742A"/>
+    <circle cx="300" cy="200" r="11" fill="#B8742A" stroke="#0F2E4A" stroke-width="3"/><text x="318" y="205" font-family="Source Sans 3, Arial, sans-serif" font-size="13" fill="#0F2E4A">2. Main shut-off</text>
+    <path d="M300 120 H330 V90 H420" fill="none" stroke="#B8742A" stroke-width="5"/>
+    <rect x="420" y="80" width="40" height="70" rx="6" fill="#C9D6E0" stroke="#4A5862" stroke-width="2"/>
+    <circle cx="420" cy="90" r="8" fill="#B8742A" stroke="#0F2E4A" stroke-width="2"/><text x="470" y="100" font-family="Source Sans 3, Arial, sans-serif" font-size="13" fill="#0F2E4A">3. Water heater valve</text>
+    <path d="M330 120 H590 V190" fill="none" stroke="#1B7F8E" stroke-width="4"/>
+    <circle cx="590" cy="190" r="7" fill="#1B7F8E" stroke="#0F2E4A" stroke-width="2"/><rect x="575" y="205" width="40" height="30" rx="4" fill="#fff" stroke="#4A5862"/><text x="520" y="248" font-family="Source Sans 3, Arial, sans-serif" font-size="13" fill="#0F2E4A">4. Angle stop (toilet, sink)</text>
+  </svg>
+  <figcaption>Close the valve nearest the problem first; if you can't find it, close the main. Clockwise is off.</figcaption>
+</figure>
+
+<figure class="photo"><img src="/img/services/emergency-plumber-1.jpg" alt="Plumbers Bonney Lake technician shutting off a main water valve in a Bonney Lake garage during an emergency call" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Our truck carries the fittings and tools for most emergency plumbing repairs on the first visit.</figcaption></figure>
+
+<h2>Emergency plumbing problems we handle around the clock</h2>
+<p>Our emergency plumbing service covers the problems that can't wait, and the crew that answers is the same crew that does our scheduled work — licensed Washington plumbers, not a subcontractor pulled off a list.</p>
+<ul>
+  <li><strong>Burst and leaking pipes.</strong> Copper, PEX, galvanized or CPVC. We isolate, repair or replace the section, and check the rest of the run for the same failure. Older homes around the original Bonney Lake lots and Lake Tapps often have galvanized lines that fail in more than one place.</li>
+  <li><strong>Water heater failures.</strong> No hot water, a tank leaking from the bottom, a relief valve that won't stop dripping, a pilot that won't stay lit. Same-day <a href="/services/water-heater-installation/">water heater replacement</a> in most cases.</li>
+  <li><strong>Sewer backups and main-line clogs.</strong> Sewage in a tub or floor drain means the main line is blocked. We clear it, camera it, and tell you whether <a href="/services/drain-line-repair/">drain line repair</a> is needed.</li>
+  <li><strong>Frozen pipes.</strong> The Plateau gets a handful of hard freezes most winters. Uninsulated crawl-space lines and <a href="/services/hose-bibs/">hose bibs</a> are the usual casualties.</li>
+  <li><strong>Overflowing toilets and failed shut-off valves.</strong> A stuck fill valve or a corroded angle stop that won't close.</li>
+  <li><strong>Slab and crawl-space leaks.</strong> Unexplained wet spots, a water meter that spins with everything off, or a sudden pressure drop.</li>
+  <li><strong>Gas water heater and gas line issues.</strong> After the utility clears a leak, we inspect, repair and relight.</li>
+</ul>
+
+<h2>Why a local emergency plumber gets there faster</h2>
+<p>When you search "emergency plumber Bonney Lake," most of the results are regional companies whose nearest truck might be in Kent, Federal Way or Tacoma. SR 410 and SR 167 at the wrong hour can turn that into a long wait while water keeps running. Our office is on 198th Ave E in the center of Bonney Lake. Lake Tapps, Sumner and Tehaleh are minutes away; Buckley, Orting and South Prairie are a short drive up SR 410 or SR 162. That proximity is the whole point of a local plumber, and it's why we don't charge for the drive.</p>
+<p>Local knowledge matters in an emergency too. We know that many Bonney Lake homes now have a backflow preventer at the meter, which means a failing water heater can't push expanding water back into the main — the pressure has to go somewhere, and it often shows up as a dripping relief valve before the tank fails. We know which neighborhoods have well water with sediment that chews through valves, and we know that a sewer backup in a home shaded by big firs or cedars is almost always roots. That lets us bring the right parts the first time.</p>
+
+<figure class="photo"><img src="/img/services/emergency-plumber-2.jpg" alt="Emergency sewer backup cleared and camera-inspected by Plumbers Bonney Lake at a home near Lake Tapps" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A camera inspection after clearing a backup shows whether roots, a belly or a broken joint caused it.</figcaption></figure>
+
+<h2>What happens when you call</h2>
+<p>A person answers — 24 hours a day — and asks three things: what's happening, where you are, and whether you've been able to shut anything off. If water is running, we walk you through the shut-off before anything else. Then we give you an honest arrival window and the after-hours arrival fee, so there are no surprises when the truck pulls up.</p>
+<p>On site, your plumber finds the cause, not just the drip. A leaking supply line gets a pressure check to make sure a failed pressure-reducing valve didn't cause it. A water heater that quit gets a look at the expansion tank and venting. A backup gets a camera. Then you get a written estimate with options, and nothing beyond the diagnosis is billed until you approve it. Most emergency plumbing repairs are finished on the first visit because the truck is stocked for them; when a part has to be ordered, we make the system safe and usable before we leave.</p>
+
+<div class="callout"><strong>After the emergency: the follow-up that prevents the next one</strong><br>Burst pipes, backups and water heater failures almost always have a cause worth fixing — high pressure, roots, a missing expansion tank, an uninsulated line. We note it on your invoice and quote the fix separately. You decide whether to schedule it.</div>
+
+<h2>Preventing the most common Bonney Lake plumbing emergencies</h2>
+<p>A few inexpensive habits head off most of the midnight calls we get on the Plateau:</p>
+<ul>
+  <li><strong>Before the first freeze</strong> — disconnect hoses, install frost-free hose bibs, insulate crawl-space supply lines, and leave the garage door closed on nights below freezing if the water heater lives there.</li>
+  <li><strong>Every spring</strong> — flush the water heater to remove sediment, test the relief valve, and check the expansion tank's air charge.</li>
+  <li><strong>Every year or two</strong> — have a camera run down the main sewer line if your lot has mature trees; a root cutting on your schedule beats a backup on a holiday weekend.</li>
+  <li><strong>Any time</strong> — if your water pressure feels high (banging pipes, spraying faucets), have it measured. The fix is a pressure-reducing valve, and it protects every fixture in the house.</li>
+</ul>
+<p>We offer all of this as a yearly plumbing inspection for homes and small commercial plumbing customers in Bonney Lake. It costs far less than water damage, and it means that when you do need an emergency plumber, we already know your house.</p>

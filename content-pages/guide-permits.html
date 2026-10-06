@@ -1,0 +1,89 @@
+<!--META {
+"path": "/guides/water-heater-permit-bonney-lake/",
+"kind": "guide",
+"date": "2026-10-06",
+"crumb": "Permits",
+"title": "Water Heater Permits in Bonney Lake & Pierce County | Guide",
+"description": "Do you need a permit to replace a water heater in Bonney Lake or Pierce County? Which office, what inspectors check, why it matters. (253) 465-7734.",
+"h1": "Permits for Water Heater Replacement in Bonney Lake and Pierce County",
+"lede": "Yes, replacing a water heater needs a permit here — and the inspection is the cheapest protection you'll ever buy for a steel tank full of 120°F water sitting next to your furnace. Here's who issues it, what they check, and how to find out which office is yours.",
+"related": [
+"water-heater-installation",
+"tankless-water-heaters",
+"expansion-tanks"
+],
+"faqs": [
+[
+"Who pulls the permit — me or the plumber?",
+"The plumbing contractor pulls it in their name, which puts their license on the line for the work. If a plumber tells you the permit is 'your responsibility' or 'not needed,' that's a warning sign."
+],
+[
+"What if my water heater was replaced without a permit?",
+"It happens often. The risk shows up at resale, when a buyer's inspector or lender asks, and in a claim if the heater causes damage. A licensed plumber can inspect it and, if it meets code, help get it permitted after the fact."
+],
+[
+"Does a like-for-like swap really need one?",
+"Yes, in Bonney Lake and Pierce County. The permit exists because the connections — gas, venting, relief valve, straps, expansion tank — are what fail, not the brand of tank."
+]
+]
+}-->
+<h2>Find your jurisdiction</h2>
+<p>The Plateau is a patchwork. The City of Bonney Lake issues permits inside its limits; Pierce County Planning and Public Works covers unincorporated areas like Tehaleh, Prairie Ridge and most of Lake Tapps; Sumner, Buckley, Orting, Puyallup, Edgewood and Milton each have their own building departments; Enumclaw and the King County side of Lakeland Hills go through King County or their cities. Your tax statement or the county assessor's parcel lookup names the jurisdiction. Use the finder for a quick answer.</p>
+
+<div class="tool" id="pj">
+  <h3>Where does my water heater permit go?</h3>
+  <div class="row"><div><label for="pj-a">Where is the house?</label><select id="pj-a"><option value="bl">Inside Bonney Lake city limits</option><option value="pc">Tehaleh, Prairie Ridge, Lake Tapps (unincorporated) or rural Pierce County</option><option value="sumner">Sumner</option><option value="buckley">Buckley</option><option value="orting">Orting</option><option value="puyallup">Puyallup</option><option value="edgewood">Edgewood or Milton</option><option value="enumclaw">Enumclaw</option><option value="auburn">Auburn (incl. Lakeland Hills, King side)</option><option value="sp">South Prairie, Wilkeson or Carbonado (in town)</option></select></div><div><label for="pj-f">Fuel</label><select id="pj-f"><option value="gas">Gas / propane</option><option value="elec">Electric</option></select></div></div>
+  <button class="btn btn-outline" type="button" id="pj-go">Find it</button>
+  <div class="result" id="pj-out" hidden></div>
+</div>
+<script>
+(function(){var J={bl:'City of Bonney Lake — Community Development / Building Division',pc:'Pierce County Planning and Public Works (Development Center)',sumner:'City of Sumner — Community Development',buckley:'City of Buckley — Building Department',orting:'City of Orting — Building / Public Works',puyallup:'City of Puyallup — Development Services',edgewood:'City of Edgewood (or City of Milton) — Building',enumclaw:'City of Enumclaw — Community Development (King County)',auburn:'City of Auburn — Permit Center',sp:'The town hall for South Prairie, Wilkeson or Carbonado; outside town limits, Pierce County'};document.getElementById('pj-go').addEventListener('click',function(){var a=document.getElementById('pj-a').value,f=document.getElementById('pj-f').value;var o=document.getElementById('pj-out');o.hidden=false;o.innerHTML='<strong>'+J[a]+'</strong>A plumbing permit for the water heater'+(f==='gas'?', with the gas connection and venting inspected as part of it':'; electric units also need the circuit confirmed')+'. We pull it in our name, schedule the inspection, and give you the final. Jurisdictions change with annexation — we confirm against the parcel before filing.'});})();
+</script>
+
+<h2>What the inspector actually checks</h2>
+<p>A water heater inspection is short, and almost every item on the list is something that matters more than the tank itself:</p>
+<ul>
+  <li><strong>Seismic strapping</strong> — two straps, upper and lower third, anchored to framing. Western Washington requires it.</li>
+  <li><strong>Temperature-and-pressure relief valve</strong> with a discharge line of the right size, running downhill to an approved location, never capped or threaded at the end.</li>
+  <li><strong>Thermal expansion control</strong> — an expansion tank on closed systems, which is most Bonney Lake homes with a backflow device or PRV at the meter.</li>
+  <li><strong>Venting</strong> on gas units — diameter, rise, clearances, draft; sealed venting and condensate drain on power-vent and condensing units.</li>
+  <li><strong>Gas connection</strong> — sediment trap, approved flex connector, shut-off valve, leak test.</li>
+  <li><strong>Drip pan and drain</strong> where a leak would damage the house.</li>
+  <li><strong>Combustion air and clearances</strong> for gas units in closets and small rooms.</li>
+  <li><strong>Dielectric or brass transitions</strong> between copper and the steel tank.</li>
+</ul>
+<p>Those are the items we see missing on bargain installs around the Plateau, and the items that cause the water-damage and carbon-monoxide calls. The permit fee buys a second set of trained eyes on all of them.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 200" role="img" aria-labelledby="pjdTitle">
+    <title id="pjdTitle">Flow of a permitted water heater replacement: estimate approved, permit filed by the contractor, installation, inspection, final issued, record on file for resale</title>
+    <rect width="720" height="200" rx="8" fill="#E3F1F3"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A" text-anchor="middle">
+      <rect x="30" y="70" width="110" height="56" rx="6" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="85" y="94">Written estimate</text><text x="85" y="110">approved</text>
+      <rect x="165" y="70" width="110" height="56" rx="6" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="220" y="94">Permit filed</text><text x="220" y="110">(contractor's name)</text>
+      <rect x="300" y="70" width="110" height="56" rx="6" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="355" y="94">Installation</text><text x="355" y="110">to code</text>
+      <rect x="435" y="70" width="110" height="56" rx="6" fill="#fff" stroke="#B8742A" stroke-width="2"/><text x="490" y="94">Inspection</text><text x="490" y="110">(straps, T&amp;P, vent…)</text>
+      <rect x="570" y="70" width="120" height="56" rx="6" fill="#F6ECDF" stroke="#B8742A" stroke-width="2"/><text x="630" y="94">Final issued</text><text x="630" y="110">on record for resale</text>
+      <path d="M140 98 H165 M275 98 H300 M410 98 H435 M545 98 H570" stroke="#4A5862" stroke-width="2"/>
+      <text x="360" y="40" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="15">A permitted replacement, start to finish — usually one visit plus the inspection</text>
+      <text x="360" y="170" fill="#4A5862">The inspection can often be scheduled the same week; the heater works in the meantime.</text>
+    </g>
+  </svg>
+  <figcaption>The contractor carries the permit. You carry the paperwork into your next sale.</figcaption>
+</figure>
+
+<h2>Why unpermitted work costs more later</h2>
+<p>Three ways. At resale, a buyer's inspector notes a water heater with no permit on file, and the lender or buyer asks for it to be inspected or redone — on your timeline, not yours to choose. In an insurance claim after a tank fails or a vent leaks, an unpermitted install gives the adjuster a reason to look harder. And in the day-to-day, an install nobody checked is the one with the capped relief valve, the missing expansion tank and the straps that aren't anchored to anything. The permit fee in Bonney Lake and Pierce County is modest; the inspection is included in our price.</p>
+
+<h2>Permits and insurance, briefly</h2><p>Homeowner policies don't usually ask about permits up front, but adjusters do after a loss. A permitted, inspected water heater removes an argument before it starts; an unpermitted one invites questions about who installed it and whether the venting and relief valve met code. For a gas unit in particular, the inspection's check of the vent and combustion air is the part that protects the people in the house, not just the floor under the tank.</p>
+<h2>Tankless, heat pump and relocations</h2>
+<p>A tankless conversion needs the same plumbing permit plus gas work — the upsized line and the venting — and both get inspected. A heat pump water heater needs the circuit confirmed and the condensate drain checked. Moving a water heater to a new location, or adding one for an addition or ADU, involves new supply, drain and possibly gas and venting, and is a larger permit. We quote the permit and inspection on every water heater estimate so there's nothing to add later.</p>
+
+<h2>Other plumbing work that needs a permit here</h2>
+<p>Water heaters are the most common, but they're not alone. In Bonney Lake and Pierce County a permit is required for repipes, sewer and water service line repair or replacement, backflow assembly installation, moving or adding fixtures (a new bathroom, a relocated kitchen sink, a utility sink in the garage), gas line work, and most remodel rough-in. Straight replacements of a faucet, toilet or disposal in the same location generally don't. When in doubt, the jurisdiction's permit desk will tell you in a two-minute call — and so will we.</p>
+<h2>What to keep after the inspection</h2>
+<p>Keep the permit number, the inspection final, the installer's invoice with the model and serial number, and the warranty registration. Photograph the rating plate. Put the folder with the house documents, because the next owner's inspector will ask, and because a manufacturer's warranty claim on a tank that fails early is far easier with the install date and the permit in hand.</p>
+<h2>How long the inspection takes, and what if it fails</h2><p>The inspector's visit is typically fifteen to twenty minutes, scheduled within the week in Bonney Lake and Pierce County, and the heater is in service the whole time. A failed inspection is uncommon on our work, but when a correction is called for — a strap re-anchored, a discharge line re-routed — we make it at no charge and request the re-inspection ourselves. You never deal with the permit office directly unless you want to. The final is emailed to you and kept in our records; if you lose it, call and we'll send another copy.</p>
+<h2>What we handle</h2>
+<p>We confirm your jurisdiction against the parcel, file the permit in our name, install to the current Washington code, schedule the inspection and meet the inspector, and send you the final. If you have an existing unpermitted heater and want it checked, we inspect it against the same list and tell you what, if anything, needs correcting. Serving Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, Puyallup, Enumclaw and the Plateau — <a href="tel:+12534657734">(253) 465-7734</a>.</p>
+<h2>When to call</h2><p>If your water heater is leaking, past ten years, or failing in a way that means replacement, call and we'll handle the permit as part of the job — you won't need to contact the City or County at all. If you've got an existing heater you suspect was installed without a permit, call for an inspection against the list above; most can be brought into compliance with a few parts, and the peace of mind at resale is worth the visit. <a href="tel:+12534657734">(253) 465-7734</a>.</p>

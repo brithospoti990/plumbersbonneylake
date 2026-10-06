@@ -1,0 +1,106 @@
+<!--META {
+"slug": "fixture-installation",
+"title": "Plumbing Fixture Installation Bonney Lake, WA | Sinks & More",
+"description": "Plumbing fixture installation in Bonney Lake, WA: sinks, vanities, faucets, toilets, shower heads, utility sinks and bidet seats. Call (253) 465-7734.",
+"h1": "Plumbing Fixture Installation in Bonney Lake, WA",
+"lede": "New vanity, new sink, new shower head, a bidet seat, a utility sink in the garage — the fixtures that make a house yours. We install them properly: level, sealed, vented, with working shut-offs, and without surprising the next person who opens the cabinet.",
+"cta_noun": "fixtures installed",
+"faqs": [
+[
+"What counts as a fixture?",
+"Anything water comes out of or goes into: sinks, faucets, toilets, tubs, showers and their heads and valves, bidets and bidet seats, utility and bar sinks, pot fillers, outdoor showers, drinking fountains and hose bibs. If you bought it and it needs water, we install it."
+],
+[
+"Can you install fixtures I bought online?",
+"Yes. Send us the model and we'll check it fits your rough-in, hole spacing and drain location before the visit, so there's no return shipping."
+],
+[
+"Do I need a permit to install a new sink or toilet?",
+"Replacing a fixture in the same spot typically doesn't. Moving a fixture, adding one where there wasn't one, or changing drain or vent plumbing does, through the City of Bonney Lake or Pierce County. We'll tell you and handle it."
+],
+[
+"Can you add a bathroom or utility sink in the garage?",
+"Yes. It needs a supply, a vented drain and often a hot line; garages on the Plateau also need freeze consideration. We plan the route and quote it in writing."
+],
+[
+"How long does a vanity install take?",
+"A vanity swap with the drain in the same place is two to four hours including faucet, trap and supply lines. Moving the drain or supply adds time."
+],
+[
+"Do you install bidet seats?",
+"Yes — they need a cold supply tee at the toilet and, for heated models, a GFCI outlet nearby. We install the tee with a proper valve and coordinate an electrician for the outlet if needed."
+],
+[
+"Will you remove and dispose of old fixtures?",
+"Yes. Old vanities, sinks and toilets are hauled away as part of the job."
+]
+]
+}-->
+<h2>Build your fixture list</h2>
+<p>Fixture jobs rarely come one at a time. A new vanity usually means a new faucet; a kitchen refresh means a sink, faucet, <a href="/services/garbage-disposals/">disposal</a> and maybe an <a href="/services/instant-hot-water-dispensers/">instant hot</a>. Doing them in one visit saves you the trip charge and us the setup. Tick what you're planning and the tool tells you what each needs behind the wall, so there are no surprises on the day.</p>
+
+<div class="tool" id="fx">
+  <h3>Fixture project planner</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="fx" value="vanity">Bathroom vanity and sink</label></li>
+    <li><label><input type="checkbox" class="fx" value="ksink">Kitchen sink (undermount or drop-in)</label></li>
+    <li><label><input type="checkbox" class="fx" value="faucet">Faucet(s)</label></li>
+    <li><label><input type="checkbox" class="fx" value="toilet">Toilet</label></li>
+    <li><label><input type="checkbox" class="fx" value="bidet">Bidet seat</label></li>
+    <li><label><input type="checkbox" class="fx" value="shower">Shower head, hand shower or slide bar</label></li>
+    <li><label><input type="checkbox" class="fx" value="utility">Utility or garage sink</label></li>
+    <li><label><input type="checkbox" class="fx" value="potfiller">Pot filler over the range</label></li>
+    <li><label><input type="checkbox" class="fx" value="outdoor">Outdoor shower or hose station</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="fx-go">What's involved?</button>
+  <div class="result" id="fx-out" hidden></div>
+</div>
+<script>
+(function(){var info={vanity:["Vanity + sink","drain trap re-cut to the new height, new supply lines, faucet set, caulk at the wall. Moving the drain = permit."],ksink:["Kitchen sink","undermount clips or drop-in seal, new basket strainers, trap rework, disposal reconnection, dishwasher drain and air gap."],faucet:["Faucet","hole-pattern check, new braided supplies, quarter-turn shut-offs if the old ones are failing."],toilet:["Toilet","rough-in measured, flange inspected, new seal and supply line."],bidet:["Bidet seat","cold supply tee at the toilet with a valve; GFCI outlet within reach for heated/warm-water models (electrician)."],shower:["Shower head / hand shower","check the arm and drop-ear fitting in the wall; a slide bar needs solid backing. Low flow? Clean the valve first."],utility:["Utility / garage sink","hot and cold supply, vented drain to the main line, freeze-safe routing on the Plateau. Usually a permit."],potfiller:["Pot filler","cold line run inside the wall to a drop-ear fitting at the right height over the range; wall opened and patched, or done during a remodel."],outdoor:["Outdoor shower / hose station","frost-free supply with an interior drain-down valve, and a drain that meets code (often a dry well or tie-in)."]};document.getElementById('fx-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#fx .fx:checked')).map(function(i){return i.value});var o=document.getElementById('fx-out');o.hidden=false;if(!c.length){o.innerHTML='<strong>Nothing selected</strong>Tick the fixtures you\'re planning.';return}var permit=c.some(function(k){return ['utility','potfiller','outdoor'].indexOf(k)>-1});o.innerHTML='<strong>'+c.length+' item'+(c.length>1?'s':'')+' — one visit'+(c.length>3?', probably a full day':'')+'</strong><ul style="margin:6px 0 0;padding-left:18px">'+c.map(function(k){return '<li><b>'+info[k][0]+':</b> '+info[k][1]+'</li>'}).join('')+'</ul>'+(permit?'<p style="margin:8px 0 0">At least one of these adds plumbing rather than replacing it, so expect a permit — we handle it.</p>':'')});})();
+</script>
+
+<figure class="photo"><img src="/img/services/fixture-installation-1.jpg" alt="New bathroom vanity, undermount sink and widespread faucet installed in a Bonney Lake home by Plumbers Bonney Lake" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A vanity install done right has the trap re-cut to height, not an accordion pipe bent into place.</figcaption></figure>
+
+<h2>The fixtures we install most in Bonney Lake homes</h2>
+<h3>Vanities and bathroom sinks</h3>
+<p>The most common fixture job on the Plateau. New vanities are almost never the same height or depth as the old one, so the drain trap has to be re-cut and the supplies repositioned — the difference between a clean cabinet and a flexible accordion trap that clogs. We set the vanity level, seal the countertop to the wall, install the faucet and pop-up drain, and replace the shut-off valves if they're the old type.</p>
+<h3>Kitchen sinks</h3>
+<p>Undermount sinks in stone or quartz need the right clips and a properly supported bowl; drop-ins need a clean seal. Either way the basket strainers, trap, disposal and dishwasher drain all get reconnected, and the air gap gets re-drilled if the new sink's deck layout changed. A deep farmhouse sink often means a shorter trap arm and a relocated disposal — we plan for it.</p>
+<h3>Toilets, bidets and bidet seats</h3>
+<p>Toilet replacement is covered on its <a href="/services/toilet-repair-replacement/">own page</a>. Bidet seats are the fastest-growing fixture request we get: a cold tee at the toilet supply with a real valve, and for heated models a GFCI outlet within reach. Stand-alone bidets need a drain and both supplies.</p>
+<h3>Shower heads, hand showers and body sprays</h3>
+<p>Swapping a shower head is easy; adding a hand shower on a slide bar needs backing in the wall for the bar, and a diverter. Body sprays and multi-head showers need a valve and supply sized for the flow, which is a <a href="/services/tub-shower-installation/">shower valve</a> job.</p>
+<h3>Utility, laundry and garage sinks</h3>
+<p>A deep sink by the washer or in the garage is one of the most useful additions to a house. It needs hot and cold supply, a drain tied into the main with a vent, and on the Plateau, routing that won't freeze in an unheated garage. This is usually permitted work.</p>
+<h3>Pot fillers and specialty fixtures</h3>
+<p>A pot filler over the range needs a cold line inside the wall to a drop-ear fitting at the right height, which is easiest during a remodel but doable afterward with a small wall opening. Bar sinks, drinking-water faucets, outdoor showers and dog-wash stations follow the same logic: supply, drain, vent, freeze protection, done once.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 250" role="img" aria-labelledby="fxTitle">
+    <title id="fxTitle">Diagram showing what every fixture installation needs behind the wall: a hot and cold supply with shut-off valves, a trapped and vented drain, solid backing for wall-mounted items, and an outlet where the fixture is powered</title>
+    <rect width="720" height="250" rx="8" fill="#E3F1F3"/>
+    <rect x="60" y="30" width="600" height="190" fill="#fff" stroke="#0F2E4A" stroke-width="2" stroke-dasharray="6 4"/><text x="70" y="52" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#4A5862">Inside the wall / cabinet</text>
+    <path d="M110 200 V90 H260" fill="none" stroke="#B8742A" stroke-width="5"/><path d="M150 200 V110 H260" fill="none" stroke="#1B7F8E" stroke-width="5"/>
+    <circle cx="240" cy="90" r="7" fill="#B8742A" stroke="#0F2E4A" stroke-width="2"/><circle cx="240" cy="110" r="7" fill="#1B7F8E" stroke="#0F2E4A" stroke-width="2"/>
+    <text x="100" y="225" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Hot + cold with shut-offs</text>
+    <rect x="300" y="70" width="120" height="30" rx="4" fill="#C9D6E0" stroke="#0F2E4A" stroke-width="2"/><text x="318" y="90" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="14" fill="#0F2E4A">Fixture</text>
+    <path d="M360 100 V130 C360 160 400 160 400 130 V115" fill="none" stroke="#4A5862" stroke-width="6"/><path d="M400 140 H520 V200" fill="none" stroke="#4A5862" stroke-width="6"/><path d="M460 140 V40" stroke="#4A5862" stroke-width="4" stroke-dasharray="6 4"/>
+    <text x="470" y="60" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Vent</text><text x="330" y="190" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">P-trap → drain</text>
+    <rect x="300" y="40" width="120" height="8" fill="#8F5A1F"/><text x="430" y="48" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#8F5A1F">Backing for wall-mounts</text>
+    <rect x="560" y="80" width="26" height="24" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="540" y="125" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">GFCI if powered</text>
+  </svg>
+  <figcaption>Every fixture, same five questions: supply, shut-offs, trap, vent, backing. Powered fixtures add a sixth.</figcaption>
+</figure>
+
+<h2>How we install</h2>
+<p>We start by confirming the fixture fits — rough-in, hole spacing, drain location, cabinet depth — because the wrong fixture is the most expensive thing to discover on install day. Old fixtures come out and go to recycling. Supply stubs get new quarter-turn shut-offs where the existing valves are worn; drains get a proper trap and, where the fixture is new, a vent connection that meets Washington's plumbing code. Wall-mounted items get solid backing. Everything is set level and plumb, sealed, and run under full pressure while we check each joint. When a job adds plumbing rather than replacing it, we pull the permit with the City of Bonney Lake or Pierce County and meet the inspector.</p>
+
+<figure class="photo"><img src="/img/services/fixture-installation-2.jpg" alt="Utility sink with hot and cold supply and vented drain installed in a Tehaleh garage laundry area by Plumbers Bonney Lake" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A garage utility sink, routed so it won't freeze and vented so it won't gurgle.</figcaption></figure>
+
+<div class="callout"><strong>Buying fixtures online?</strong><br>Send us the model numbers before you order. We'll check the rough-in and hole pattern against your sink or wall, and flag the ones that arrive without the parts you need — a fifteen-minute email that saves a week of returns.</div>
+
+<h2>Before we arrive</h2>
+<p>Have every fixture on site, unboxed enough to confirm nothing's cracked and all the parts are there. Clear the cabinets and the floor. For vanities, confirm the countertop and sink arrive together; for wall-mounted items, let us know if the wall has been opened recently — backing is far easier to add before the drywall closes. If any item is going somewhere it hasn't been before, send a photo of the spot and the nearest plumbing you can see; it helps us route accurately and quote once.</p>
+
+<h2>Fixture installation across the Plateau</h2>
+<p>Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge. For a full bathroom or kitchen with moved walls, see <a href="/services/repipes-remodels/">remodel plumbing</a>; for everything from a single faucet to a day's worth of upgrades, call <a href="tel:+12534657734">(253) 465-7734</a> with your list.</p>

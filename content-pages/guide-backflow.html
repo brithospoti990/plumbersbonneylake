@@ -1,0 +1,81 @@
+<!--META {
+"path": "/guides/backflow-preventer-bonney-lake/",
+"kind": "guide",
+"date": "2026-10-06",
+"crumb": "Backflow",
+"title": "Do I Need a Backflow Preventer in Bonney Lake? | Guide",
+"description": "Who needs a backflow assembly under Bonney Lake's cross-connection program, which type, how annual testing works, what the notice means. (253) 465-7734.",
+"h1": "Do I Need a Backflow Preventer in Bonney Lake?",
+"lede": "If you've received a letter from the City of Bonney Lake Water Department about backflow testing, you're not alone — and it isn't a scam. Here's what the cross-connection program requires, who it applies to, and how to satisfy it without a headache.",
+"related": [
+"backflow-preventers",
+"expansion-tanks",
+"water-line-repair"
+],
+"faqs": [
+[
+"What happens if I ignore the City's test notice?",
+"The City can discontinue water service to a property with an untested or failed assembly after the notice deadline. Call us before it passes; a test and filing takes under an hour."
+],
+[
+"I don't have irrigation. Why is there a backflow device at my meter?",
+"The City installs backflow protection at many residential meters as part of its program. That device is the City's; you don't test it. But it makes your house a closed system — see the expansion tank note below."
+],
+[
+"Can I test my own assembly?",
+"No. Washington requires testing by a Department of Health certified Backflow Assembly Tester, and the report has to be filed by that tester."
+]
+]
+}-->
+<h2>Why the City cares what's in your yard</h2>
+<p>Every water system in Washington must protect its supply from cross-connections — places where water from a customer's property could flow backward into the public main. It happens when pressure drops in the main: a hydrant opens for a fire, a main breaks, a pump starts. For a moment the pressure in your pipes is higher than the pressure in the street, and anything connected to your plumbing can be siphoned back. The City of Bonney Lake's cross-connection control program exists so that the fertilizer in your irrigation lines, the stagnant water in a fire sprinkler system, or the untreated water from a private well never ends up in a neighbor's glass.</p>
+
+<div class="tool" id="bq">
+  <h3>Do you need an assembly? Three questions</h3>
+  <div class="row three">
+    <div><label for="bq-1">Irrigation, fire sprinkler, pool auto-fill or boiler connected to your water?</label><select id="bq-1"><option value="none">None of those</option><option value="irr">Irrigation only</option><option value="fire">Fire sprinkler</option><option value="pool">Pool / spa / boiler</option></select></div>
+    <div><label for="bq-2">A private well, pond pump or other water source on the same property?</label><select id="bq-2"><option value="no">No</option><option value="yes">Yes</option></select></div>
+    <div><label for="bq-3">Property type</label><select id="bq-3"><option value="res">Single-family home</option><option value="comm">Commercial, multi-family, farm</option></select></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="bq-go">Answer</button>
+  <div class="result" id="bq-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('bq-go').addEventListener('click',function(){var a=document.getElementById('bq-1').value,w=document.getElementById('bq-2').value,t=document.getElementById('bq-3').value;var o=document.getElementById('bq-out');o.hidden=false;if(w==='yes'||t==='comm'||a==='pool'){o.innerHTML='<strong>Yes — a reduced pressure backflow assembly (RPBA)</strong>The City treats a second water source, commercial use, and chemical or heating connections as high hazard. An RPBA at the service, tested annually by a certified tester, with the report filed with the Water Department.';return}if(a==='fire'){o.innerHTML='<strong>Yes — a double check valve assembly (DCVA) on the sprinkler line</strong>Tested annually; the fire system contractor and we coordinate so the test doesn\'t trip the alarm.';return}if(a==='irr'){o.innerHTML='<strong>Yes — a DCVA or pressure vacuum breaker on the irrigation line</strong>Tested annually, blown down before winter so it doesn\'t freeze. We install, test and file.';return}o.innerHTML='<strong>No assembly for you to maintain</strong>The City may have installed protection at your meter — that\'s theirs to maintain — but it makes your home a closed system. Check that your water heater has a working <a href="/services/expansion-tanks/">expansion tank</a>.'});})();
+</script>
+
+<h2>Which assembly, and where it goes</h2>
+<p>The program sorts hazards into two levels. Low-hazard connections — lawn irrigation without chemical injection, most fire sprinklers — get a double check valve assembly (DCVA) or, on some irrigation, a pressure vacuum breaker. High-hazard connections — a private well or pond pump on a property with City water, chemical feed on well water, boilers, commercial and agricultural uses — get a reduced pressure backflow assembly (RPBA), which has a relief port that dumps water if either check fails. Low-hazard assemblies go on the branch that feeds the hazard; high-hazard assemblies go at the service so the whole property is isolated. Every assembly has to be accessible for testing, protected from freezing, and — for an RPBA — given a drain path for its relief port.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 220" role="img" aria-labelledby="bqdTitle">
+    <title id="bqdTitle">Decision diagram: low-hazard connections such as irrigation and fire sprinklers get a double check valve assembly on the branch; high-hazard connections such as wells, boilers and commercial use get a reduced pressure assembly at the service</title>
+    <rect width="720" height="220" rx="8" fill="#E3F1F3"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">
+      <rect x="40" y="80" width="150" height="60" rx="6" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="115" y="105" text-anchor="middle" font-weight="700">What's connected?</text><text x="115" y="124" text-anchor="middle">to your water</text>
+      <path d="M190 95 H280" stroke="#1B7F8E" stroke-width="3"/><path d="M190 125 H280" stroke="#B03A2E" stroke-width="3"/>
+      <rect x="280" y="40" width="200" height="70" rx="6" fill="#fff" stroke="#1B7F8E" stroke-width="2"/><text x="380" y="62" text-anchor="middle" font-weight="700">Low hazard</text><text x="380" y="80" text-anchor="middle">Irrigation, fire sprinkler</text><text x="380" y="98" text-anchor="middle">→ DCVA / PVB on the branch</text>
+      <rect x="280" y="120" width="200" height="80" rx="6" fill="#fff" stroke="#B03A2E" stroke-width="2"/><text x="380" y="142" text-anchor="middle" font-weight="700">High hazard</text><text x="380" y="160" text-anchor="middle">Well, boiler, pool fill, chemical</text><text x="380" y="178" text-anchor="middle">feed, commercial / agricultural</text><text x="380" y="194" text-anchor="middle">→ RPBA at the service</text>
+      <rect x="520" y="80" width="170" height="60" rx="6" fill="#F6ECDF" stroke="#B8742A" stroke-width="2"/><text x="605" y="105" text-anchor="middle" font-weight="700">Both: annual test</text><text x="605" y="124" text-anchor="middle">by a DOH-certified BAT, filed</text>
+      <path d="M480 75 H520 M480 160 H520" stroke="#B8742A" stroke-width="3"/>
+    </g>
+  </svg>
+  <figcaption>The hazard decides the assembly type and location; the test requirement is the same either way.</figcaption>
+</figure>
+
+<h2>The annual test</h2>
+<p>Washington's Department of Health requires every assembly to be tested after installation, repair or relocation, and once a year after that, by a DOH-certified Backflow Assembly Tester. The test uses a calibrated differential gauge on the assembly's test cocks and takes about twenty minutes. The tester files the report with the City of Bonney Lake Water Department (or Tacoma Water for Tehaleh), and you get a copy. If it fails — debris on a seat, a worn disc, a relief valve that won't open — the assembly is repaired with the manufacturer's kit and re-tested. We're certified testers and licensed plumbers, so one visit covers testing, repair and the filing; we also keep a calendar and remind you a month before the City's deadline.</p>
+
+<h2>The side effect: your house is now a closed system</h2>
+<p>This is the part no one explains. Once a backflow device sits at your meter — whether it's yours or the City's — water can't push back into the main. When your water heater heats a tankful, the water expands by roughly half a gallon, and in a closed system that expansion drives pressure up every heating cycle. The relief valve on the heater vents it, which is why so many Bonney Lake homeowners find a wet floor or a mineral trail under the water heater and assume the valve is bad. The valve is fine; the house needs an <a href="/services/expansion-tanks/">expansion tank</a>. Washington's plumbing code requires one on closed systems and inspectors look for it on water heater permits. If the City upgraded your meter in the last few years and your relief valve started dripping afterward, that's the connection.</p>
+
+<h2>Winter and the assembly</h2>
+<p>Irrigation assemblies live outdoors. Left charged through a Plateau freeze, the brass body cracks, and that's a replacement rather than a repair. Each fall we blow down the irrigation and the assembly, or install an insulated enclosure for assemblies that must stay in service — fire sprinklers, commercial supplies. Spring is when we find the ones that weren't winterized.</p>
+
+<h2>Commercial and multi-family properties</h2>
+<p>Restaurants, salons, offices, churches, small apartment buildings and farms along SR 410, Main Street and the valley are treated as high hazard by the program, and most have an RPBA at the service plus additional assemblies on specific equipment — a dishwasher chemical feed, a carbonator, an irrigation branch. The City tracks each assembly by its serial number and expects a test on each one every year. We maintain the list for our commercial plumbing customers, test everything in one visit, repair on the spot where possible, and file every report so no single assembly slips through and triggers a notice.</p>
+<h2>Selling or buying with a backflow assembly</h2>
+<p>An untested assembly shows up as an open item with the City and can delay a closing. If you're selling, have it tested and the report filed before listing. If you're buying, ask for the last test report; an assembly that's never been tested is often a sign the irrigation or well connection was done without a permit, which is worth knowing before the price is set.</p>
+<h2>Got the notice? Here's what to do</h2>
+<p>Read the deadline. Find the assembly — usually a brass valve pair near the irrigation controller, by the meter, or where the sprinkler riser enters the building. Call <a href="tel:+12534657734">(253) 465-7734</a> with the notice in hand; we test, repair if needed, and file the same day. If you're not sure you have an assembly at all, the City's letter will name the one on record, and we'll find it. Full detail on our <a href="/services/backflow-preventers/">backflow preventer page</a>.</p>
+<h2>When to call</h2><p>With a notice in hand, call before the deadline and we'll test and file. Without one, call if you have irrigation, a well, a sprinkler system or a business and have never had an assembly tested — the program will find you eventually, and a scheduled test is far easier than a shut-off notice. If your relief valve started dripping after the City worked on your meter, call about an expansion tank; that one isn't a backflow problem, but it's the backflow program's most common side effect.</p>

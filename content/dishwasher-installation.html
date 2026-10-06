@@ -1,0 +1,101 @@
+<!--META {
+"slug": "dishwasher-installation",
+"title": "Dishwasher Installation Bonney Lake, WA | Hookup & Replace",
+"description": "Dishwasher installation and replacement in Bonney Lake, WA. Supply, drain with air gap, leveling and leak test by a licensed plumber. Call (253) 465-7734.",
+"h1": "Dishwasher Installation & Replacement in Bonney Lake, WA",
+"lede": "The appliance store will drop the box in your kitchen. Getting water in, drain out and no leak behind the cabinet for the next fifteen years is plumbing — and in Washington it needs an air gap or high loop, a proper shut-off and a leak test. That's what we do.",
+"cta_noun": "a dishwasher installed",
+"faqs": [
+[
+"Does Washington require an air gap for a dishwasher?",
+"Washington's plumbing code requires backflow protection on the dishwasher drain — an air gap fitting on the sink deck is the standard method, and a high loop is accepted in many jurisdictions. We install what the City of Bonney Lake or Pierce County accepts at your address and tell you which it is."
+],
+[
+"Can you install a dishwasher where there wasn't one?",
+"Yes. That means adding a hot water supply with a shut-off, a drain connection to the sink trap or disposal, and an electrical circuit (we coordinate an electrician). Cabinet modification may be needed; we'll tell you up front."
+],
+[
+"Why does my new dishwasher leave water in the bottom?",
+"Usually the drain hose has no high loop so water siphons back, or the disposal's knockout plug was never removed. Both are quick fixes. A pump problem is the next possibility."
+],
+[
+"Do you haul away the old dishwasher?",
+"Yes. We disconnect, remove and recycle the old unit as part of the job."
+],
+[
+"Hot or cold water supply?",
+"Hot, in almost every case — dishwashers rely on incoming hot water and only boost it. We connect to the hot side with a braided stainless line and a dedicated shut-off valve."
+],
+[
+"How long does installation take?",
+"A like-for-like replacement is one to two hours. A first-time install or one that needs a new supply, drain rework or an air gap drilled takes longer."
+],
+[
+"Can you install the water filter line for the fridge at the same time?",
+"Yes — an ice maker line and a dishwasher install share the same cabinet space and shut-offs, and doing both on one visit saves you a trip charge."
+]
+]
+}-->
+<h2>Is your kitchen ready for the dishwasher?</h2>
+<p>A dishwasher needs three things behind the cabinet: hot water with its own shut-off, a drain connection that can't siphon back, and a dedicated electrical circuit. If you're replacing an existing unit, most of that is there; the question is whether it's in good shape. If you're adding a dishwasher to a kitchen that never had one — common in older Lake Tapps and original Bonney Lake homes — some of it has to be built. Run the checklist below to see where you stand.</p>
+
+<div class="tool" id="dw">
+  <h3>Dishwasher install readiness check</h3>
+  <ul class="chk">
+    <li><label><input type="checkbox" class="dw" value="space">There's a 24-inch opening under the counter next to the sink (or an existing dishwasher)</label></li>
+    <li><label><input type="checkbox" class="dw" value="hot">A hot water shut-off valve for the dishwasher is visible under the sink</label></li>
+    <li><label><input type="checkbox" class="dw" value="drain">There's a dishwasher drain connection on the disposal or sink tailpiece</label></li>
+    <li><label><input type="checkbox" class="dw" value="gap">There's an air gap fitting on the sink deck, or the drain hose loops up high under the counter</label></li>
+    <li><label><input type="checkbox" class="dw" value="elec">There's an outlet or junction box in the opening on its own circuit</label></li>
+    <li><label><input type="checkbox" class="dw" value="floor">The floor under the opening is dry and solid, with no swelling or staining</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="dw-go">Check readiness</button>
+  <div class="result" id="dw-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('dw-go').addEventListener('click',function(){var c=[].slice.call(document.querySelectorAll('#dw .dw:checked')).map(function(i){return i.value});var all=['space','hot','drain','gap','elec','floor'];var miss=all.filter(function(k){return c.indexOf(k)<0});var names={space:'cabinet opening',hot:'hot water shut-off',drain:'drain connection',gap:'air gap / high loop',elec:'dedicated circuit',floor:'dry, sound floor'};var o=document.getElementById('dw-out');o.hidden=false;if(!miss.length){o.innerHTML='<strong>Ready for a straight replacement</strong>Expect a one-to-two-hour job: disconnect, haul the old unit, connect supply and drain, level, leak test.';}else{var elecNote=miss.indexOf('elec')>-1?' The circuit is electrical work — we coordinate a licensed electrician.':'';var floorNote=miss.indexOf('floor')>-1?' A soft or stained floor means the old unit leaked; we check the subfloor before setting the new one.':'';o.innerHTML='<strong>'+(miss.length>=4?'First-time installation':'Replacement with some prep')+'</strong>Still needed: '+miss.map(function(k){return names[k]}).join(', ')+'.'+elecNote+floorNote+' We quote the prep and the install together in writing.';}})})();
+</script>
+
+<figure class="photo"><img src="/img/services/dishwasher-installation-1.jpg" alt="Dishwasher installed and leveled under a Bonney Lake kitchen counter with braided supply line, shut-off valve and air gap at the sink" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Braided stainless supply, a quarter-turn shut-off, an air gap on the deck and a level unit that latches cleanly.</figcaption></figure>
+
+<h2>The connections, and why each one matters</h2>
+<h3>Water supply</h3>
+<p>Dishwashers connect to the hot line under the sink through a dedicated shut-off valve and a braided stainless supply line. We replace old rubber or copper lines and any valve that doesn't close completely — a valve that won't shut means the next leak can't be stopped without closing the house main. On Bonney Lake's moderately hard water, the inlet screen on the dishwasher valve collects scale; we check it on replacements.</p>
+<h3>Drain</h3>
+<p>The drain hose runs from the dishwasher pump to the sink's tailpiece or the <a href="/services/garbage-disposals/">disposal</a>'s inlet. Without backflow protection, dirty sink water can siphon into the dishwasher, which is why Washington requires an air gap fitting at the sink deck or, where accepted, a high loop fastened under the counter. We drill the air gap hole cleanly if the sink doesn't have one, and we never leave the drain hose lying in the cabinet bottom.</p>
+<h3>Electrical</h3>
+<p>A dishwasher needs its own 15- or 20-amp circuit, ending in an outlet or a junction box in the opening. A unit sharing the disposal's circuit will trip the breaker when both run. Adding a circuit is an electrician's job; we coordinate it so the plumbing and electrical arrive together.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 270" role="img" aria-labelledby="dwTitle">
+    <title id="dwTitle">Diagram of dishwasher plumbing under a counter: hot water line with shut-off to the dishwasher inlet, drain hose rising to an air gap on the sink deck then down to the disposal, and a dedicated electrical outlet in the opening</title>
+    <rect width="720" height="270" rx="8" fill="#E3F1F3"/>
+    <rect x="40" y="40" width="640" height="14" fill="#8F5A1F"/><text x="50" y="30" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#4A5862">Countertop</text>
+    <rect x="80" y="54" width="220" height="190" fill="#F4F6F7" stroke="#0F2E4A" stroke-width="3"/><text x="140" y="150" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="16" fill="#0F2E4A">Dishwasher</text>
+    <rect x="340" y="54" width="300" height="190" fill="#fff" stroke="#0F2E4A" stroke-width="2" stroke-dasharray="6 4"/><text x="440" y="75" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#4A5862">Sink cabinet</text>
+    <path d="M400 54 V30" stroke="#4A5862" stroke-width="8"/><rect x="390" y="18" width="20" height="14" rx="4" fill="#4A5862"/><text x="412" y="30" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">Air gap on sink deck</text>
+    <path d="M300 200 H360 V40 H400 M400 40 V120 H470" fill="none" stroke="#4A5862" stroke-width="5"/>
+    <rect x="470" y="100" width="40" height="60" rx="8" fill="#C9D6E0" stroke="#4A5862" stroke-width="2"/><text x="480" y="180" font-family="Source Sans 3, Arial, sans-serif" font-size="11" fill="#0F2E4A">Disposal</text>
+    <path d="M620 100 V220 H560" fill="none" stroke="#B8742A" stroke-width="5"/><circle cx="600" cy="220" r="8" fill="#B8742A" stroke="#0F2E4A" stroke-width="2"/><path d="M560 220 H300" fill="none" stroke="#B8742A" stroke-width="5"/>
+    <text x="540" y="245" font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#8F5A1F">Hot supply + shut-off</text>
+    <rect x="95" y="215" width="28" height="22" fill="#fff" stroke="#0F2E4A" stroke-width="2"/><text x="100" y="257" font-family="Source Sans 3, Arial, sans-serif" font-size="11" fill="#0F2E4A">Dedicated outlet</text>
+  </svg>
+  <figcaption>Supply from the hot side, drain up through the air gap and down to the disposal, power on its own circuit.</figcaption>
+</figure>
+
+<h2>Replacing an existing dishwasher</h2>
+<p>A replacement is the most common dishwasher call we get in Bonney Lake, and the job is mostly about doing the small things right. We shut the water, disconnect the supply, drain and power, pull the old unit and check the floor underneath — a stained or swollen subfloor means the old unit leaked for a while, and we'd rather you know before the new one goes in. The new dishwasher is leveled front-to-back and side-to-side so the door seals and the racks don't roll, anchored to the counter or cabinet sides, and connected with a new supply line and clamps. Then it runs through a full cycle while we watch every joint.</p>
+<p>Quartz and stone countertops can't take the top-mount brackets most dishwashers ship with; we side-mount to the cabinet instead. Panel-ready and tall-tub models sometimes need the opening's height checked against the toe-kick; we measure before the unit is ordered if you ask us to.</p>
+
+<figure class="photo"><img src="/img/services/dishwasher-installation-2.jpg" alt="Plumbers Bonney Lake technician connecting the drain hose with a high loop and testing a newly installed dishwasher in a Tehaleh kitchen" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A full wash cycle with the kickplate off, watching every joint, before we call it done.</figcaption></figure>
+
+<h2>First-time installations and remodels</h2>
+<p>Adding a dishwasher to a kitchen that never had one is a small project rather than an appliance swap: a 24-inch cabinet comes out, a hot supply is teed under the sink with a shut-off, a drain connection is added to the tailpiece or disposal, an air gap is drilled, and an electrician runs a circuit. In older homes around the lake with galvanized supply lines, we often recommend replacing the under-sink supply plumbing at the same time rather than teeing into pipe that's near the end of its life. During a kitchen remodel we rough in supply and drain stubs before the cabinets go in so the install is clean; see <a href="/services/repipes-remodels/">remodel plumbing</a>.</p>
+
+<div class="callout"><strong>Three dishwasher leaks that aren't the dishwasher</strong><br>Water on the floor in front: a door gasket or an overfilled unit. Water in the cabinet next door: usually the sink drain, disposal or faucet supply, not the dishwasher. Water at the back: a supply fitting or a cracked drain hose where it was pinched during installation. We find which one it is before quoting.</div>
+
+<h2>Before we arrive</h2>
+<p>Have the new dishwasher in the kitchen with its installation kit (supply fitting, strain relief, hose clamps) — most units ship without a supply line, which we carry. Empty the sink cabinet so we can reach the valve and drain. If the old dishwasher is hardwired, note where its breaker is. And if the floor under the old unit is damaged, we'd rather you know now: a photo sent ahead lets us bring what's needed to level a new unit on a repaired floor rather than making a second trip.</p>
+
+<h2>Kitchen plumbing across the Plateau</h2>
+<p>Dishwasher installation and replacement in Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge. If you're also adding an <a href="/services/ice-maker-water-lines/">ice maker line</a> or an <a href="/services/instant-hot-water-dispensers/">instant hot water dispenser</a>, tell us — one visit covers all three. Call <a href="tel:+12534657734">(253) 465-7734</a>.</p>

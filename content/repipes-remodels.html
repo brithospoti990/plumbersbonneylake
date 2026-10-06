@@ -1,0 +1,111 @@
+<!--META {
+"slug": "repipes-remodels",
+"title": "Whole House Repipe & Remodel Plumbing Bonney Lake, WA",
+"description": "Whole-house repipes and remodel plumbing in Bonney Lake, WA. Galvanized and polybutylene replaced with PEX or copper to code. Call (253) 465-7734.",
+"h1": "Repipes & Remodel Plumbing in Bonney Lake, WA",
+"lede": "Rusty water, pinhole leaks, pressure that fades when two taps run — the pipe inside the walls is done. A whole-house repipe replaces it in days, not weeks. And when you're remodeling a kitchen or bath, we rough in the new plumbing so the tile never has to come off again.",
+"cta_noun": "a repipe or remodel quote",
+"faqs": [
+[
+"How do I know if my house needs a repipe?",
+"Galvanized steel supply lines (common before the mid-1970s) that give rusty water, low pressure or repeated leaks; polybutylene (gray plastic, roughly 1978–1995) regardless of symptoms; or copper with recurring pinholes. The pipe identifier on this page helps you tell what you have."
+],
+[
+"PEX or copper?",
+"PEX for most repipes: it's flexible, so it runs with fewer wall openings, it tolerates freezing better than copper, and it doesn't pinhole. Copper where it's exposed, near water heaters, or where you prefer it. We use both and will explain the choice for your house."
+],
+[
+"How long does a whole-house repipe take?",
+"Two to four days for a typical Bonney Lake home, with water back on every evening. Drywall patching and painting follow; we open as few, as small, and as accessible holes as the layout allows."
+],
+[
+"Is a permit required?",
+"Yes. Repipes and any remodel that moves or adds plumbing are permitted and inspected by the City of Bonney Lake or Pierce County. We pull the permit, meet the inspector for rough-in and final, and provide the paperwork for your records and insurance."
+],
+[
+"Do you do the drywall repair?",
+"We coordinate a drywall contractor for patching and texture after inspection, or work with yours. The plumbing quote lists it separately so there are no surprises."
+],
+[
+"Can you move plumbing for a kitchen island or a relocated bathroom?",
+"Yes. Moving supply is simple; moving drains and vents is the real work and needs crawl-space or slab access. We plan it with you and your contractor before anything is demolished."
+],
+[
+"Will a repipe fix my water pressure?",
+"If the cause is narrowed galvanized pipe, dramatically. If it's a failing pressure-reducing valve or a narrowed service line from the meter, we'll find that during the assessment and quote it separately — see water line repair."
+]
+]
+}-->
+<h2>What pipe is in your walls?</h2>
+<p>Bonney Lake's housing stock spans seventy years, and the supply pipe inside the walls changed every couple of decades. Knowing which you have tells you whether a repipe is a someday project or an overdue one. Find an exposed section — under a sink, at the water heater, in the crawl space — and run through the identifier below.</p>
+
+<div class="tool" id="pipe">
+  <h3>Pipe material identifier</h3>
+  <div class="row three">
+    <div><label for="pp-year">House built</label><select id="pp-year"><option value="old">Before 1975</option><option value="mid">1975–1995</option><option value="new">After 1995</option></select></div>
+    <div><label for="pp-look">What the exposed pipe looks like</label><select id="pp-look"><option value="gray">Dull gray metal, threaded fittings</option><option value="copper">Orange/brown metal, soldered joints</option><option value="pb">Gray plastic, crimped copper or plastic fittings</option><option value="pex">Red/blue/white flexible plastic</option><option value="cpvc">Cream/tan rigid plastic, glued joints</option></select></div>
+    <div><label for="pp-mag">Does a magnet stick to it?</label><select id="pp-mag"><option value="yes">Yes</option><option value="no">No</option><option value="unk">Not sure</option></select></div>
+  </div>
+  <ul class="chk">
+    <li><label><input type="checkbox" id="pp-rust">Water runs rusty or brown after sitting overnight</label></li>
+    <li><label><input type="checkbox" id="pp-leak">There's been more than one pipe leak in the last few years</label></li>
+    <li><label><input type="checkbox" id="pp-press">Pressure drops noticeably when two fixtures run</label></li>
+  </ul>
+  <button class="btn btn-outline" type="button" id="pp-go">Identify</button>
+  <div class="result" id="pp-out" hidden></div>
+</div>
+<script>
+(function(){document.getElementById('pp-go').addEventListener('click',function(){var y=document.getElementById('pp-year').value,l=document.getElementById('pp-look').value,m=document.getElementById('pp-mag').value,rust=document.getElementById('pp-rust').checked,leak=document.getElementById('pp-leak').checked,pr=document.getElementById('pp-press').checked;var mat,verdict;if(l==='gray'&&(m==='yes'||m==='unk')){mat='Galvanized steel';verdict='Past its service life. It rusts shut from the inside and then pinholes. '+(rust||pr?'Your symptoms are the classic signs. ':'')+'A repipe to PEX or copper is the fix; patching one leak usually just moves the next one.';}else if(l==='pb'){mat='Polybutylene';verdict='Known to fail at fittings and from chlorine exposure, usually without warning. Insurers often flag it. We recommend a full repipe regardless of symptoms — before a failure, not after.';}else if(l==='copper'){mat='Copper';verdict=leak?'Copper with repeated pinholes points to aggressive water or stray current; a partial or full repipe in PEX ends it.':'Sound copper lasts decades. If pressure is low, the cause is more likely the service line or a pressure-reducing valve than the house pipe.';}else if(l==='pex'){mat='PEX';verdict='Modern and reliable. No repipe needed; if you have leaks, they\'re at fittings and are individual repairs.';}else{mat='CPVC';verdict='Serviceable but brittle with age, especially on hot lines. Leaks at joints are common past 20 years; we repair individually or repipe if they recur.';}var o=document.getElementById('pp-out');o.hidden=false;o.innerHTML='<strong>'+mat+'</strong>'+verdict+' Typical for a '+(y==='old'?'pre-1975':y==='mid'?'1975–1995':'post-1995')+' home. We confirm on site before quoting.'});})();
+</script>
+
+<figure class="photo"><img src="/img/services/repipes-remodels-1.jpg" alt="Whole-house PEX repipe in progress in a Bonney Lake crawl space, new manifold and color-coded lines installed by Plumbers Bonney Lake" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>A PEX manifold in the crawl space: each fixture gets its own home run and its own shut-off.</figcaption></figure>
+
+<h2>Whole-house repipes</h2>
+<p>A repipe replaces every hot and cold supply line from the main shut-off to each fixture. In the homes we see around Lake Tapps and the original Bonney Lake lots that usually means removing galvanized steel; in the 1980s and early-90s subdivisions it often means polybutylene — the gray plastic pipe that fails without warning and that many insurers won't cover. Either way the process is the same:</p>
+<ul>
+  <li><strong>Assessment and plan.</strong> We map every fixture, find the routes with the least drywall impact (crawl space, attic, closets), and decide PEX vs. copper for each run.</li>
+  <li><strong>Day one.</strong> Water off, new lines run alongside the old ones where possible, new shut-offs at every fixture. Water is back on by evening on the new system wherever it's connected.</li>
+  <li><strong>Days two to three.</strong> Remaining fixtures, the water heater connections, hose bibs, and a new main shut-off and pressure-reducing valve if the house needs one.</li>
+  <li><strong>Inspection.</strong> The City of Bonney Lake or Pierce County inspects the rough-in before walls close.</li>
+  <li><strong>Drywall and finish.</strong> Coordinated with a drywall contractor; we size openings to standard patch sizes to keep this quick.</li>
+</ul>
+<p>The payoff is immediate: full pressure at every tap, clear water, individual shut-offs so one repair never means shutting the house down, and no more guessing where the next leak will be. On well properties we also add the sediment protection a new system deserves.</p>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 260" role="img" aria-labelledby="rpTitle">
+    <title id="rpTitle">Timeline chart of common supply pipe materials in Bonney Lake homes by era: galvanized steel before the mid-1970s, copper from the 1960s onward, polybutylene from about 1978 to 1995, CPVC in some homes from the 1980s, and PEX from the late 1990s to today, with each marked as replace, monitor, or sound</title>
+    <rect width="720" height="260" rx="8" fill="#E3F1F3"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">
+      <text x="20" y="40" font-family="Barlow Semi Condensed, Arial Narrow, sans-serif" font-size="15">Supply pipe by era — what's likely in a Plateau home</text>
+      <g stroke="#B9C8D4"><line x1="140" y1="55" x2="140" y2="230"/><line x1="260" y1="55" x2="260" y2="230"/><line x1="380" y1="55" x2="380" y2="230"/><line x1="500" y1="55" x2="500" y2="230"/><line x1="620" y1="55" x2="620" y2="230"/></g>
+      <text x="130" y="245">1960</text><text x="250" y="245">1975</text><text x="370" y="245">1990</text><text x="490" y="245">2005</text><text x="610" y="245">2020</text>
+      <rect x="40" y="70" width="230" height="22" fill="#B03A2E" opacity=".85"/><text x="46" y="86" fill="#fff">Galvanized steel — replace</text>
+      <rect x="140" y="102" width="560" height="22" fill="#B8742A" opacity=".85"/><text x="146" y="118" fill="#fff">Copper — sound unless pinholing</text>
+      <rect x="280" y="134" width="140" height="22" fill="#B03A2E" opacity=".85"/><text x="286" y="150" fill="#fff">Polybutylene — replace</text>
+      <rect x="300" y="166" width="200" height="22" fill="#D59A55" opacity=".9"/><text x="306" y="182" fill="#0F2E4A">CPVC — monitor joints</text>
+      <rect x="440" y="198" width="260" height="22" fill="#1B7F8E" opacity=".9"/><text x="446" y="214" fill="#fff">PEX — sound</text>
+    </g>
+  </svg>
+  <figcaption>Two of the five materials are a "replace on sight." The identifier above tells you which you have.</figcaption>
+</figure>
+
+<h2>Remodel plumbing: rough-in done right</h2>
+<p>A kitchen or bathroom remodel is the one time the walls and floor are open. That's when plumbing should be moved, upsized and corrected — not after the tile is set. We work with homeowners directly and with general contractors across the Plateau on:</p>
+<ul>
+  <li><strong>Kitchens</strong> — relocating the sink to an island (which means a drain and a vent under the floor, not just supply), adding a pot filler, a second sink, an <a href="/services/instant-hot-water-dispensers/">instant hot</a>, a <a href="/services/dishwasher-installation/">dishwasher</a> where there wasn't one, and a properly sized <a href="/services/ice-maker-water-lines/">fridge line</a>.</li>
+  <li><strong>Bathrooms</strong> — <a href="/services/tub-shower-installation/">tub-to-shower conversions</a>, double vanities, moving the toilet, freestanding tub fillers, thermostatic shower valves, body sprays, and the 2-inch drains and proper venting that a new layout requires.</li>
+  <li><strong>Additions and ADUs</strong> — new bathrooms and kitchens tied into the existing system, sized so the water heater and the main line can serve them, with a separate shut-off.</li>
+  <li><strong>Laundry rooms</strong> — relocated washer boxes, standpipes that meet code, a <a href="/services/fixture-installation/">utility sink</a>, and a floor drain.</li>
+</ul>
+<p>Every remodel rough-in gets a pressure test before inspection, and we photograph the layout inside the walls before they close so the next person — maybe us, maybe you — knows exactly where everything runs.</p>
+
+<figure class="photo"><img src="/img/services/repipes-remodels-2.jpg" alt="Bathroom remodel rough-in plumbing in a Tehaleh home: new supply stubs, 2-inch shower drain and vent installed by Plumbers Bonney Lake before drywall" width="1200" height="800" loading="lazy" onerror="this.onerror=null;this.src='/img/placeholder-photo.svg'"><figcaption>Rough-in before drywall: supply stubs capped and pressure-tested, drain and vent ready for inspection.</figcaption></figure>
+
+<h2>Why permits and inspections protect you</h2>
+<p>Repipes and remodel plumbing are permitted work in Bonney Lake and Pierce County for a reason: this is the plumbing nobody will see again for decades. An inspector confirms the venting, the slope, the pipe sizing and the pressure test before the walls close. The permit record also matters when you sell — buyers' inspectors and lenders ask about polybutylene and unpermitted work, and a documented repipe answers both questions. We pull every permit in our name, schedule the inspections, and hand you the final.</p>
+<p>Have the main shut-off location and, if you can, a photo of the exposed pipe ready when you call; it lets us bring the right fittings and quote more accurately on the first visit.</p>
+
+<div class="callout"><strong>Partial repipes</strong><br>Not every house needs everything replaced at once. A bathroom's worth of galvanized, the hot side only, or the run that keeps leaking can be replaced on its own, with the rest planned for later. We'll show you where the money does the most good.</div>
+
+<h2>Repipes and remodel plumbing across the Plateau</h2>
+<p>Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh, Orting, South Prairie, Puyallup, Enumclaw, Auburn, Edgewood and Prairie Ridge. Call <a href="tel:+12534657734">(253) 465-7734</a> for an assessment — we'll identify the pipe, map the job, and give you a written quote with the permit and inspection included.</p>

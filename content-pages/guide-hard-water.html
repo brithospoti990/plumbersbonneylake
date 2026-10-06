@@ -1,0 +1,85 @@
+<!--META {
+"path": "/guides/bonney-lake-hard-water/",
+"kind": "guide",
+"date": "2026-10-06",
+"crumb": "Hard water",
+"title": "Hard Water in Bonney Lake: Reading the City Report | Guide",
+"description": "Is Bonney Lake water hard? How to read the City's water report, convert mg/L to grains and decide whether a softener makes sense. (253) 465-7734.",
+"h1": "Hard Water in Bonney Lake: What the City's Report Actually Says",
+"lede": "Every year the City of Bonney Lake publishes a Consumer Confidence Report. It tells you where your water comes from and what's in it — if you know which lines to read and how to turn milligrams per liter into something that means anything at your shower door.",
+"related": [
+"water-softener-installation",
+"water-filtration-systems",
+"water-heater-installation"
+],
+"faqs": [
+[
+"Where do I find Bonney Lake's water quality report?",
+"The City of Bonney Lake Water Department publishes it annually on the City website and mails notice to customers. Tehaleh residents should look at Tacoma Water's report instead."
+],
+[
+"What hardness number means I need a softener?",
+"Below about 3 grains per gallon, rarely. Three to seven is a comfort decision. Above seven, scale on water heaters and fixtures usually makes a softener the cheaper long-term choice. Most Plateau groundwater lands in the upper half of that range."
+],
+[
+"Does hard water mean unsafe water?",
+"No. Hardness is calcium and magnesium — minerals, not contaminants. The City's water meets Department of Health standards. Hardness is a plumbing and appliance issue, not a health one."
+]
+]
+}-->
+<h2>Hardness, in units you can use</h2>
+<p>Water reports list hardness in milligrams per liter (or parts per million) as calcium carbonate. Softener sizing and most homeowner advice use grains per gallon. The conversion is simple — one grain per gallon is about 17.1 mg/L — but nobody remembers it at the kitchen table. Use the converter, then read the scale beneath it.</p>
+
+<div class="tool" id="hw">
+  <h3>Hardness converter and scale</h3>
+  <div class="row">
+    <div><label for="hw-v">Hardness value</label><input id="hw-v" type="number" min="0" max="1000" step="0.1" value="140"></div>
+    <div><label for="hw-u">Units on the report</label><select id="hw-u"><option value="mgl">mg/L or ppm (as CaCO₃)</option><option value="gpg">grains per gallon</option></select></div>
+  </div>
+  <button class="btn btn-outline" type="button" id="hw-go">Convert</button>
+  <div class="result" id="hw-out" hidden></div>
+  <p class="note">If your report doesn't list hardness, it often lists calcium and magnesium separately; call and we'll do the arithmetic, or we'll test at your tap.</p>
+</div>
+<script>
+(function(){document.getElementById('hw-go').addEventListener('click',function(){var v=+document.getElementById('hw-v').value||0,u=document.getElementById('hw-u').value;var gpg=u==='gpg'?v:v/17.1,mgl=u==='gpg'?v*17.1:v;var cls=gpg<1?'Soft':gpg<3.5?'Slightly hard':gpg<7?'Moderately hard':gpg<10.5?'Hard':'Very hard';var adv=gpg<3.5?'A softener is optional at this level; a scale-inhibiting filter protects a tankless heater if you have one.':gpg<7?'Scale will show on glass and in the water heater over years. Softener is a comfort and appliance-life decision.':'Scale will shorten water heater and fixture life. A softener usually pays for itself; size it with our calculator.';var o=document.getElementById('hw-out');o.hidden=false;o.innerHTML='<strong>'+gpg.toFixed(1)+' grains per gallon ('+Math.round(mgl)+' mg/L) — '+cls+'</strong>'+adv});})();
+</script>
+
+<figure class="diagram">
+  <svg viewBox="0 0 720 200" role="img" aria-labelledby="hwsTitle">
+    <title id="hwsTitle">Hardness scale from soft to very hard in grains per gallon, with the typical ranges for Tacoma Water, Bonney Lake City water and Plateau private wells marked</title>
+    <rect width="720" height="200" rx="8" fill="#E3F1F3"/>
+    <rect x="40" y="80" width="640" height="26" fill="#C9D6E0"/>
+    <rect x="40" y="80" width="46" height="26" fill="#9FD8E0"/><rect x="86" y="80" width="114" height="26" fill="#1B7F8E"/><rect x="200" y="80" width="160" height="26" fill="#B8742A"/><rect x="360" y="80" width="160" height="26" fill="#8F5A1F"/><rect x="520" y="80" width="160" height="26" fill="#0F2E4A"/>
+    <g font-family="Source Sans 3, Arial, sans-serif" font-size="12" fill="#0F2E4A">
+      <text x="40" y="128">0</text><text x="80" y="128">1</text><text x="190" y="128">3.5</text><text x="350" y="128">7</text><text x="505" y="128">10.5</text><text x="660" y="128">15+ gpg</text>
+      <text x="40" y="150">Soft</text><text x="100" y="150">Slightly hard</text><text x="230" y="150">Moderately hard</text><text x="410" y="150">Hard</text><text x="560" y="150">Very hard</text>
+      <path d="M120 70 V60 H180 V70" fill="none" stroke="#0F2E4A" stroke-width="1.5"/><text x="90" y="52">Tacoma Water (Tehaleh)</text>
+      <path d="M260 70 V60 H420 V70" fill="none" stroke="#0F2E4A" stroke-width="1.5"/><text x="275" y="52">Bonney Lake City water</text>
+      <path d="M380 180 V172 H640 V180" fill="none" stroke="#0F2E4A" stroke-width="1.5"/><text x="440" y="192">Plateau private wells</text>
+    </g>
+  </svg>
+  <figcaption>Typical ranges we measure. Your tap can sit anywhere inside its band; test before buying anything.</figcaption>
+</figure>
+
+<h2>Reading the City of Bonney Lake report</h2>
+<p>The report opens with the sources: Victor Falls and Grainger Springs, the City's wells, and the agreement with Tacoma Water that supplements supply. Groundwater that has filtered through the Plateau's glacial deposits picks up calcium and magnesium on the way, which is why Bonney Lake's supply reads moderately hard while Tacoma's Green River surface water reads much softer. If you live in Tehaleh or Prairie Ridge, note that your water may come partly or entirely from Tacoma through an intertie, and your hardness will be lower than the City's figure.</p>
+<p>Then come the tables. Look for <em>hardness</em> (sometimes "total hardness as CaCO₃"), and if it isn't listed, for <em>calcium</em> and <em>magnesium</em>. Look at <em>iron</em> and <em>manganese</em> — small amounts explain orange and black staining and tell you whether a softener needs an iron filter ahead of it. Look at the <em>chlorine residual</em>, which is what you taste. And look at the <em>lead and copper</em> section: the City samples at customer taps, and the result reflects the private plumbing in older homes as much as the water itself. Everything else in the report is about safety, which the City handles; hardness, iron and chlorine are about your plumbing, which is where we come in.</p>
+
+<h2>What hardness does to a Bonney Lake house</h2>
+<ul>
+  <li><strong>Water heaters.</strong> Scale settles at the bottom of a tank, insulating the burner from the water, so the heater runs longer, rumbles, and fails early. In a tankless unit it narrows the heat exchanger. Annual flushing and descaling slow it; a softener stops it. See <a href="/services/water-heater-installation/">water heaters</a>.</li>
+  <li><strong>Fixtures.</strong> Aerators and shower heads clog, cartridges stick, toilet rim jets close up. The white crust on glass doors and the ring in the kettle are the visible version.</li>
+  <li><strong>Appliances.</strong> Dishwasher elements, washing machine valves, coffee makers and the fridge's water valve all scale. Detergent works less well, so people use more.</li>
+  <li><strong>Skin and hair.</strong> Not a plumbing issue, but the most common reason people call about a softener.</li>
+</ul>
+
+<h2>Softener, conditioner or filter?</h2>
+<p>A <a href="/services/water-softener-installation/">salt-based softener</a> removes hardness by ion exchange and is the only thing that actually makes water soft. A salt-free conditioner changes the way scale forms so it doesn't stick as readily, without removing minerals — useful for people who don't want salt or the slick feel, with honest limits. A <a href="/services/water-filtration-systems/">carbon filter</a> removes chlorine taste and does nothing for hardness; an iron filter removes iron and does nothing for hardness either. Plenty of Plateau homes benefit from a softener plus a filter stage; the test at your tap decides which combination, and we'll tell you if the answer is none.</p>
+
+<h2>Three Bonney Lake households, three answers</h2>
+<p><strong>A family in Tehaleh on Tacoma Water</strong> asked about a softener because the shower door spots. Their tap tested slightly hard; a softener would have been a waste. A squeegee and a carbon filter for chlorine taste were the honest recommendation. <strong>A couple on the original Bonney Lake lots</strong> had replaced two water heaters in twelve years. Their City water tested at the top of the moderately hard range; a softener and a new heater with an expansion tank ended the cycle. <strong>A homeowner outside Buckley on a well</strong> wanted a softener for the orange staining. The lab panel showed iron well above what a softener can handle; an air-injection iron filter first, then a softener, was the system that worked. The report gives you the range. The tap gives you the answer.</p>
+<h2>Maintenance on hard water</h2>
+<p>Whether or not you soften, two habits protect the house. Flush the water heater every year — a hose on the drain valve, ten minutes, done — and check the anode rod every two or three. On a tankless unit, descale annually through the isolation valves. Clean aerators and shower heads with a vinegar soak when flow drops. And if you do install a softener, set it to your measured hardness rather than the factory default; an over-set softener wastes salt and water, an under-set one leaves scale.</p>
+<h2>Testing: report vs. tap</h2>
+<p>The City's report is an average across the system and the year. Your tap is specific. We test hardness, iron, pH, chlorine and total dissolved solids on the first visit, and for well homes we recommend a certified laboratory panel. If you'd like to test yourself first, a titration kit (the kind with drops, not strips) gives a reliable hardness number. Then call <a href="tel:+12534657734">(253) 465-7734</a> and we'll size and quote whatever the number justifies — and nothing it doesn't.</p>
+<h2>When to call</h2><p>If the City's report or your own kit puts you above seven grains, or if you've replaced a water heater early, cleaned scale off a tankless unit, or given up on the shower door, call for a tap test and a written quote. We bring the kit, size the softener with the same calculator on our softener page, check for iron and sediment that would change the design, and tell you if a conditioner or a filter is the better fit — or if the honest answer is that your water is fine as it is. Bonney Lake, Lake Tapps, Sumner, Buckley, Tehaleh and the rest of the Plateau: <a href="tel:+12534657734">(253) 465-7734</a>.</p>
